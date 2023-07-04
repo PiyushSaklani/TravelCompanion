@@ -6,6 +6,7 @@ import openai
 import requests
 import json
 
+
 app = Flask(__name__)
 CORS(app)
 
@@ -27,7 +28,6 @@ def generate_itinerary():
         num_days = int(request.args.get('num_days'))
         summary = request.args.get("summary")
         print(num_days)
-        print("destination:")
         print(destination)
         extracted_destination, extracted_num_days = extract_information(string)
         
@@ -48,13 +48,18 @@ def generate_itinerary():
         # prompt = f"Preexisting Itinerary: {summary}\n"
         prompt += f"Changes: {string}\n"
         prompt += f"Make itinerary for {num_days} days in {destination}\n"
-        prompt += "Generate itinerary day wise in detail with headings like DAY 1: Arrival in Destination\n"
+        prompt += "Generate itinerary day wise in detail with headings like DAY 1: Arrival in Destination\n, DAY 2: Sightseeing in Destination\n, DAY 3: Departure from Destination\n"
         prompt += "Make sure the heading's DAY is in capital only rest everything normal\n"
-        prompt += "If word Day anywhere else in itinerary make it all lowercase like day\n"
         prompt += "Each line should have small paragraphic details\n"
         prompt += "Also give a summary in the extreme end (after complete itinerary for all days) including just the name of all places visited. Format: Day 1: Place 1, Place 2, Place 3 in 1 line with heading SUMMARY:\n"
         prompt += "Detailed and strictly follow the format specified."
-        prompt += "Give me. Max words 700"
+        prompt += "Give me. Max words 300"
+        prompt += "give in bullet points"
+        from datetime import datetime
+        now = datetime.now()
+        print("now =", now)
+        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+        print("date and time =", dt_string)
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo-0613",
@@ -66,7 +71,12 @@ def generate_itinerary():
             timeout=2
         )
         itinerary = response.choices[0].message['content'].strip()
+        now = datetime.now()
+        print("now =", now)
+        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+        print("date and time =", dt_string)
         print(itinerary)
+        
         # Split itinerary into separate days
         itinerary_split = itinerary.split('DAY ')
         for variation in ["SUMMARY:", "summary:", "Summary:"]:
@@ -214,7 +224,26 @@ def initial_details():
         app.logger.error(f"Error: {str(e)}")
         return jsonify({'error': 'An error occurred'}), 500
 
+import mysql.connector
 
+connection = mysql.connector.connect(
+    host="localhost",
+    user="try",
+    password="try_1234",
+    database="autofill"
+)
+@app.route('/autocomplete')
+def autocomplete():
+    user_input = request.args.get('query')
+
+    # Query the MySQL database to retrieve matching country names
+    cursor = connection.cursor()
+    cursor.execute("SELECT name FROM countries WHERE name LIKE %s", (f"{user_input}%",))
+
+    results = cursor.fetchall()
+    country_names = [result[0] for result in results]
+
+    return jsonify(country_names)
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
     app.run(debug=True, host='0.0.0.0', port=port)
