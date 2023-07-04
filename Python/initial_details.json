@@ -1,0 +1,224 @@
+{
+    "Paris": {
+        "0": {
+            "title": "Discover Paris's Charm",
+            "days": 3,
+            "cost": "50,000/person",
+            "description": "",
+            "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        "3": {
+            "id": 3,
+            "it": [
+                {
+                    "day": "Day 1",
+                    "activities": [
+                        "Arrive in Paris",
+                        "Check into hotel",
+                        "Visit the Louvre Museum",
+                        "Explore the Tuileries Garden",
+                        "Have dinner at a local bistro"
+                    ],
+                    "description": {
+                        "Arrive in Paris": "Welcome to the enchanting city of Paris, often referred to as the 'City of Love'! As you arrive in the French capital, you'll be greeted by the romantic ambiance and timeless beauty that Paris is renowned for. Get ready to immerse yourself in its rich history, art, and culture.",
+                        "Check into hotel": "After your arrival, make your way to your hotel in Paris. Check-in and get settled into your cozy accommodation, where you can relax and prepare for the memorable experiences that await you.",
+                        "Visit the Louvre Museum": "Embark on a journey through art and history at the world-famous Louvre Museum. Marvel at its impressive collection, which houses iconic masterpieces like the Mona Lisa, Venus de Milo, and countless other treasures. Explore the vast galleries and let the artworks transport you through time.",
+                        "Explore the Tuileries Garden": "Discover the serenity of the Tuileries Garden, a beautiful green oasis nestled between the Louvre Museum and Place de la Concorde. Take a leisurely stroll through its perfectly manicured lawns, admire the elegant fountains, and relax in the shade of its majestic trees.",
+                        "Have dinner at a local bistro": "Indulge in the gastronomic delights of Parisian cuisine with a memorable dinner at a local bistro. Immerse yourself in the charming ambiance, savor classic French dishes prepared with the finest ingredients, and enjoy the warm hospitality that Paris is known for."
+                    },
+                    "image": "https://images.unsplash.com/photo-1587422023429-24edff4116a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TG91dnJlJTIwTXVzZXVtfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                },
+                {
+                    "day": "Day 2",
+                    "activities": [
+                        "Visit the Eiffel Tower",
+                        "Take a Seine River cruise",
+                        "Discover the Notre-Dame Cathedral",
+                        "Stroll along the charming streets of Montmartre",
+                        "Enjoy a traditional French dinner"
+                    ],
+                    "description": {
+                        "Visit the Eiffel Tower": "No trip to Paris is complete without a visit to the iconic Eiffel Tower. Marvel at its magnificent structure and panoramic views of the city from its observation decks. Capture breathtaking photos and create lasting memories as you immerse yourself in the grandeur of this architectural marvel.",
+                        "Take a Seine River cruise": "Embark on a delightful Seine River cruise and experience the beauty of Paris from a unique perspective. Glide along the gentle waters, passing under charming bridges and admiring the city's landmarks, including the Notre-Dame Cathedral, the Louvre Museum, and the enchanting riverside architecture.",
+                        "Discover the Notre-Dame Cathedral": "Step into history as you explore the Notre-Dame Cathedral, a masterpiece of Gothic architecture. Admire the intricate details of its facade, marvel at the stunning stained glass windows, and climb to the top for a breathtaking view of the city. Feel the sense of spirituality and awe in this iconic Parisian landmark.",
+                        "Stroll along the charming streets of Montmartre": "Immerse yourself in the bohemian atmosphere of Montmartre, a neighborhood brimming with art, culture, and charm. Wander through its winding streets, visit the famous Sacré-Cœur Basilica, and discover quaint cafes, artist studios, and lively street performers that capture the essence of Parisian creativity.",
+                        "Enjoy a traditional French dinner": "Indulge in an unforgettable culinary experience with a traditional French dinner. Delight your taste buds with exquisite French cuisine, savor rich flavors and delicate textures, and immerse yourself in the art of French gastronomy. From classic dishes to regional specialties, let the flavors of France transport you on a culinary journey."
+                    },
+                    "image": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RWlmZmVsJTIwVG93ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                },
+                {
+                    "day": "Day 3",
+                    "activities": [
+                        "Explore the Palace of Versailles",
+                        "Marvel at the Hall of Mirrors",
+                        "Take a leisurely walk in the gardens",
+                        "Visit the Grand Trianon and Marie-Antoinette's Estate",
+                        "Experience a gourmet French lunch"
+                    ],
+                    "description": {
+                        "Explore the Palace of Versailles": "Immerse yourself in the opulence and grandeur of the Palace of Versailles. Discover the rich history and architectural splendor of this UNESCO World Heritage site. Marvel at the lavish halls, ornate rooms, and intricate details that showcase the power and wealth of French royalty.",
+                        "Marvel at the Hall of Mirrors": "Step into the legendary Hall of Mirrors and be awestruck by its breathtaking beauty. Adorned with magnificent chandeliers, gilded statues, and stunning mirrors reflecting endless reflections, this iconic hall is a true masterpiece of design and craftsmanship.",
+                        "Take a leisurely walk in the gardens": "Indulge in the tranquility of the expansive gardens of Versailles. Take leisurely strolls along perfectly manicured pathways, admire the meticulously designed fountains and statues, and bask in the serenity of the stunning landscape that surrounds the palace.",
+                        "Visit the Grand Trianon and Marie-Antoinette's Estate": "Explore the exquisite Grand Trianon, a retreat built for French royalty. Marvel at its elegant architecture, beautiful gardens, and intimate interior spaces. Continue your journey to Marie-Antoinette's Estate, where you can discover her charming hamlet and the Petit Trianon, her private residence.",
+                        "Experience a gourmet French lunch": "Indulge in a gourmet French lunch fit for royalty. Delight in the culinary mastery of French cuisine as you savor the finest flavors and enjoy exquisite dishes prepared with meticulous attention to detail. Let the ambiance of Versailles enhance your dining experience."
+                    },
+                    "image": "https://images.unsplash.com/photo-1633117678740-989810c62541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGFsbCUyMG9mJTIwTWlycm9yc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                }
+            ]
+        }
+    },
+    "Vietnam": {
+        "0": {
+            "title": "Vietnam's Hidden Gems",
+            "days": 3,
+            "cost": "40,000/person",
+            "description": "",
+            "image": "https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1856&q=80"
+        },
+        "3": {
+            "id": 3,
+            "it": [
+                {
+                    "day": "Day 1",
+                    "activities": [
+                        "Arrival in Hanoi",
+                        "Visit Hoan Kiem Lake",
+                        "Explore the Old Quarter",
+                        "Enjoy local street food"
+                    ],
+                    "description": {
+                        "Arrival in Hanoi": "Begin your trip in Hanoi, the vibrant capital city of Vietnam.",
+                        "Visit Hoan Kiem Lake": "Discover the scenic beauty of Hoan Kiem Lake, a peaceful oasis in the heart of Hanoi.",
+                        "Explore the Old Quarter": "Immerse yourself in the bustling atmosphere of Hanoi's historic Old Quarter, known for its narrow streets, traditional architecture, and vibrant markets.",
+                        "Enjoy local street food": "Indulge in the flavors of Hanoi's famous street food, from pho and banh mi to egg coffee and fresh spring rolls."
+                    },
+                    "image": "https://images.unsplash.com/photo-1685345411929-295c99f923b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8SG9hbiUyMEtpZW0lMjBMYWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                },
+                {
+                    "day": "Day 2",
+                    "activities": [
+                        "Day trip to Halong Bay",
+                        "Cruise through the stunning limestone formations",
+                        "Visit Thien Cung Cave",
+                        "Enjoy seafood lunch on the boat",
+                        "Kayaking or swimming in the bay",
+                        "Return to Hanoi in the evening"
+                    ],
+                    "description": {
+                        "Day trip to Halong Bay": "A full-day excursion to the mesmerizing Halong Bay, a UNESCO World Heritage Site known for its emerald waters and towering limestone karsts.",
+                        "Cruise through the stunning limestone formations": "Embark on a scenic cruise journey through the breathtaking limestone formations and islets scattered across Halong Bay.",
+                        "Visit Thien Cung Cave": "Explore the enchanting Thien Cung Cave, also known as the Heavenly Palace Cave, renowned for its remarkable stalactite and stalagmite formations.",
+                        "Enjoy seafood lunch on the boat": "Explore the enchanting Thien Cung Cave, also known as the Heavenly Palace Cave, renowned for its remarkable stalactite and stalagmite formations.",
+                        "Kayaking or swimming in the bay": "Engage in kayaking or take a refreshing swim in the crystal-clear waters of Halong Bay, immersing yourself in the natural beauty of the surroundings.",
+                        "Return to Hanoi in the evening": " Conclude the day trip by returning to Hanoi, the capital city of Vietnam, in the evening, with memories of a captivating adventure in Halong Bay."
+                    },
+                    "image": "https://images.unsplash.com/photo-1510256506868-484d0db06ee2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGhpZW4lMjBDdW5nJTIwQ2F2ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                },
+                {
+                    "day": "Day 3",
+                    "activities": [
+                        "Morning flight to Ho Chi Minh City",
+                        "Explore the Cu Chi Tunnels",
+                        "Visit the War Remnants Museum",
+                        "Explore Ben Thanh Market",
+                        "Try local Vietnamese coffee",
+                        "Departure from Ho Chi Minh City"
+                    ],
+                    "description": {
+                        "Morning flight to Ho Chi Minh City": "Begin your journey with a flight to vibrant Ho Chi Minh City.",
+                        "Explore the Cu Chi Tunnels": "Discover the historic Cu Chi Tunnels, an intricate network of underground tunnels used during the Vietnam War.",
+                        "Visit the War Remnants Museum": "Gain insight into the war's impact by visiting the War Remnants Museum, showcasing artifacts and exhibits.",
+                        "Explore Ben Thanh Market": "Immerse yourself in the bustling atmosphere of Ben Thanh Market, known for its vibrant stalls selling local goods and street food.",
+                        "Try local Vietnamese coffee": "Indulge in the rich flavors of Vietnamese coffee, a beloved local beverage, and experience its unique brewing style.",
+                        "Departure from Ho Chi Minh City": "Conclude your trip in Ho Chi Minh City, bidding farewell to the captivating city as you depart."
+                    },
+                    "image": "https://images.unsplash.com/photo-1529228465118-99ee19d5f43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fEJlbiUyMFRoYW5oJTIwTWFya2V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                }
+            ]
+        }
+    },
+    "Himachal": {
+        "0": {
+            "title": "Explore Himachal's Beauty",
+            "days": 3,
+            "cost": "25,000/person",
+            "description": "",
+            "image": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        },
+        "3": {
+            "id": 3,
+            "it": [
+                {
+                    "day": "Day 1",
+                    "activities": [
+                        "Arrive in Himachal Pradesh",
+                        "Check-in at a hotel in Shimla",
+                        "Explore Mall Road and Ridge",
+                        "Visit Jakhu Temple",
+                        "Enjoy panoramic views from Scandal Point",
+                        "Dinner at a local restaurant"
+                    ],
+                    "description": {
+                        "Arrive in Himachal Pradesh": "Arrive in Himachal Pradesh and get ready for an exciting trip in the beautiful region known for its scenic landscapes and vibrant culture.",
+                        "Check-in at a hotel in Shimla": "Check-in at a comfortable hotel in Shimla, the capital city of Himachal Pradesh, and unwind after your journey.",
+                        "Explore Mall Road and Ridge": "Stroll along the famous Mall Road and Ridge in Shimla, lined with shops, restaurants, and colonial-era buildings. Enjoy the charming atmosphere and indulge in shopping for souvenirs.",
+                        "Visit Jakhu Temple": "Head to Jakhu Temple, located atop Jakhu Hill. Take a short hike or a ride on the ropeway to reach the temple dedicated to Lord Hanuman. Enjoy the breathtaking views of the surroundings from the hilltop.",
+                        "Enjoy panoramic views from Scandal Point": "Visit Scandal Point, a popular viewpoint in Shimla, offering panoramic vistas of the Himalayas and the cityscape. Capture some memorable photographs at this picturesque spot.",
+                        "Dinner at a local restaurant": "Savor the flavors of Himachali cuisine at a local restaurant in Shimla. Try traditional dishes and relish the local delicacies before retiring for the night."
+                    },
+                    "image": "https://images.unsplash.com/photo-1597074866923-dc0589150358?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2hpbWxhfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                },
+                {
+                    "day": "Day 2",
+                    "activities": [
+                        "Breakfast at the hotel",
+                        "Drive to Kufri",
+                        "Enjoy skiing, horse riding, and other activities",
+                        "Visit the Himalayan Nature Park",
+                        "Return to Shimla",
+                        "Explore Shimla State Museum",
+                        "Shopping at the Mall Road",
+                        "Dinner at a local restaurant"
+                    ],
+                    "description": {
+                        "Breakfast at the hotel": "Start your day with a delicious breakfast at the hotel, energizing yourself for the day's adventures.",
+                        "Drive to Kufri": "Embark on a scenic drive to Kufri, a picturesque hill station near Shimla. Enjoy the cool mountain breeze and the stunning landscapes along the way.",
+                        "Enjoy skiing, horse riding, and other activities": "Engage in thrilling activities like skiing, horse riding, and more in Kufri. Embrace the adventure and make unforgettable memories amidst the snow-covered mountains.",
+                        "Visit the Himalayan Nature Park": "Explore the Himalayan Nature Park, home to various species of flora and fauna. Get a chance to see rare Himalayan wildlife up close.",
+                        "Return to Shimla": "Head back to Shimla and relax after an eventful day. Enjoy the serene ambiance of the city and take some leisure time for yourself.",
+                        "Explore Shimla State Museum": "Visit the Shimla State Museum and delve into the rich history and culture of Himachal Pradesh. Admire the fascinating collection of artifacts and artworks on display.",
+                        "Shopping at the Mall Road": "Indulge in shopping at Mall Road, Shimla's popular commercial hub. Browse through a variety of shops selling handicrafts, woolens, jewelry, and more.",
+                        "Dinner at a local restaurant": "Enjoy a delightful dinner at a local restaurant in Shimla, savoring the local flavors and specialties before calling it a day."
+                    },
+                    "image": "https://images.unsplash.com/photo-1619417889956-c701044fed86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNoaW1sYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                },
+                {
+                    "day": "Day 3",
+                    "activities": [
+                        "Breakfast at the hotel",
+                        "Check-out from the hotel",
+                        "Drive to Manali",
+                        "Visit Hadimba Devi Temple",
+                        "Explore the Vashisht Village",
+                        "Enjoy the scenic beauty of Solang Valley",
+                        "Return to Manali",
+                        "Shopping at the local markets",
+                        "Departure from Himachal Pradesh"
+                    ],
+                    "description": {
+                        "Breakfast at the hotel": "Start your day with a hearty breakfast at the hotel, preparing yourself for the day's adventures.",
+                        "Check-out from the hotel": "Check-out from the hotel in Shimla and get ready for the next leg of your journey.",
+                        "Drive to Manali": "Embark on a scenic drive from Shimla to Manali, enjoying the mesmerizing views of the valleys, rivers, and mountains along the way.",
+                        "Visit Hadimba Devi Temple": "Explore the Hadimba Devi Temple, a wooden temple dedicated to Goddess Hadimba. Admire the unique architecture and tranquil surroundings.",
+                        "Explore the Vashisht Village": "Visit the quaint Vashisht Village known for its hot springs and ancient temples. Immerse yourself in the peaceful ambiance and take a dip in the therapeutic waters.",
+                        "Enjoy the scenic beauty of Solang Valley": "Head to Solang Valley, a stunning valley known for its snow-capped peaks and adventure activities. Take in the breathtaking scenery and try out activities like paragliding or cable car ride (subject to availability).",
+                        "Return to Manali": "Return to Manali and spend some leisure time exploring the local markets, cafes, and enjoying the serene surroundings.",
+                        "Shopping at the local markets": "Engage in shopping at the local markets of Manali, known for their handicrafts, Tibetan artifacts, woolens, and souvenirs. Pick up some mementos to remember your trip.",
+                        "Departure from Himachal Pradesh": "Bid farewell to the beautiful state of Himachal Pradesh as you depart for your onward journey, carrying with you wonderful memories of your trip."
+                    },
+                    "image": "https://images.unsplash.com/photo-1641735735134-763d2f9bedbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHNoaW1sYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                }
+            ]
+        }
+    }
+}

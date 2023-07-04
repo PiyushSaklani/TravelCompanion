@@ -1,0 +1,1007 @@
+{
+  "Japan": {
+    "3": {
+      "destination": "Japan",
+      "num_days": 3,
+      "id": 0,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Tokyo",
+            "Check into hotel",
+            "Visit Meiji Shrine",
+            "Explore Harajuku district",
+            "Experience Shibuya Crossing",
+            "Enjoy traditional Japanese dinner"
+          ],
+          "description": {
+            "Arrive in Tokyo":
+              "Embark on an exciting journey through one of the most vibrant and dynamic cities in the world.",
+            "Check into hotel":
+              "Settle into your accommodation and prepare for your adventures in Tokyo.",
+            "Visit Meiji Shrine":
+              "Immerse yourself in the spiritual essence of Japan at the iconic Meiji Shrine, surrounded by a tranquil forested area.",
+            "Explore Harajuku district":
+              "Discover the lively and trendsetting Harajuku district, where you can find unique shops and witness fashionable locals expressing their individuality.",
+            "Experience Shibuya Crossing":
+              "Be a part of the mesmerizing spectacle at Shibuya Crossing, where pedestrians converge from all directions during the famous red light moment.",
+            "Enjoy traditional Japanese dinner":
+              "Indulge in the rich flavors and culinary delights of traditional Japanese cuisine, savoring dishes like sushi, sashimi, tempura, and ramen."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1585574362839-63b0c1b09ad4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+          },
+          {
+          "day": "Day 2",
+          "activities": [
+            "Visit Tsukiji Fish Market",
+            "Explore Asakusa district",
+            "Visit Senso-ji Temple",
+            "Stroll through Ueno Park",
+            "Experience Tokyo Skytree",
+            "Try authentic sushi for dinner"
+          ],
+          "description": {
+            "Visit Tsukiji Fish Market":
+              "Immerse yourself in the bustling atmosphere of Tsukiji Fish Market, one of the world's largest seafood markets. Witness the vibrant seafood auctions and indulge in fresh sushi and sashimi delicacies.",
+            "Explore Asakusa district":
+              "Step back in time as you explore the historic Asakusa district. Visit Nakamise Shopping Street, leading to the iconic Senso-ji Temple, and immerse yourself in traditional Japanese culture, shops, and street food.",
+            "Visit Senso-ji Temple":
+              "Discover the majestic Senso-ji Temple, Tokyo's oldest Buddhist temple. Marvel at the imposing entrance gate, the vibrant Nakamise Shopping Street, and the serene temple grounds.",
+            "Stroll through Ueno Park":
+              "Take a leisurely stroll through Ueno Park, a vast green oasis in the heart of Tokyo. Admire the beautiful cherry blossoms (in spring), visit museums and art galleries, and enjoy a peaceful retreat from the bustling city.",
+            "Experience Tokyo Skytree":
+              "Ascend to breathtaking heights at Tokyo Skytree, one of the tallest towers in the world. Enjoy panoramic views of the cityscape, explore the observation decks, and capture stunning photographs.",
+            "Try authentic sushi for dinner":
+              "Delight your taste buds with an authentic sushi dining experience. Choose from a variety of fresh, high-quality sushi and sashimi, skillfully prepared by expert chefs, and savor the artistry of Japanese culinary traditions."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1526112546639-3d51f3310382?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U2Vuc28lMjBqaSUyMFRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Explore the Imperial Palace",
+            "Visit the Tokyo National Museum",
+            "Discover Akihabara district",
+            "Experience a traditional tea ceremony",
+            "Shop for souvenirs at Nakamise Shopping Street",
+            "Enjoy a farewell dinner in a local izakaya"
+          ],
+          "description": {
+            "Explore the Imperial Palace":
+              "Embark on a journey through history as you explore the Imperial Palace. Wander through the vast gardens, admire the traditional architecture, and learn about the imperial heritage of Japan.",
+            "Visit the Tokyo National Museum":
+              "Immerse yourself in the rich cultural heritage of Japan at the Tokyo National Museum. Discover exquisite art, ancient artifacts, and traditional crafts that showcase the country's history and traditions.",
+            "Discover Akihabara district":
+              "Step into the vibrant and electrifying Akihabara district, the hub of Japanese pop culture and technology. Explore anime and manga shops, gaming arcades, and electronics stores that cater to all your geeky interests.",
+            "Experience a traditional tea ceremony":
+              "Engage in the serene and graceful art of a traditional Japanese tea ceremony. Learn about the rituals, appreciate the aesthetics of tea preparation, and savor the tranquility it brings to your senses.",
+            "Shop for souvenirs at Nakamise Shopping Street":
+              "Indulge in a shopping spree at Nakamise Shopping Street, lined with an array of charming stalls selling traditional souvenirs, snacks, and handicrafts. Find the perfect memento to commemorate your Tokyo adventure.",
+            "Enjoy a farewell dinner in a local izakaya":
+              "Celebrate the end of your Tokyo journey with a memorable farewell dinner at a local izakaya. Immerse yourself in the lively atmosphere, savor a variety of Japanese dishes, and raise a toast to unforgettable experiences."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1677774398078-dfebffbfcd54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VG9reW8lMjBOYXRpb25hbCUyME11c2V1bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive Tokyo, Meiji Shrine, Harajuku District, Shibuya Crossing, traditional japanese dinner, day 2- Tsukiji Fish Market, Asakusa district, Senso-ji Temple, Ueno Park, Tokyo Skytree, sushi for dinner, day 3 - Imperial Palace, Tokyo National Museum, Akihabara district, Tea Ceremony, Nakamise shopping Street, dinner in local izakaya"
+    },
+    "5": {
+      "destination": "Japan",
+      "num_days": 5,
+      "id" : 1,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Tokyo",
+            "Check into hotel",
+            "Visit Meiji Shrine",
+            "Explore Harajuku district",
+            "Experience Shibuya Crossing",
+            "Enjoy traditional Japanese dinner"
+          ],
+          "description": {
+            "Arrive in Tokyo":
+              "Step foot into the bustling metropolis of Tokyo, where modernity seamlessly blends with tradition. Feel the energy and excitement as you arrive in this vibrant city, ready to embark on your adventures.",
+            "Check into hotel":
+              "Settle into your comfortable hotel in Tokyo, where you can relax and rejuvenate after your journey. Take some time to unwind and prepare for the exciting days ahead.",
+            "Visit Meiji Shrine":
+              "Immerse yourself in the tranquility of Meiji Shrine, a serene oasis in the heart of Tokyo. Marvel at the majestic torii gate, stroll through the peaceful gardens, and soak in the spiritual atmosphere of this iconic Shinto shrine.",
+            "Explore Harajuku district":
+              "Dive into the world of Harajuku, a fashion-forward district known for its vibrant street style and trendy shops. Wander through Takeshita Street, discover unique boutiques, and embrace the eccentricity and creativity that define Harajuku.",
+            "Experience Shibuya Crossing":
+              "Witness the iconic Shibuya Crossing, one of the busiest intersections in the world. Marvel at the sea of people as they cross the streets in perfect synchrony, creating a mesmerizing spectacle that captures the essence of Tokyo's fast-paced lifestyle.",
+            "Enjoy traditional Japanese dinner":
+              "Indulge in the flavors of Japan with a traditional Japanese dinner. Savor delicious and authentic dishes such as sushi, tempura, or sukiyaki, and appreciate the artistry and attention to detail that goes into Japanese cuisine."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1503764654157-72d979d9af2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit Tsukiji Fish Market",
+            "Explore Asakusa district",
+            "Visit Senso-ji Temple",
+            "Stroll through Ueno Park",
+            "Experience Tokyo Skytree",
+            "Try authentic sushi for dinner"
+          ],
+          "description": {
+            "Visit Tsukiji Fish Market":
+              "Immerse yourself in the vibrant atmosphere of Tsukiji Fish Market, one of the world's largest and busiest fish markets. Witness the lively auctions, explore the stalls brimming with fresh seafood, and indulge in delectable sushi and sashimi.",
+            "Explore Asakusa district":
+              "Step into the historic neighborhood of Asakusa and be transported back in time. Visit the Senso-ji Temple, an ancient Buddhist temple steeped in tradition and adorned with stunning architecture. Wander through Nakamise Shopping Street, lined with traditional shops offering souvenirs and street food.",
+            "Visit Senso-ji Temple":
+              "Pay a visit to the magnificent Senso-ji Temple, Tokyo's oldest and most famous Buddhist temple. Marvel at the imposing entrance gate, known as Kaminarimon, and explore the temple grounds filled with beautiful pagodas, gardens, and a bustling atmosphere of worship and spirituality.",
+            "Stroll through Ueno Park":
+              "Escape the urban bustle and enjoy a leisurely stroll through Ueno Park, a peaceful oasis in the heart of Tokyo. Admire the cherry blossoms in spring, visit the numerous museums and art galleries, or simply relax and soak in the serene ambiance of this expansive park.",
+            "Experience Tokyo Skytree":
+              "Reach new heights at Tokyo Skytree, one of the tallest towers in the world. Ascend to the observation decks for breathtaking panoramic views of the city skyline. Marvel at the architectural marvel of this modern landmark and capture unforgettable moments from the towering heights.",
+            "Try authentic sushi for dinner":
+              "Delight your taste buds with an authentic sushi dining experience in Tokyo. Savor the exquisite flavors of freshly-prepared sushi, meticulously crafted by skilled chefs. Whether you prefer nigiri, maki, or sashimi, let the culinary artistry of sushi take you on a gastronomic journey."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1684224511966-09c5d5b6f3d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U2Vuc28lMjBqaSUyMFRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Travel from Tokyo to Kyoto",
+            "Visit Fushimi Inari Taisha",
+            "Explore Arashiyama Bamboo Grove",
+            "Visit Kinkaku-ji (Golden Pavilion)",
+            "Enjoy a traditional kaiseki dinner"
+          ],
+          "description": {
+            "Travel from Tokyo to Kyoto":
+              "Embark on a scenic journey from Tokyo to Kyoto, experiencing the beauty of the Japanese countryside along the way. Sit back, relax, and enjoy the comfortable ride on a high-speed train as you transition from the bustling metropolis to the cultural capital of Japan.",
+            "Visit Fushimi Inari Taisha":
+              "Immerse yourself in the mystical ambiance of Fushimi Inari Taisha, a renowned Shinto shrine famous for its thousands of vibrant orange torii gates. Take a leisurely stroll through the mesmerizing pathways of the shrine, surrounded by a tranquil forested landscape.",
+            "Explore Arashiyama Bamboo Grove":
+              "Step into a world of natural splendor at Arashiyama Bamboo Grove. Walk beneath towering bamboo stalks that create a mesmerizing atmosphere, casting gentle rays of sunlight through the dense foliage. Indulge in the serene tranquility of this enchanting bamboo forest.",
+            "Visit Kinkaku-ji (Golden Pavilion)":
+              "Marvel at the awe-inspiring beauty of Kinkaku-ji, also known as the Golden Pavilion. Admire the shimmering gold leaf covering the exterior of this Zen Buddhist temple, reflecting its elegance in the surrounding garden and serene pond. Capture the postcard-worthy views of this iconic landmark.",
+            "Enjoy a traditional kaiseki dinner":
+              "Delight your palate with a traditional kaiseki dinner, a multi-course dining experience that showcases the artistry of Japanese cuisine. Indulge in meticulously prepared dishes, each thoughtfully presented and highlighting seasonal ingredients, flavors, and textures. Let your taste buds savor the exquisite flavors of this culinary masterpiece."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1632923754832-60642c12a7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEFyYXNoaXlhbWElMjBCYW1ib28lMjBHcm92ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 4",
+          "activities": [
+            "Explore Nijo Castle",
+            "Visit Kiyomizu-dera Temple",
+            "Stroll through Higashiyama District",
+            "Experience a tea ceremony",
+            "Try Kyoto-style ramen for dinner"
+          ],
+          "description": {
+            "Explore Nijo Castle":
+              "Step into the grandeur of Nijo Castle, a UNESCO World Heritage site known for its exquisite architecture and historical significance. Wander through the ornate halls and beautifully landscaped gardens, and immerse yourself in the rich history of Japan as you admire the intricate details and craftsmanship of this feudal-era castle.",
+            "Visit Kiyomizu-dera Temple":
+              "Embark on a spiritual journey to Kiyomizu-dera Temple, a renowned Buddhist temple perched on a hillside overlooking the city. Explore the temple complex, including the iconic wooden terrace that offers breathtaking panoramic views of Kyoto. Discover the tranquility within its sacred halls and experience a sense of serenity amidst its natural surroundings.",
+            "Stroll through Higashiyama District":
+              "Take a leisurely stroll through the charming streets of Higashiyama District, a preserved historic area of Kyoto. Immerse yourself in traditional Japanese architecture, quaint shops, and local artisans. Explore narrow alleys lined with traditional wooden machiya houses, sample local snacks, and experience the nostalgic ambiance of old Kyoto.",
+            "Experience a tea ceremony":
+              "Partake in the timeless art of a Japanese tea ceremony, known as chanoyu or sado. Engage in a ritualistic preparation and presentation of matcha tea, accompanied by serene surroundings and the gentle gestures of the tea master. Experience the harmony, respect, and tranquility inherent in this cultural practice.",
+            "Try Kyoto-style ramen for dinner":
+              "Indulge in the savory flavors of Kyoto-style ramen, a regional variation of this beloved Japanese noodle dish. Sample the unique broth, often made from soy sauce or miso, and savor the tender noodles and delectable toppings. Let the distinct taste of Kyoto-style ramen tantalize your taste buds and provide a satisfying culinary experience."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1562238869-9d59795d6a2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8S2l5b21penUlMjBkZXJhJTIwVGVtcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 5",
+          "activities": [
+            "Visit the Kyoto Imperial Palace",
+            "Explore the Gion district",
+            "Discover the Philosopher's Path",
+            "Visit the Nishiki Market",
+            "Enjoy a farewell dinner in a traditional Kyoto restaurant"
+          ],
+          "description": {
+            "Visit the Kyoto Imperial Palace":
+              "Step into the regal past by visiting the Kyoto Imperial Palace, the former residence of the Imperial family. Explore the majestic gardens and experience the serene beauty of the traditional Japanese architecture. Learn about the rich history and cultural significance of this iconic landmark as you stroll through its grand halls and picturesque surroundings.",
+            "Explore the Gion district":
+              "Immerse yourself in the allure of the Gion district, famous for its traditional machiya houses and geisha culture. Walk along its charming streets, adorned with teahouses, exclusive shops, and historic landmarks. Capture the essence of old Kyoto as you appreciate the elegant geisha performances and perhaps catch a glimpse of a geisha or maiko gracefully passing by.",
+            "Discover the Philosopher's Path":
+              "Take a peaceful stroll along the Philosopher's Path, a scenic canal-side pathway lined with cherry trees. Enjoy the tranquility of nature as you meander through the picturesque surroundings, often adorned with vibrant cherry blossoms during the spring season. Reflect on the philosophy and contemplative atmosphere that inspired the path's name.",
+            "Visit the Nishiki Market":
+              "Embark on a culinary adventure at the Nishiki Market, known as Kyoto's Kitchen. Explore this bustling marketplace filled with an array of food stalls, shops, and traditional ingredients. Sample local delicacies, such as fresh seafood, Kyoto vegetables, and traditional sweets, and immerse yourself in the vibrant sights, sounds, and aromas of this food lover's paradise.",
+            "Enjoy a farewell dinner in a traditional Kyoto restaurant":
+              "Indulge in a memorable farewell dinner at a traditional Kyoto restaurant, where you can savor the exquisite flavors of Kyoto cuisine. Experience the artful presentation and meticulous preparation of seasonal dishes made with local ingredients. Immerse yourself in the ambiance of a traditional setting while enjoying a culinary feast that celebrates the rich culinary heritage of Kyoto."
+          },
+          "image":
+            "https://images.unsplash.com/photo-1552747517-1a509cba1f2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1: Arrive Tokyo, Meiji Shrine, Harajuku district, Shibuya Crossing, Traditional Japanese Dinner , day 2: Tsukiji fish market, asakusa district, senso-ji temple, ueno park, tokyo skytree, sushi for dinner, day 3: tokyo to kyoto, fushimi inari taisha, arashiyama bamboo grove, kinkaku ji, traditional kaiseki dinner, day 4: nijo castle, kiyomizu-dera temple, higashiyama district, tea ceremony, kyoto-style ramen for dinner, day 5: kyoto imperial palace, gion district, philosopher's path, nishiki market, traditional kyoto dinner"
+    },
+    "7": {
+      "destination": "Japan",
+      "num_days": 7,
+      "id":2,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Tokyo",
+            "Check into hotel",
+            "Visit Meiji Shrine",
+            "Explore Harajuku district",
+            "Experience Shibuya Crossing",
+            "Enjoy traditional Japanese dinner"
+          ],
+          "description": {
+            "Arrive in Tokyo":
+              "Welcome to Tokyo, the vibrant capital of Japan! As you step foot in this bustling city, you'll be greeted by a perfect blend of modernity and tradition. Take a moment to soak in the lively atmosphere and get ready for an unforgettable journey.",
+            "Check into hotel":
+              "After your arrival, make your way to your hotel in Tokyo. Check-in and get settled into your comfortable accommodation, where you can relax and recharge for the adventures that await you.",
+            "Visit Meiji Shrine":
+              "Embark on a spiritual journey to Meiji Shrine, a serene oasis nestled in the heart of Tokyo. Explore the grandeur of this Shinto shrine as you stroll through its tranquil forested grounds, offering a peaceful escape from the city's hustle and bustle.",
+            "Explore Harajuku district":
+              "Immerse yourself in the eclectic world of Harajuku, a vibrant district known for its unique fashion, quirky boutiques, and lively street culture. Experience the youthful energy as you wander through its colorful streets, lined with trendy shops and captivating street art.",
+            "Experience Shibuya Crossing":
+              "Prepare to be mesmerized by the iconic Shibuya Crossing, a bustling intersection that epitomizes Tokyo's fast-paced lifestyle. Stand at the pedestrian scramble and witness the symphony of people crossing the streets from all directions, creating a thrilling spectacle of organized chaos.",
+            "Enjoy traditional Japanese dinner":
+              "Delight your taste buds with a traditional Japanese dinner, where you'll savor the exquisite flavors of authentic cuisine. Indulge in a culinary journey, whether it's savoring sushi, tempura, or a comforting bowl of ramen, and appreciate the artistry and attention to detail that goes into each dish."
+          },
+          "image": "https://images.unsplash.com/photo-1563434100436-9daa2abcbe20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8SGFyYWp1a3UlMjBkaXN0cmljdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit Tsukiji Fish Market",
+            "Explore Asakusa district",
+            "Visit Senso-ji Temple",
+            "Stroll through Ueno Park",
+            "Experience Tokyo Skytree",
+            "Try authentic sushi for dinner"
+          ],
+          "description": {
+            "Visit Tsukiji Fish Market":
+              "Immerse yourself in the bustling atmosphere of Tsukiji Fish Market, one of the world's largest seafood markets. Witness the vibrant auction of fresh seafood, explore the various stalls offering a wide variety of fish, shellfish, and other culinary delights, and savor the sights, sounds, and flavors of this gastronomic paradise.",
+            "Explore Asakusa district":
+              "Step back in time as you wander through the historic streets of Asakusa district. Discover the charm of traditional Tokyo with its old-fashioned shops, beautiful temples, and the iconic Nakamise Shopping Street. Don't miss the opportunity to visit Senso-ji Temple, Tokyo's oldest and most revered Buddhist temple.",
+            "Visit Senso-ji Temple":
+              "Pay a visit to Senso-ji Temple, a symbol of Tokyo's rich cultural heritage. Marvel at the majestic main gate (Kaminarimon), explore the temple grounds, and immerse yourself in the spiritual ambiance. Take a moment to offer prayers, purify yourself with the smoke of burning incense, and appreciate the intricate details of the architecture and artwork.",
+            "Stroll through Ueno Park":
+              "Escape the urban hustle and find tranquility in Ueno Park, a vast green oasis in the heart of Tokyo. Take a leisurely stroll through its serene pathways, enjoy the picturesque scenery, and visit attractions like Ueno Zoo, Tokyo National Museum, and numerous cherry blossom spots during the spring season.",
+            "Experience Tokyo Skytree":
+              "Soar to new heights at Tokyo Skytree, an iconic landmark and one of the tallest towers in the world. Enjoy breathtaking panoramic views of Tokyo from its observation decks, indulge in shopping and dining experiences at the bustling Tokyo Skytree Town, and capture memorable moments from this architectural marvel.",
+            "Try authentic sushi for dinner":
+              "Indulge in a culinary masterpiece as you savor authentic sushi, the epitome of Japanese gastronomy. Delight in the delicate flavors, fresh ingredients, and meticulous craftsmanship that make sushi a world-renowned delicacy. Whether you opt for traditional sushi bars or high-end restaurants, let your taste buds embark on an unforgettable journey."
+          },
+          "image": "https://images.unsplash.com/photo-1664716083755-1333cdc24fd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QXNha3VzYSUyMGRpc3RyaWN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Travel from Tokyo to Kyoto",
+            "Visit Fushimi Inari Taisha",
+            "Explore Arashiyama Bamboo Grove",
+            "Visit Kinkaku-ji (Golden Pavilion)",
+            "Enjoy a traditional kaiseki dinner"
+          ],
+          "description": {
+            "Travel from Tokyo to Kyoto":
+              "Embark on a scenic journey from Tokyo to Kyoto, as you transition from the bustling metropolis to the serene cultural capital of Japan. Enjoy the picturesque landscapes, observe the changing scenery, and experience the convenience of Japan's efficient transportation system.",
+            "Visit Fushimi Inari Taisha":
+              "Discover the iconic Fushimi Inari Taisha, a Shinto shrine renowned for its mesmerizing pathways lined with thousands of vibrant torii gates. Take a memorable hike through the forested mountain trails, soak in the spiritual atmosphere, and admire the stunning panoramic views of Kyoto from the mountaintop.",
+            "Explore Arashiyama Bamboo Grove":
+              "Immerse yourself in the ethereal beauty of the Arashiyama Bamboo Grove. Walk along the enchanting bamboo-lined pathways, where sunlight filters through the towering stalks, creating a surreal and tranquil ambiance. Experience a sense of serenity as you connect with nature's majesty.",
+            "Visit Kinkaku-ji (Golden Pavilion)":
+              "Marvel at the exquisite beauty of Kinkaku-ji, also known as the Golden Pavilion. Admire the shimmering gold leaf facade reflecting in the surrounding pond, and appreciate the harmonious blend of Zen Buddhism and stunning architecture. Explore the meticulously landscaped gardens that surround this UNESCO World Heritage site.",
+            "Enjoy a traditional kaiseki dinner":
+              "Indulge in a traditional kaiseki dinner, a multi-course culinary experience that showcases the artistry and seasonal flavors of Kyoto's cuisine. Delight in the meticulous presentation, exquisite flavors, and harmonious balance of textures as you savor each meticulously crafted dish. Let your taste buds be transported to a world of gastronomic delight."
+          },
+          "image": "https://images.unsplash.com/photo-1586857682746-5b58eab01c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fEZ1c2hpbWklMjBJbmFyaSUyMFRhaXNoYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 4",
+          "activities": [
+            "Explore Nijo Castle",
+            "Visit Kiyomizu-dera Temple",
+            "Stroll through Higashiyama District",
+            "Experience a tea ceremony",
+            "Try Kyoto-style ramen for dinner"
+          ],
+          "description": {
+            "Explore Nijo Castle":
+              "Step into history as you explore Nijo Castle, a UNESCO World Heritage site known for its architectural grandeur and historical significance. Wander through the magnificent palace halls, adorned with beautiful artwork and intricate designs. Experience the tranquility of the castle gardens and immerse yourself in the rich cultural heritage of Kyoto.",
+            "Visit Kiyomizu-dera Temple":
+              "Embark on a spiritual journey to Kiyomizu-dera Temple, an iconic Buddhist temple perched on a hillside offering breathtaking panoramic views of Kyoto. Marvel at the temple's impressive wooden structure and enjoy the serene atmosphere. Explore the temple grounds and discover the sacred Otawa Waterfall, where visitors can sip from the streams believed to grant wishes.",
+            "Stroll through Higashiyama District":
+              "Immerse yourself in the traditional charm of Higashiyama District. Take a leisurely stroll through narrow streets lined with traditional wooden machiya houses, quaint shops, and artisanal workshops. Discover hidden temples, teahouses, and gardens along the way, and experience the nostalgic ambiance of Kyoto's old town.",
+            "Experience a tea ceremony":
+              "Partake in a quintessential Japanese cultural experience by participating in a traditional tea ceremony. Engage in the art of tea preparation and presentation, and learn about the rituals and etiquette associated with this ancient practice. Savor the delicate flavors of matcha tea while enveloped in an atmosphere of tranquility and mindfulness.",
+            "Try Kyoto-style ramen for dinner":
+              "Satisfy your taste buds with a delicious bowl of Kyoto-style ramen, a regional variation of this beloved Japanese dish. Delight in the rich and savory flavors of the broth, the perfect balance of chewy noodles, and the carefully selected toppings that make Kyoto-style ramen unique. Indulge in this comforting and hearty meal that showcases the local culinary scene."
+          },
+          "image": "https://images.unsplash.com/photo-1686560663293-4cfb90088a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8U3Ryb2xsJTIwdGhyb3VnaCUyMEhpZ2FzaGl5YW1hJTIwRGlzdHJpY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 5",
+          "activities": [
+            "Travel from Kyoto to Osaka",
+            "Visit Osaka Castle",
+            "Explore Dotonbori district",
+            "Try street food at Kuromon Ichiba Market",
+            "Experience vibrant nightlife in Namba",
+            "Enjoy dinner at a local izakaya"
+          ],
+          "description": {
+            "Travel from Kyoto to Osaka":
+              "Embark on a seamless journey from Kyoto to Osaka, as you transition from one vibrant city to another. Enjoy the scenic train ride and soak in the beautiful landscapes along the way. Prepare to explore the dynamic energy and modernity of Osaka after your serene experience in Kyoto.",
+            "Visit Osaka Castle":
+              "Step into history as you visit Osaka Castle, a majestic symbol of the city's heritage. Explore the castle grounds and learn about its storied past through exhibitions and historical artifacts. Ascend to the top for panoramic views of the surrounding area, and immerse yourself in the feudal era charm that Osaka Castle exudes.",
+            "Explore Dotonbori district":
+              "Immerse yourself in the lively atmosphere of Dotonbori district, renowned for its neon lights, vibrant street life, and culinary delights. Take a leisurely walk along the canal, surrounded by iconic billboards and bustling shops. Indulge in local street food, discover unique shops, and experience the buzzing nightlife that Dotonbori has to offer.",
+            "Try street food at Kuromon Ichiba Market":
+              "Satiate your taste buds with a visit to Kuromon Ichiba Market, a food lover's paradise in Osaka. Explore the bustling market filled with fresh produce, seafood, and a wide array of local delicacies. Sample delectable street food such as takoyaki, sushi, grilled skewers, and more, showcasing the diverse flavors of Osaka's culinary scene.",
+            "Experience vibrant nightlife in Namba":
+              "Immerse yourself in the vibrant nightlife of Namba, a bustling entertainment district in Osaka. Discover a variety of entertainment options, including bars, clubs, karaoke, and live performances. Embrace the energetic atmosphere as you navigate through the colorful streets, illuminated signs, and lively crowds.",
+            "Enjoy dinner at a local izakaya":
+              "Indulge in a memorable dining experience at a local izakaya, a traditional Japanese gastropub. Taste a wide range of delicious dishes, from grilled skewers to fresh sashimi, complemented by a selection of sake and other beverages. Immerse yourself in the warm and welcoming ambiance of an izakaya, and savor the authentic flavors of Osaka's culinary traditions."
+          },
+          "image": "https://images.unsplash.com/photo-1573674451487-3c66c2aad5ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8S3Vyb21vbiUyMEljaGliYSUyME1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 6",
+          "activities": [
+            "Visit Universal Studios Japan",
+            "Explore Umeda Sky Building",
+            "Shop in Shinsaibashi district",
+            "Discover the Osaka Aquarium Kaiyukan",
+            "Try okonomiyaki for dinner"
+          ],
+          "description": {
+            "Visit Universal Studios Japan":
+              "Embark on an unforgettable adventure at Universal Studios Japan. Immerse yourself in the magic of renowned movie-themed attractions, exhilarating rides, and captivating shows. Encounter beloved characters, explore themed lands, and create lasting memories in this world-class entertainment destination.",
+            "Explore Umeda Sky Building":
+              "Marvel at the breathtaking views from the Umeda Sky Building, an iconic landmark in Osaka. Ascend to the observation deck and witness panoramic vistas of the cityscape. Admire the unique architecture of the building, which features a striking floating garden connecting two towers, and enjoy a memorable experience of Osaka's skyline.",
+            "Shop in Shinsaibashi district":
+              "Embark on a shopping spree in the vibrant Shinsaibashi district. Discover a multitude of shops, boutiques, department stores, and trendy fashion outlets. Indulge in retail therapy as you explore the bustling streets and find everything from high-end fashion to quirky souvenirs, making it a shopper's paradise.",
+            "Discover the Osaka Aquarium Kaiyukan":
+              "Dive into the wonders of the ocean at the Osaka Aquarium Kaiyukan. Explore the impressive exhibits showcasing a diverse range of marine life, including fascinating creatures from the Pacific Ocean. Walk through transparent tunnels surrounded by captivating underwater scenes and gain insight into the fascinating world beneath the waves.",
+            "Try okonomiyaki for dinner":
+              "Savor the flavors of Osaka by trying the famous local specialty, okonomiyaki. Head to a traditional okonomiyaki restaurant and experience the art of teppanyaki-style cooking. Watch as skilled chefs prepare this savory pancake, filled with various ingredients such as cabbage, meat, seafood, and topped with savory sauces and condiments."
+          },
+          "image": "https://images.unsplash.com/photo-1598734365487-1573d1b53381?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VW5pdmVyc2FsJTIwU3R1ZGlvcyUyMEphcGFufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 7",
+          "activities": [
+            "Visit Nara Park",
+            "Explore Todai-ji Temple",
+            "Feed deer at Nara Park",
+            "Visit Kasuga Taisha Shrine",
+            "Enjoy a farewell dinner in Osaka"
+          ],
+          "description": {
+            "Visit Nara Park":
+              "Immerse yourself in nature at Nara Park, a picturesque park home to hundreds of freely roaming deer. Enjoy a leisurely stroll through the park's scenic pathways, encounter friendly deer, and have the opportunity to feed them. Marvel at the harmonious coexistence of wildlife and humans in this tranquil setting.",
+            "Explore Todai-ji Temple":
+              "Discover the awe-inspiring Todai-ji Temple, a UNESCO World Heritage site and one of Japan's most significant Buddhist temples. Explore the grand architecture of the temple, including the massive Great Buddha Hall that houses a colossal bronze statue of Buddha. Admire intricate woodwork, experience a sense of serenity, and learn about the rich cultural heritage of Japan.",
+            "Feed deer at Nara Park":
+              "Engage with the friendly deer at Nara Park by feeding them special deer crackers known as shika senbei. Enjoy a unique and interactive experience as you interact with these gentle creatures. Watch them bow in return for a treat and capture memorable moments surrounded by these majestic animals.",
+            "Visit Kasuga Taisha Shrine":
+              "Step into the enchanting world of Kasuga Taisha Shrine, a Shinto shrine known for its vibrant vermilion-colored buildings and hundreds of stone lanterns. Explore the mystical atmosphere, admire the intricate architecture, and take in the serene surroundings. Marvel at the cultural and religious significance of this historic shrine.",
+            "Enjoy a farewell dinner in Osaka":
+              "Conclude your journey in Osaka with a delightful farewell dinner. Choose from a wide range of culinary options, including traditional Japanese cuisine, international flavors, or local specialties. Indulge in the vibrant food scene of Osaka, savor delicious dishes, and reflect on the memorable experiences from your trip."
+          },
+          "image": "https://images.unsplash.com/photo-1545063914-a1a6ec821c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RmVlZCUyMGRlZXIlMjBhdCUyME5hcmElMjBQYXJrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive Tokyo, Meiji Shrine, Harajuku District, Shibuya Crossing, Traditional Japanese dinner, day 2- Tsukiji Fish Market, Asakusa district, Senso-ji Temple, Ueno Park, Tokyo Skytree, Sushi for dinner, day 3 - tokyo to kyoto, fushimi inari taisha, arashiyama bamboo grove, kinkaku- ji, traditional kaiseki dinner, day 4 - Nijo Castle, Kiyomizu-dera Temple, Higashiyama District, Tea Ceremony, kyoto style ramen for dinner, Day 5 - Kyoto to Osaka, Osaka Castle, Dotonbori district, street food at kuromon ichiba market, namba nightlife, dinner at local izakaya, day 6 - Universal Studios Japan, Umeda Sky Building, Shinsaibashi district, Osaka Aquarium Kaiyukan, okonomiyaki for dinner, day 7 - Nara Park, Todai-ji Temple, Kasuga Taisha Shrine, farewell dinner in Osaka"
+    }
+  },
+  "Paris": {
+    "3": {
+      "destination": "Paris",
+      "num_days": 3,
+      "id": 3,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Paris",
+            "Check into hotel",
+            "Visit the Louvre Museum",
+            "Explore the Tuileries Garden",
+            "Have dinner at a local bistro"
+          ],
+          "description":{
+            "Arrive in Paris": "Welcome to the enchanting city of Paris, often referred to as the 'City of Love'! As you arrive in the French capital, you'll be greeted by the romantic ambiance and timeless beauty that Paris is renowned for. Get ready to immerse yourself in its rich history, art, and culture.",
+            "Check into hotel": "After your arrival, make your way to your hotel in Paris. Check-in and get settled into your cozy accommodation, where you can relax and prepare for the memorable experiences that await you.",
+            "Visit the Louvre Museum": "Embark on a journey through art and history at the world-famous Louvre Museum. Marvel at its impressive collection, which houses iconic masterpieces like the Mona Lisa, Venus de Milo, and countless other treasures. Explore the vast galleries and let the artworks transport you through time.",
+            "Explore the Tuileries Garden": "Discover the serenity of the Tuileries Garden, a beautiful green oasis nestled between the Louvre Museum and Place de la Concorde. Take a leisurely stroll through its perfectly manicured lawns, admire the elegant fountains, and relax in the shade of its majestic trees.",
+            "Have dinner at a local bistro": "Indulge in the gastronomic delights of Parisian cuisine with a memorable dinner at a local bistro. Immerse yourself in the charming ambiance, savor classic French dishes prepared with the finest ingredients, and enjoy the warm hospitality that Paris is known for."
+          }
+          ,
+          "image": "https://images.unsplash.com/photo-1587422023429-24edff4116a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TG91dnJlJTIwTXVzZXVtfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit the Eiffel Tower",
+            "Take a Seine River cruise",
+            "Discover the Notre-Dame Cathedral",
+            "Stroll along the charming streets of Montmartre",
+            "Enjoy a traditional French dinner"
+          ],
+          "description":{
+            "Visit the Eiffel Tower": "No trip to Paris is complete without a visit to the iconic Eiffel Tower. Marvel at its magnificent structure and panoramic views of the city from its observation decks. Capture breathtaking photos and create lasting memories as you immerse yourself in the grandeur of this architectural marvel.",
+            "Take a Seine River cruise": "Embark on a delightful Seine River cruise and experience the beauty of Paris from a unique perspective. Glide along the gentle waters, passing under charming bridges and admiring the city's landmarks, including the Notre-Dame Cathedral, the Louvre Museum, and the enchanting riverside architecture.",
+            "Discover the Notre-Dame Cathedral": "Step into history as you explore the Notre-Dame Cathedral, a masterpiece of Gothic architecture. Admire the intricate details of its facade, marvel at the stunning stained glass windows, and climb to the top for a breathtaking view of the city. Feel the sense of spirituality and awe in this iconic Parisian landmark.",
+            "Stroll along the charming streets of Montmartre": "Immerse yourself in the bohemian atmosphere of Montmartre, a neighborhood brimming with art, culture, and charm. Wander through its winding streets, visit the famous Sacré-Cœur Basilica, and discover quaint cafes, artist studios, and lively street performers that capture the essence of Parisian creativity.",
+            "Enjoy a traditional French dinner": "Indulge in an unforgettable culinary experience with a traditional French dinner. Delight your taste buds with exquisite French cuisine, savor rich flavors and delicate textures, and immerse yourself in the art of French gastronomy. From classic dishes to regional specialties, let the flavors of France transport you on a culinary journey."
+          }
+          ,
+          "image": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RWlmZmVsJTIwVG93ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Explore the Palace of Versailles",
+            "Marvel at the Hall of Mirrors",
+            "Take a leisurely walk in the gardens",
+            "Visit the Grand Trianon and Marie-Antoinette's Estate",
+            "Experience a gourmet French lunch"
+          ],
+          "description":{
+            "Explore the Palace of Versailles": "Immerse yourself in the opulence and grandeur of the Palace of Versailles. Discover the rich history and architectural splendor of this UNESCO World Heritage site. Marvel at the lavish halls, ornate rooms, and intricate details that showcase the power and wealth of French royalty.",
+            "Marvel at the Hall of Mirrors": "Step into the legendary Hall of Mirrors and be awestruck by its breathtaking beauty. Adorned with magnificent chandeliers, gilded statues, and stunning mirrors reflecting endless reflections, this iconic hall is a true masterpiece of design and craftsmanship.",
+            "Take a leisurely walk in the gardens": "Indulge in the tranquility of the expansive gardens of Versailles. Take leisurely strolls along perfectly manicured pathways, admire the meticulously designed fountains and statues, and bask in the serenity of the stunning landscape that surrounds the palace.",
+            "Visit the Grand Trianon and Marie-Antoinette's Estate": "Explore the exquisite Grand Trianon, a retreat built for French royalty. Marvel at its elegant architecture, beautiful gardens, and intimate interior spaces. Continue your journey to Marie-Antoinette's Estate, where you can discover her charming hamlet and the Petit Trianon, her private residence.",
+            "Experience a gourmet French lunch": "Indulge in a gourmet French lunch fit for royalty. Delight in the culinary mastery of French cuisine as you savor the finest flavors and enjoy exquisite dishes prepared with meticulous attention to detail. Let the ambiance of Versailles enhance your dining experience."
+          }
+          ,
+          "image": "https://images.unsplash.com/photo-1633117678740-989810c62541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGFsbCUyMG9mJTIwTWlycm9yc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 : Arrive Paris, Hotel Checkin, Louvre Museum, Tuileries Garden, Dinner at a local bistro, day 2 : Eiffel Tower, Seine River cruise, Notre-Dame Cathedral, Montmartre, Traditional French dinner, day 3 : Palace of Versailles, Hall of Mirrors, Gardens, Grand Trianon, Marie-Antoinette's Estate, Gourmet French lunch"
+    },
+    "5": {
+      "destination": "Paris",
+      "num_days": 5,
+      "id": 4,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Paris",
+            "Check into hotel",
+            "Visit the Louvre Museum",
+            "Explore the Tuileries Garden",
+            "Have dinner at a local bistro"
+          ],
+          "description":{
+            "Arrive in Paris": "Step foot in the enchanting city of Paris, known for its romance, culture, and iconic landmarks. Feel the excitement and anticipation as you arrive in the City of Lights, ready to embark on a memorable journey.",
+            "Check into hotel": "Settle into your comfortable hotel and make yourself at home. Take a moment to relax and freshen up before you begin exploring the vibrant streets of Paris.",
+            "Visit the Louvre Museum": "Immerse yourself in art and history at the world-renowned Louvre Museum. Marvel at masterpieces such as the Mona Lisa, explore ancient artifacts, and wander through the vast galleries of one of the largest and most famous museums in the world.",
+            "Explore the Tuileries Garden": "Take a leisurely stroll through the picturesque Tuileries Garden, located between the Louvre Museum and the Place de la Concorde. Admire the beautifully manicured gardens, charming statues, and serene ponds as you enjoy a peaceful moment in the heart of the city.",
+            "Have dinner at a local bistro": "Savor the flavors of Parisian cuisine as you indulge in a delicious dinner at a local bistro. Treat yourself to French culinary delights, from classic dishes to innovative creations, and soak up the cozy atmosphere of a traditional Parisian eatery."
+          },
+          "image": "https://images.unsplash.com/photo-1541264161754-445bbdd7de52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TG91dnJlJTIwTXVzZXVtfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit the Eiffel Tower",
+            "Take a Seine River cruise",
+            "Discover the Notre-Dame Cathedral",
+            "Stroll along the charming streets of Montmartre",
+            "Enjoy a traditional French dinner"
+          ],
+          "description":{
+            "Visit the Eiffel Tower": "Witness the awe-inspiring beauty of the Eiffel Tower, an iconic symbol of Paris. Ascend to the top for panoramic views of the city or simply admire its magnificent structure from below. Let the charm of this architectural masterpiece take your breath away.",
+            "Take a Seine River cruise": "Embark on a delightful Seine River cruise and marvel at the breathtaking sights along the riverbanks. Glide past historical landmarks, elegant bridges, and picturesque neighborhoods, soaking in the romantic ambiance of Paris from a unique perspective.",
+            "Discover the Notre-Dame Cathedral": "Step into the grandeur of the Notre-Dame Cathedral and be captivated by its Gothic architecture and rich history. Explore the intricate details of the stained glass windows, admire the imposing towers, and soak in the spiritual atmosphere of this iconic cathedral.",
+            "Stroll along the charming streets of Montmartre": "Immerse yourself in the bohemian ambiance of Montmartre, a lively neighborhood known for its artistic heritage. Wander through its quaint streets, visit the famous Sacré-Cœur Basilica, and experience the vibrant energy of street artists, cafes, and boutique shops.",
+            "Enjoy a traditional French dinner": "Indulge in a gastronomic experience by savoring a traditional French dinner. Delight your taste buds with exquisite French cuisine, from delicate pastries to delectable main courses, and immerse yourself in the culinary delights that have made French cuisine renowned worldwide."
+          },
+          "image": "https://images.unsplash.com/photo-1588893968277-50b9e91ba970?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEVpZmZlbCUyMFRvd2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Explore the Palace of Versailles",
+            "Marvel at the Hall of Mirrors",
+            "Take a leisurely walk in the gardens",
+            "Visit the Grand Trianon and Marie-Antoinette's Estate",
+            "Experience a gourmet French lunch"
+          ],
+          "description":{
+            "Explore the Palace of Versailles": "Step into the opulent world of the Palace of Versailles, a magnificent royal residence that showcases the grandeur of French monarchy. Discover its lavish halls, intricate artworks, and ornate furnishings, as you immerse yourself in the rich history and exquisite architecture of this UNESCO World Heritage site.",
+            "Marvel at the Hall of Mirrors": "Be mesmerized by the Hall of Mirrors, a stunning gallery adorned with breathtaking mirrors and beautiful chandeliers. Experience the grandeur and elegance of this iconic room, which served as a backdrop for numerous historical events and royal ceremonies.",
+            "Take a leisurely walk in the gardens": "Take a leisurely stroll in the sprawling gardens of Versailles, adorned with meticulously landscaped lawns, fountains, and sculptures. Enjoy the serenity and beauty of the perfectly manicured gardens, which were designed to complement the magnificence of the palace.",
+            "Visit the Grand Trianon and Marie-Antoinette's Estate": "Explore the Grand Trianon, a charming palace retreat nestled within the palace grounds. Marvel at its elegant architecture and wander through its lush gardens. Additionally, discover Marie-Antoinette's Estate, a separate area where the queen indulged in her private retreats and created her own enchanting gardens.",
+            "Experience a gourmet French lunch": "Indulge in a gourmet French lunch fit for royalty. Delight your taste buds with a culinary experience that showcases the finest French cuisine, featuring exquisite flavors, fresh ingredients, and meticulous preparation. Enjoy the refined ambiance and savor the flavors of a memorable meal in the heart of Versailles."
+          },
+          "image": "https://images.unsplash.com/photo-1467238307002-480ffdd260f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VGFrZSUyMGElMjBsZWlzdXJlbHklMjB3YWxrJTIwaW4lMjB0aGUlMjBnYXJkZW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 4",
+          "activities": [
+            "Discover the Musée d'Orsay",
+            "Take a scenic walk along the Seine River",
+            "Visit the Sainte-Chapelle",
+            "Explore the Latin Quarter",
+            "Indulge in French pastries"
+          ],
+          "description":{
+            "Discover the Musée d'Orsay": "Immerse yourself in the world of art at the Musée d'Orsay, home to an extensive collection of impressionist and post-impressionist masterpieces. Admire works by renowned artists such as Monet, Van Gogh, Renoir, and Degas as you explore the museum's stunning galleries housed in a beautifully converted railway station.",
+            "Take a scenic walk along the Seine River": "Enjoy a leisurely stroll along the picturesque banks of the Seine River. Take in the iconic sights of Paris, including charming bridges, historic landmarks, and riverside boulevards. Experience the romantic ambiance of the Seine as you soak in the scenic views of the city.",
+            "Visit the Sainte-Chapelle": "Step into the breathtaking beauty of the Sainte-Chapelle, a stunning Gothic chapel renowned for its intricate stained glass windows. Marvel at the kaleidoscope of colors as sunlight filters through the magnificent glass panels, depicting biblical stories and scenes from medieval history.",
+            "Explore the Latin Quarter": "Delve into the bohemian charm of the Latin Quarter, a vibrant neighborhood known for its lively atmosphere, historic streets, and cozy cafes. Discover hidden gems, browse quaint bookshops, and soak up the intellectual and artistic ambiance of this renowned cultural hub.",
+            "Indulge in French pastries": "Treat yourself to a delectable selection of French pastries, from flaky croissants to delicate macarons. Visit a local patisserie and indulge in the exquisite craftsmanship and flavors of these iconic French delicacies. Savor every bite and experience the joy of French pastry culture."
+          },
+          "image": "https://images.unsplash.com/photo-1566237170140-21dca174a88f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TXVzJUMzJUE5ZSUyMGQnT3JzYXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 5",
+          "activities": [
+            "Explore the Champs-Élysées",
+            "Visit the Arc de Triomphe",
+            "Discover the Picasso Museum",
+            "Enjoy a boat ride in the Bois de Boulogne park",
+            "Savor a farewell dinner at a Michelin-starred restaurant"
+          ],
+          "description":{
+            "Explore the Champs-Élysées": "Take a leisurely stroll along the famous Champs-Élysées, one of the world's most iconic avenues. Admire the elegant architecture, upscale boutiques, and charming cafes that line the boulevard. Immerse yourself in the vibrant atmosphere and soak up the Parisian charm.",
+            "Visit the Arc de Triomphe": "Marvel at the grandeur of the Arc de Triomphe, a monumental arch that stands proudly at the western end of the Champs-Élysées. Ascend to the top for panoramic views of the city and witness the spectacular roundabout below, known as the Place de l'Étoile.",
+            "Discover the Picasso Museum": "Step into the world of Pablo Picasso at the Picasso Museum. Explore the extensive collection of paintings, sculptures, drawings, and ceramics, showcasing the artistic journey of this legendary Spanish artist. Gain insight into Picasso's life and artistic evolution.",
+            "Enjoy a boat ride in the Bois de Boulogne park": "Escape the bustling city and unwind with a peaceful boat ride in the enchanting Bois de Boulogne park. Navigate the serene lakes, surrounded by lush greenery and charming landscapes. Breathe in the fresh air and embrace the tranquility of nature.",
+            "Savor a farewell dinner at a Michelin-starred restaurant": "Indulge in an unforgettable culinary experience at a Michelin-starred restaurant. Delight your taste buds with exquisite French cuisine, meticulously prepared by renowned chefs. Experience the finest flavors, elegant presentation, and impeccable service, creating lasting memories of your Parisian journey."
+          },
+          "image": "https://images.unsplash.com/photo-1650531453204-55cc25f1e1f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2hhbXBzJTIwJUMzJTg5bHlzJUMzJUE5ZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive Paris, hotel checkin, Louvre museum, Tuileries Garden, dinner at local bistro, day 2 - Eiffel Tower, Seine river cruise, Notre-Dame Cathedral, Montmarte, Traditional french dinner, day 3 - Palace of Versailles, Hall of mirrors, gardens, grand trianon and Marie-Antoinette's Estate, gourmet french lunch day 4 - Musée d'Orsay, Seine River, Sainte-Chapelle, Latin Quarter, French pastries, day 5 - Champs-Élysées, Arc de Triomphe, Picasso Museum, Bois de Boulogne park, farewell dinner at Michelin-starred restaurant"
+    },
+    "7": {
+      "destination": "Paris",
+      "num_days": 7,
+      "id": 5,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Paris",
+            "Check into hotel",
+            "Visit the Louvre Museum",
+            "Explore the Tuileries Garden",
+            "Have dinner at a local bistro"
+          ],
+          "description":{
+            "Arrive in Paris": "Begin your Parisian adventure by arriving in the City of Lights. Take in the bustling streets, charming architecture, and vibrant atmosphere as you immerse yourself in the city's energy and beauty.",
+            "Check into hotel": "Settle into your hotel and make yourself comfortable. Unwind and relax after your journey, preparing for the exciting days ahead exploring the wonders of Paris.",
+            "Visit the Louvre Museum": "Immerse yourself in art and culture at the Louvre Museum, home to thousands of masterpieces including the iconic Mona Lisa. Explore the vast collection of paintings, sculptures, and historical artifacts that span centuries of human creativity and history.",
+            "Explore the Tuileries Garden": "Take a leisurely stroll through the enchanting Tuileries Garden. Admire the manicured lawns, elegant fountains, and beautiful flowerbeds. Find a quiet spot to relax and soak up the serene atmosphere of this picturesque oasis in the heart of the city.",
+            "Have dinner at a local bistro": "Indulge in the authentic flavors of Parisian cuisine at a local bistro. Savor delectable dishes prepared with fresh, local ingredients, paired with a glass of fine French wine. Immerse yourself in the cozy ambiance and enjoy the warm hospitality of the city."
+          },
+          "image": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8TG91dnJlJTIwTXVzZXVtfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit the Eiffel Tower",
+            "Take a Seine River cruise",
+            "Discover the Notre-Dame Cathedral",
+            "Stroll along the charming streets of Montmartre",
+            "Enjoy a traditional French dinner"
+          ],
+          "description":{
+            "Visit the Eiffel Tower": "No trip to Paris is complete without a visit to the iconic Eiffel Tower. Ascend to the top of this magnificent structure and marvel at the breathtaking panoramic views of the city. Capture unforgettable memories as you take in the beauty of the Parisian skyline.",
+            "Take a Seine River cruise": "Embark on a delightful cruise along the Seine River, one of the most picturesque waterways in Paris. Sail past historic landmarks, romantic bridges, and charming riverside architecture, while listening to informative commentary about the city's history and culture.",
+            "Discover the Notre-Dame Cathedral": "Immerse yourself in the grandeur of the Notre-Dame Cathedral, a masterpiece of Gothic architecture. Explore the intricate details of its facade, step inside to admire the magnificent stained glass windows, and soak in the sacred atmosphere of this iconic landmark.",
+            "Stroll along the charming streets of Montmartre": "Wander through the bohemian neighborhood of Montmartre, known for its artistic heritage and unique ambiance. Explore the winding streets, visit the famous Sacré-Cœur Basilica perched atop the hill, and experience the vibrant atmosphere that has inspired countless artists throughout history.",
+            "Enjoy a traditional French dinner": "Indulge in the culinary delights of France by savoring a traditional French dinner. Delight your taste buds with exquisite flavors and dishes that showcase the richness of French gastronomy. From classic French cuisine to regional specialties, this dinner experience will be a true celebration of French culinary heritage."
+          },
+          "image": "https://images.unsplash.com/photo-1581211653431-310ba15ff9bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Tm90cmUlMjBEYW1lJTIwQ2F0aGVkcmFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Explore the Palace of Versailles",
+            "Marvel at the Hall of Mirrors",
+            "Take a leisurely walk in the gardens",
+            "Visit the Grand Trianon and Marie-Antoinette's Estate",
+            "Experience a gourmet French lunch"
+          ],
+          "description":{
+            "Explore the Palace of Versailles": "Embark on a journey back in time as you explore the opulent Palace of Versailles. Marvel at the grandeur of the royal residence, adorned with exquisite architecture, lavish furnishings, and ornate decorations. Discover the rich history and immerse yourself in the splendor of this UNESCO World Heritage site.",
+            "Marvel at the Hall of Mirrors": "Step into the legendary Hall of Mirrors and be captivated by its breathtaking beauty. Adorned with magnificent chandeliers, gilded mirrors, and stunning ceiling paintings, this iconic gallery will leave you in awe. Walk along the hall and witness the interplay of light and reflection that earned it its name.",
+            "Take a leisurely walk in the gardens": "After exploring the palace, take a leisurely stroll in the sprawling gardens of Versailles. Discover meticulously manicured lawns, ornamental flowerbeds, and serene water features. Enjoy the peaceful ambiance, surrounded by the natural beauty that inspired generations of artists and landscape designers.",
+            "Visit the Grand Trianon and Marie-Antoinette's Estate": "Venture further into the palace grounds and explore the Grand Trianon, a beautiful retreat built for French kings. Marvel at its elegant architecture and wander through the carefully landscaped gardens. Then, immerse yourself in the enchanting atmosphere of Marie-Antoinette's Estate, where you can visit her private chambers, the Petit Trianon, and the picturesque Hameau de la Reine.",
+            "Experience a gourmet French lunch": "Indulge in a gourmet French lunch fit for royalty. Savor exquisite culinary creations featuring traditional French flavors and techniques. Delight in the fine dining experience, accompanied by a selection of exquisite wines. Let your taste buds revel in the flavors of French gastronomy."
+          },
+          "image": "https://images.unsplash.com/photo-1549895058-36748fa6c6a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fE1hcnZlbCUyMGF0JTIwdGhlJTIwSGFsbCUyMG9mJTIwTWlycm9yc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 4",
+          "activities": [
+            "Discover the Musée d'Orsay",
+            "Take a scenic walk along the Seine River",
+            "Visit the Sainte-Chapelle",
+            "Explore the Latin Quarter",
+            "Indulge in French pastries"
+          ],
+          "description":{
+            "Discover the Musée d'Orsay": "Immerse yourself in the world of art at the Musée d'Orsay. Admire an extensive collection of impressionist and post-impressionist masterpieces, including works by Monet, Van Gogh, and Renoir. Explore the stunning architecture of the former railway station turned museum and appreciate the artistic treasures within.",
+            "Take a scenic walk along the Seine River": "Take a leisurely stroll along the banks of the Seine River and soak in the beauty of Paris. Enjoy picturesque views of the city's landmarks, such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. Capture memorable photos and embrace the romantic atmosphere of the river.",
+            "Visit the Sainte-Chapelle": "Step into the exquisite Sainte-Chapelle, a gem of Gothic architecture. Marvel at its breathtaking stained glass windows that depict biblical stories in vibrant colors. Experience a sense of awe and tranquility as the light filters through the magnificent glass panels, creating a mesmerizing ambiance.",
+            "Explore the Latin Quarter": "Immerse yourself in the vibrant Latin Quarter, known for its lively atmosphere and intellectual legacy. Discover narrow streets filled with bookshops, cafes, and jazz clubs. Visit the historic Sorbonne University and enjoy the bohemian charm of this cultural hub.",
+            "Indulge in French pastries": "Treat your taste buds to an array of delectable French pastries. Visit a local patisserie and indulge in flaky croissants, delicate macarons, and mouthwatering éclairs. Experience the artistry and culinary expertise of French pastry chefs as you savor these sweet delights."
+          },
+          "image": "https://images.unsplash.com/photo-1546444809-d64eccd9fb88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2FpbnRlJTIwQ2hhcGVsbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 5",
+          "activities": [
+            "Explore the Champs-Élysées",
+            "Visit the Arc de Triomphe",
+            "Discover the Picasso Museum",
+            "Enjoy a boat ride in the Bois de Boulogne park",
+            "Savor a farewell dinner at a Michelin-starred restaurant"
+          ],
+          "description":{
+            "Explore the Champs-Élysées": "Take a leisurely stroll along the famous Champs-Élysées, one of the most prestigious avenues in the world. Admire the luxury shops, charming cafés, and beautiful tree-lined promenade as you soak in the vibrant atmosphere of this iconic Parisian landmark.",
+            "Visit the Arc de Triomphe": "Marvel at the grandeur of the Arc de Triomphe, an iconic monument honoring French soldiers. Climb to the top for panoramic views of the city, and witness the spectacular roundabout where twelve avenues converge, including the renowned Champs-Élysées.",
+            "Discover the Picasso Museum": "Immerse yourself in the world of art at the Picasso Museum. Explore the extensive collection of works by the renowned artist, Pablo Picasso, and gain insights into his creative genius and artistic evolution.",
+            "Enjoy a boat ride in the Bois de Boulogne park": "Escape the bustling city and unwind with a relaxing boat ride in the scenic Bois de Boulogne park. Cruise along the serene lake, surrounded by lush greenery and picturesque landscapes, offering a tranquil retreat in the heart of Paris.",
+            "Savor a farewell dinner at a Michelin-starred restaurant": "Indulge in an unforgettable culinary experience at a Michelin-starred restaurant, where you'll be treated to exquisite gourmet creations. Enjoy the finest ingredients, expertly crafted dishes, and impeccable service, culminating in a memorable farewell dinner."
+          },
+          "image": "https://images.unsplash.com/photo-1567187156116-8a7d411df217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRoZSUyMEFyYyUyMGRlJTIwVHJpb21waGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 6",
+          "activities": [
+            "Visit the Musée de l'Orangerie",
+            "Explore the Jardin des Plantes",
+            "Discover the Panthéon",
+            "Take a relaxing boat tour on Canal Saint-Martin",
+            "Try local French cuisine for dinner"
+          ],
+          "description":{
+            "Visit the Musée de l'Orangerie": "Immerse yourself in the art world at the Musée de l'Orangerie, known for its impressive collection of impressionist and post-impressionist masterpieces. Marvel at the captivating Water Lilies series by Claude Monet and explore other works by renowned artists like Renoir, Cézanne, and Picasso.",
+            "Explore the Jardin des Plantes": "Escape to the serene oasis of the Jardin des Plantes, a beautiful botanical garden in Paris. Wander through its enchanting pathways, discover diverse plant species, and explore the captivating greenhouses. Enjoy the tranquil atmosphere and connect with nature in the heart of the city.",
+            "Discover the Panthéon": "Step into history as you visit the iconic Panthéon, a mausoleum dedicated to honoring the greatest figures of French history. Admire its neoclassical architecture, explore the crypt, and pay homage to notable individuals like Voltaire, Victor Hugo, and Marie Curie.",
+            "Take a relaxing boat tour on Canal Saint-Martin": "Embark on a leisurely boat tour along the scenic Canal Saint-Martin, known for its charming bridges and picturesque waterways. Cruise through the tree-lined canal, pass under quaint footbridges, and discover hidden gems along the way, including trendy shops, cafes, and galleries.",
+            "Try local French cuisine for dinner": "Indulge in the flavors of French cuisine as you savor a delightful dinner at a local restaurant. Enjoy classic dishes like escargots, foie gras, or coq au vin, paired with fine French wine. Immerse yourself in the gastronomic traditions of France and treat your taste buds to a memorable culinary experience."
+          },
+          "image": "https://images.unsplash.com/photo-1667214414692-b21ba68a847d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SmFyZGluJTIwZGVzJTIwUGxhbnRlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 7",
+          "activities": [
+            "Explore the Montparnasse Tower for panoramic views of Paris",
+            "Visit the Musée Rodin",
+            "Stroll through the Luxembourg Gardens",
+            "Shop for souvenirs at Le Marais",
+            "Enjoy a final evening in Paris"
+          ],
+          "description":{
+            "Explore the Montparnasse Tower for panoramic views of Paris": "Ascend the Montparnasse Tower and enjoy breathtaking panoramic views of the Parisian skyline. From the observation deck, marvel at iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. Capture memorable photos and take in the beauty of the city from above.",
+            "Visit the Musée Rodin": "Immerse yourself in the world of sculpture at the Musée Rodin, home to an exceptional collection of works by renowned sculptor Auguste Rodin. Admire his masterpiece, 'The Thinker,' and explore the museum's tranquil gardens, adorned with sculptures such as 'The Gates of Hell' and 'The Kiss.'",
+            "Stroll through the Luxembourg Gardens": "Escape the bustling city and wander through the picturesque Luxembourg Gardens. Explore the beautifully manicured lawns, flowerbeds, and the serene Medici Fountain. Relax on a park bench, soak in the peaceful atmosphere, and observe locals and visitors enjoying this iconic Parisian green space.",
+            "Shop for souvenirs at Le Marais": "Indulge in some retail therapy at Le Marais, a trendy neighborhood known for its unique shops and boutiques. Discover fashionable clothing, accessories, vintage items, and stylish souvenirs. Explore the narrow streets lined with charming storefronts and soak up the vibrant atmosphere of this eclectic district.",
+            "Enjoy a final evening in Paris": "Savor your last evening in Paris by immersing yourself in its enchanting ambiance. Take a leisurely stroll along the Seine River, enjoy the magical city lights, and soak up the romantic atmosphere. Find a cozy cafe or bistro and indulge in a delicious meal, savoring the flavors and sipping a glass of fine French wine."
+          },
+          "image": "https://images.unsplash.com/photo-1602553339318-51aca6020cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEx1eGVtYm91cmclMjBHYXJkZW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive Paris, hotel checkin, Louvre museum, Tuileries Garden, dinner at local bistro, day 2 - Eiffel Tower, Seine river cruise, Notre-Dame Cathedral, Montmarte, Traditional french dinner, day 3 - Palace of Versailles, Hall of mirrors, gardens, grand trianon and Marie-Antoinette's Estate, gourmet french lunch day 4 - Musée d'Orsay, Seine River, Sainte-Chapelle, Latin Quarter, French pastries, day 5 - Champs-Élysées, Arc de Triomphe, Picasso Museum, Bois de Boulogne park, dinner at Michelin-starred restaurant, day 6 - Musee de l'Orangerie, Jardin des Plantes, Pantheon, Canal Saint-Martin, local french dinner, day 7 - Montparnasse Tower, Musée Rodin, Luxembourg Gardens, Le Marais, final evening in paris"
+    }
+  },
+  "London": {
+    "3": {
+      "destination": "London",
+      "num_days": 3,
+      "id": 6,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in London",
+            "Check into hotel",
+            "Visit the Tower of London",
+            "Explore Tower Bridge",
+            "Take a Thames River cruise",
+            "Enjoy dinner at a traditional British pub"
+          ],
+          "description":{
+            "Arrive in London": "Welcome to London! Step foot in this vibrant city and get ready for an unforgettable adventure. Feel the energy and excitement as you arrive in one of the world's most iconic capitals.",
+            "Check into hotel": "Settle into your hotel and make yourself at home. Take a moment to relax and freshen up before you embark on your exploration of London's wonders.",
+            "Visit the Tower of London": "Immerse yourself in history as you visit the Tower of London. Discover its fascinating past, from being a royal palace to a notorious prison. Marvel at the Crown Jewels, explore the ancient fortifications, and learn captivating stories of kings, queens, and famous historical figures.",
+            "Explore Tower Bridge": "Admire the architectural marvel that is Tower Bridge. Walk across its iconic glass floor and enjoy panoramic views of the cityscape from the high-level walkways. Learn about its engineering ingenuity and the role it played in London's history.",
+            "Take a Thames River cruise": "Hop aboard a Thames River cruise and glide along the iconic waterway. Enjoy stunning views of London's landmarks, such as the Houses of Parliament, Big Ben, the London Eye, and the Shard. Capture memorable photos and soak in the vibrant atmosphere of the city from a unique perspective.",
+            "Enjoy dinner at a traditional British pub": "Savor the flavors of British cuisine at a traditional pub. Indulge in hearty dishes like fish and chips, bangers and mash, or a classic Sunday roast. Pair your meal with a pint of local ale or cider, and immerse yourself in the cozy ambiance of a quintessential British pub."
+          },
+          "image": "https://images.unsplash.com/photo-1558361143-c3871caca80b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VG93ZXIlMjBvZiUyMExvbmRvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit Buckingham Palace",
+            "Explore the British Museum",
+            "Stroll through Hyde Park",
+            "Discover the iconic Big Ben and Houses of Parliament",
+            "Enjoy a West End theatre show in the evening"
+          ],
+          "description":
+          {
+            "Visit Buckingham Palace": "Experience royal grandeur as you visit Buckingham Palace, the official residence of the British monarch. Admire the iconic Changing of the Guard ceremony and explore the magnificent State Rooms, filled with exquisite art and treasures.",
+            "Explore the British Museum": "Embark on a journey through time at the British Museum, home to a vast collection of world-class artifacts. Marvel at ancient Egyptian mummies, Greek sculptures, and the iconic Rosetta Stone. Immerse yourself in the rich history and diverse cultures represented in this renowned institution.",
+            "Stroll through Hyde Park": "Escape the bustling city streets and relax in Hyde Park, one of London's most famous green spaces. Take a leisurely stroll along the Serpentine Lake, enjoy a picnic on the grass, or rent a rowboat for a tranquil experience in the heart of the city.",
+            "Discover the iconic Big Ben and Houses of Parliament": "Marvel at the iconic Big Ben and the Houses of Parliament, symbols of London's history and democracy. Capture memorable photos of the stunning Gothic architecture and learn about the significance of these landmarks.",
+            "Enjoy a West End theatre show in the evening": "Immerse yourself in the world of performing arts with a captivating West End theatre show. From dazzling musicals to gripping dramas, the West End offers a wide range of productions to suit every taste. Sit back, relax, and be enthralled by the talent on stage."
+          },            
+          "image": "https://images.unsplash.com/photo-1556821862-33ec0be5c2c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QnVja2luZ2hhbSUyMFBhbGFjZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Explore the historic neighborhood of Greenwich",
+            "Visit the Royal Observatory",
+            "Take a walk in Greenwich Park",
+            "Experience the famous Changing of the Guard at Windsor Castle",
+            "Enjoy a farewell dinner at a trendy restaurant"
+          ],
+          "description":{
+            "Explore the historic neighborhood of Greenwich": "Step into history as you explore the charming neighborhood of Greenwich. Visit the Cutty Sark, a historic sailing ship, and wander through the Greenwich Market for unique finds. Don't forget to stand on the Prime Meridian Line at the Royal Observatory!",
+            "Visit the Royal Observatory": "Discover the wonders of astronomy and navigation at the Royal Observatory in Greenwich. Learn about the history of timekeeping and stand at the center of world time by straddling the Prime Meridian Line.",
+            "Take a walk in Greenwich Park": "Escape to the peaceful Greenwich Park, one of London's eight Royal Parks. Enjoy a leisurely walk amidst beautiful landscapes, ancient trees, and stunning views of the city skyline.",
+            "Experience the famous Changing of the Guard at Windsor Castle": "Embark on a day trip to Windsor Castle and witness the world-renowned Changing of the Guard ceremony. Marvel at the grandeur of the castle, which is an official residence of the British royal family.",
+            "Enjoy a farewell dinner at a trendy restaurant": "Savor a memorable farewell dinner at one of London's trendy restaurants, where you can indulge in delicious cuisine and toast to the wonderful experiences you've had in the city."
+          },            
+          "image": "https://images.unsplash.com/photo-1557822477-ec8d8bbbcd2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Um95YWwlMjBPYnNlcnZhdG9yeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive London, Hotel Checkin, Tower of London, Tower Bridge, Thames River cruise, dinner at traditional british pub, day 2 - Buckingham Palace, British Museum, Hyde Park, Big Ben and Houses of Parliament, West End theatre show, day 3 - Greenwich, Royal Observatory, Greenwich Park, Changing of the Guard at Windsor Castle, farewell dinner at trendy restaurant"
+    },
+    "5": {
+      "destination":"London",
+      "num_days": 5,
+      "id": 7,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in London",
+            "Check into hotel",
+            "Visit the Tower of London",
+            "Explore Tower Bridge",
+            "Take a Thames River cruise",
+            "Enjoy dinner at a traditional British pub"
+          ],
+          "description":{
+            "Arrive in London": "Welcome to the bustling city of London! Take in the vibrant atmosphere as you arrive and get ready for an exciting adventure.",
+            "Check into hotel": "Settle into your comfortable hotel and make yourself at home. Rest and recharge before diving into the sights and sounds of London.",
+            "Visit the Tower of London": "Step back in time and explore the historic Tower of London. Discover its fascinating history, view the Crown Jewels, and walk along its ancient walls.",
+            "Explore Tower Bridge": "Admire the iconic Tower Bridge, one of London's most recognizable landmarks. Take a walk across the bridge, learn about its engineering marvels, and enjoy panoramic views of the city.",
+            "Take a Thames River cruise": "Hop on a Thames River cruise and enjoy a leisurely journey along the iconic river. Take in breathtaking views of London's skyline and pass by famous landmarks like the Houses of Parliament and the London Eye.",
+            "Enjoy dinner at a traditional British pub": "Immerse yourself in British culture by dining at a traditional pub. Indulge in classic dishes like fish and chips, bangers and mash, or a hearty pie, accompanied by a pint of ale or a refreshing glass of cider."
+          },
+          "image": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VG93ZXIlMjBCcmlkZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit Buckingham Palace",
+            "Explore the British Museum",
+            "Stroll through Hyde Park",
+            "Discover the iconic Big Ben and Houses of Parliament",
+            "Enjoy a West End theatre show in the evening"
+          ],
+          "description":{
+            "Visit Buckingham Palace": "Embark on a royal experience with a visit to Buckingham Palace, the official residence of the British monarch. Admire the grandeur of the palace, witness the Changing of the Guard ceremony, and explore the beautiful surrounding gardens.",
+            "Explore the British Museum": "Delve into the rich history and cultural treasures at the British Museum. Marvel at its vast collection of artifacts and artworks from around the world, including the Rosetta Stone and the Elgin Marbles.",
+            "Stroll through Hyde Park": "Escape the hustle and bustle of the city and enjoy a leisurely stroll through Hyde Park. Admire the serene landscape, rent a paddleboat on the Serpentine lake, or simply relax under the shade of a tree.",
+            "Discover the iconic Big Ben and Houses of Parliament": "Stand in awe of the iconic Big Ben and the Houses of Parliament, two architectural marvels that define the London skyline. Capture memorable photos and learn about their historical significance.",
+            "Enjoy a West End theatre show in the evening": "Experience the magic of London's West End by attending a captivating theatre show. From dazzling musicals to gripping dramas, there's a wide range of performances to choose from that will leave you entertained and enthralled."
+          },
+          "image": "https://images.unsplash.com/photo-1610843191510-21e38d84c316?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEJ1Y2tpbmdoYW0lMjBQYWxhY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Explore the historic neighborhood of Greenwich",
+            "Visit the Royal Observatory",
+            "Take a walk in Greenwich Park",
+            "Experience the famous Changing of the Guard at Windsor Castle",
+            "Enjoy a farewell dinner at a trendy restaurant"
+          ],
+          "description":{
+            "Explore the historic neighborhood of Greenwich": "Immerse yourself in the historic charm of Greenwich. Visit the Cutty Sark, explore the National Maritime Museum, and wander through the quaint streets lined with Georgian and Victorian architecture.",
+            "Visit the Royal Observatory": "Unleash your inner astronomer at the Royal Observatory. Stand on the Prime Meridian, learn about the history of navigation, and gaze at the stars through the telescopes.",
+            "Take a walk in Greenwich Park": "Enjoy a leisurely stroll in the picturesque Greenwich Park. Admire the stunning views of the city skyline, visit the Deer Park, and relax in the tranquil surroundings.",
+            "Experience the famous Changing of the Guard at Windsor Castle": "Witness the grandeur of the Changing of the Guard ceremony at Windsor Castle. Marvel at the precision and pageantry as the guards change shifts, accompanied by the stirring sounds of a military band.",
+            "Enjoy a farewell dinner at a trendy restaurant": "Indulge in a memorable farewell dinner at one of London's trendy restaurants. Savor delectable cuisine prepared by renowned chefs, and toast to the wonderful memories you've made in London."
+          },
+          "image": "https://images.unsplash.com/photo-1577729507926-78897cc4de05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QnJpdGlzaCUyME11c2V1bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 4",
+          "activities": [
+            "Visit the British Library",
+            "Explore the Tate Modern",
+            "Take a ride on the London Eye",
+            "Shop on Oxford Street",
+            "Enjoy dinner in Covent Garden"
+          ],
+          "description":{
+            "Visit the British Library": "Immerse yourself in the world of literature and knowledge at the British Library. Explore its vast collection of books, manuscripts, and historical documents, including famous works like the Magna Carta and original manuscripts by renowned authors.",
+            "Explore the Tate Modern": "Discover contemporary and modern art at the Tate Modern. Marvel at the diverse range of artworks from international artists, explore thought-provoking exhibitions, and enjoy breathtaking views of the city from the viewing gallery.",
+            "Take a ride on the London Eye": "Experience breathtaking panoramic views of London from the iconic London Eye. Step into one of the glass capsules and enjoy a bird's-eye perspective of the city's landmarks, including the Houses of Parliament, St. Paul's Cathedral, and the Thames River.",
+            "Shop on Oxford Street": "Indulge in a shopping spree on Oxford Street, one of the world's most famous shopping destinations. Explore a wide range of fashion boutiques, department stores, and luxury brands, and find the perfect souvenirs or stylish additions to your wardrobe.",
+            "Enjoy dinner in Covent Garden": "Dine in style at Covent Garden, a vibrant district known for its restaurants, bars, and entertainment. Enjoy a delicious meal at one of the many eateries offering a diverse range of cuisines, and soak up the lively atmosphere of street performers and live music."
+          },
+          "image": "https://images.unsplash.com/photo-1541880414642-13eda210a5af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJpZGUlMjBvbiUyMHRoZSUyMExvbmRvbiUyMEV5ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 5",
+          "activities": [
+            "Visit the National Gallery",
+            "Explore the Victoria and Albert Museum",
+            "Stroll through Notting Hill",
+            "Experience the vibrant atmosphere of Camden Market",
+            "Enjoy a Thameside dinner cruise"
+          ],
+          "description":{
+            "Visit the National Gallery": "Immerse yourself in the world of art at the National Gallery. Explore its extensive collection of paintings, ranging from the Renaissance period to modern masterpieces, and admire works by renowned artists such as Van Gogh, Monet, and Botticelli.",
+            "Explore the Victoria and Albert Museum": "Discover a treasure trove of art, design, and historical artifacts at the Victoria and Albert Museum. From sculptures and ceramics to fashion and furniture, the museum showcases a diverse range of exhibits spanning different cultures and time periods.",
+            "Stroll through Notting Hill": "Take a leisurely walk through the charming streets of Notting Hill, known for its colorful houses, boutique shops, and quaint cafes. Enjoy the vibrant atmosphere, browse through antique stores, and soak up the neighborhood's unique charm.",
+            "Experience the vibrant atmosphere of Camden Market": "Immerse yourself in the eclectic and vibrant atmosphere of Camden Market. Explore the stalls and shops offering a diverse range of fashion, accessories, vintage items, and international cuisine. Discover unique treasures and enjoy the lively street performances.",
+            "Enjoy a Thameside dinner cruise": "Embark on a memorable Thameside dinner cruise and indulge in a delightful dining experience while cruising along the iconic River Thames. Admire the illuminated landmarks of London, enjoy live entertainment, and savor a delicious meal with stunning waterfront views."
+          },
+          "image": "https://images.unsplash.com/photo-1562754193-ba39a22c110b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VmljdG9yaWElMjBhbmQlMjBBbGJlcnQlMjBNdXNldW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive London, Hotel Checkin, Tower of London, Tower Bridge, Thames River cruise, dinner at traditional british pub, day 2 - Buckingham Palace, British Museum, Hyde Park, Big Ben and Houses of Parliament, West End theatre show, day 3 - Greenwich, Royal Observatory, Greenwich Park, Changing of the Guard at Windsor Castle, farewell dinner at trendy restaurant, day 4 - British Library, Tate Modern, London Eye, Oxford Street, dinner in Covent Garden, day 5 - National Gallery, Victoria and Albert Museum, Notting Hill, Camden Market, Thameside dinner cruise"
+    },
+    "7": {
+      "destination": "London",
+      "num_days": 7,
+      "id": 8,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in London",
+            "Check into hotel",
+            "Visit the Tower of London",
+            "Explore Tower Bridge",
+            "Take a Thames River cruise",
+            "Enjoy dinner at a traditional British pub"
+          ],
+          "description":{
+            "Arrive in London": "Welcome to the bustling city of London! Begin your adventure by arriving at the vibrant capital and get ready to immerse yourself in its rich history and culture.",
+            "Check into hotel": "Check into your comfortable hotel and get settled in. Rest and refresh before embarking on your London exploration.",
+            "Visit the Tower of London": "Step into history as you visit the iconic Tower of London. Explore this historic fortress, walk along its ancient walls, and discover the Crown Jewels and captivating stories of its past.",
+            "Explore Tower Bridge": "Admire the magnificent Tower Bridge, an iconic symbol of London. Take a stroll across the bridge, learn about its history, and enjoy panoramic views of the River Thames and the city skyline.",
+            "Take a Thames River cruise": "Hop aboard a Thames River cruise and embark on a scenic journey along the iconic river. Marvel at the stunning landmarks that line the banks, including the Tower of London, the Houses of Parliament, and the London Eye.",
+            "Enjoy dinner at a traditional British pub": "Indulge in a delicious dinner at a traditional British pub. Savor classic dishes like fish and chips, bangers and mash, or a hearty pie while immersing yourself in the cozy atmosphere of an authentic pub."
+          },
+          "image": "https://images.unsplash.com/photo-1431818492223-58d36d8002bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFRoYW1lcyUyMFJpdmVyJTIwY3J1aXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit Buckingham Palace",
+            "Explore the British Museum",
+            "Stroll through Hyde Park",
+            "Discover the iconic Big Ben and Houses of Parliament",
+            "Enjoy a West End theatre show in the evening"
+          ],
+          "description":{
+            "Visit Buckingham Palace": "Immerse yourself in royal splendor as you visit Buckingham Palace, the official residence of the British monarch. Marvel at the grandeur of this iconic palace, witness the Changing of the Guard ceremony, and explore the beautiful surrounding gardens.",
+            "Explore the British Museum": "Step into a world of art, culture, and history at the renowned British Museum. Discover its vast collection of artifacts from around the globe, including the Rosetta Stone, Egyptian mummies, and ancient Greek sculptures.",
+            "Stroll through Hyde Park": "Take a leisurely stroll through Hyde Park, one of London's largest and most beautiful parks. Enjoy the serene atmosphere, picturesque landscapes, and perhaps rent a boat to row on the Serpentine lake.",
+            "Discover the iconic Big Ben and Houses of Parliament": "Marvel at the iconic Big Ben and the majestic Houses of Parliament, symbols of London's rich history and architectural beauty. Take memorable photos and learn about the political significance of this historic landmark.",
+            "Enjoy a West End theatre show in the evening": "Immerse yourself in the world of theater by watching a dazzling performance in London's famous West End. Choose from a variety of world-class productions, from musicals to plays, and experience the magic of live entertainment."
+          },
+          "image": "https://images.unsplash.com/photo-1574515529318-b3a2cd51242e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QnJpdGlzaCUyME11c2V1bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Explore the historic neighborhood of Greenwich",
+            "Visit the Royal Observatory",
+            "Take a walk in Greenwich Park",
+            "Experience the famous Changing of the Guard at Windsor Castle",
+            "Enjoy a dinner at a trendy restaurant"
+          ],
+          "description":{
+            "Explore the historic neighborhood of Greenwich": "Embark on a journey to the historic neighborhood of Greenwich, known for its rich maritime heritage. Discover the Cutty Sark, explore the National Maritime Museum, and take in the picturesque views along the River Thames.",
+            "Visit the Royal Observatory": "Visit the Royal Observatory in Greenwich and stand on the Prime Meridian, where the Eastern and Western hemispheres meet. Learn about the history of navigation, astronomy, and timekeeping while enjoying breathtaking views of London.",
+            "Take a walk in Greenwich Park": "Indulge in a leisurely walk through Greenwich Park, one of London's eight Royal Parks. Admire the manicured gardens, relax by the lake, and relish the panoramic views of the city skyline.",
+            "Experience the famous Changing of the Guard at Windsor Castle": "Travel to Windsor Castle, the oldest and largest inhabited castle in the world. Witness the impressive Changing of the Guard ceremony, where the Queen's Gurd changes duty in a traditional and elaborate display of pageantry.",
+            "Enjoy a farewell dinner at a trendy restaurant": "Celebrate the end of your London adventure with a delightful farewell dinner at a trendy restaurant. Indulge in exquisite cuisine, savor local flavors, and raise a toast to the memorable moments you've experienced in this vibrant city."
+          },
+          "image": "https://images.unsplash.com/photo-1557822477-ec8d8bbbcd2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Um95YWwlMjBPYnNlcnZhdG9yeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 4",
+          "activities": [
+            "Visit the British Library",
+            "Explore the Tate Modern",
+            "Take a ride on the London Eye",
+            "Shop on Oxford Street",
+            "Enjoy dinner in Covent Garden"
+          ],
+          "description":{
+            "Visit the British Library": "Immerse yourself in knowledge and history at the British Library, home to a vast collection of books, manuscripts, and historical documents. Explore the exhibitions, marvel at treasures like the Magna Carta, and experience the intellectual richness of this renowned institution.",
+            "Explore the Tate Modern": "Discover contemporary art at the Tate Modern, housed in a former power station on the banks of the River Thames. Wander through the diverse galleries showcasing modern and contemporary artworks from around the world, and enjoy stunning views from the museum's viewing platform.",
+            "Take a ride on the London Eye": "Experience breathtaking panoramic views of London from the iconic London Eye. Step into one of the glass capsules and enjoy a leisurely rotation, taking in landmarks such as Big Ben, the Houses of Parliament, and the River Thames.",
+            "Shop on Oxford Street": "Indulge in a shopping spree on Oxford Street, one of the world's most famous shopping destinations. Explore the numerous department stores, high-street brands, and boutique shops, and find everything from fashion and accessories to electronics and homeware.",
+            "Enjoy dinner in Covent Garden": "Savor a delicious dinner in the vibrant and charming neighborhood of Covent Garden. Choose from an array of restaurants, bistros, and pubs offering a wide range of cuisines, and soak up the lively atmosphere of street performers and entertainment."
+          },
+          "image": "https://images.unsplash.com/photo-1533481038561-73a2e03ad570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8T3hmb3JkJTIwU3RyZWV0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 5",
+          "activities": [
+            "Visit the National Gallery",
+            "Explore the Victoria and Albert Museum",
+            "Stroll through Notting Hill",
+            "Experience the vibrant atmosphere of Camden Market",
+            "Enjoy a Thameside dinner cruise"
+          ],
+          "description":{
+            "Visit the National Gallery": "Immerse yourself in world-class art at the National Gallery. Admire masterpieces by renowned artists such as Leonardo da Vinci, Vincent van Gogh, and Rembrandt. Explore the gallery's extensive collection of paintings, sculptures, and artworks spanning centuries of artistic excellence.",
+            "Explore the Victoria and Albert Museum": "Delve into the world of art, design, and culture at the Victoria and Albert Museum. Discover a vast array of exhibits showcasing decorative arts, fashion, photography, and more. Marvel at historical artifacts, intricate textiles, and innovative design creations.",
+            "Stroll through Notting Hill": "Take a leisurely stroll through the charming streets of Notting Hill, known for its colorful houses, quaint shops, and bustling market. Enjoy the vibrant atmosphere, browse unique boutiques, and immerse yourself in the neighborhood's distinct charm.",
+            "Experience the vibrant atmosphere of Camden Market": "Immerse yourself in the lively ambiance of Camden Market. Explore a maze of stalls offering an eclectic mix of fashion, art, crafts, and international street food. Discover unique treasures, enjoy live music, and soak up the vibrant energy of this iconic market.",
+            "Enjoy a Thameside dinner cruise": "Embark on a memorable dining experience aboard a Thameside dinner cruise. Sail along the iconic River Thames, taking in panoramic views of London's landmarks illuminated at night. Indulge in a delicious dinner while enjoying live entertainment and the enchanting cityscape."
+          },
+          "image": "https://images.unsplash.com/photo-1573424334948-83945a5b2fa0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U3Ryb2xsJTIwdGhyb3VnaCUyME5vdHRpbmclMjBIaWxsfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 6",
+          "activities": [
+            "Explore the iconic St. Paul's Cathedral",
+            "Visit the Natural History Museum",
+            "Discover the Science Museum",
+            "Take a leisurely walk along the South Bank",
+            "Enjoy a traditional English afternoon tea"
+          ],
+          "description":{
+            "Explore the iconic St. Paul's Cathedral": "Marvel at the grandeur of St. Paul's Cathedral, one of London's most iconic landmarks. Admire its stunning architecture, climb to the top of the dome for panoramic views, and explore the beautiful interior, including the Whispering Gallery.",
+            "Visit the Natural History Museum": "Embark on a journey through natural history at the renowned Natural History Museum. Discover fascinating exhibits showcasing dinosaurs, human evolution, animal diversity, and much more. Don't miss the impressive dinosaur skeletons and the iconic blue whale skeleton in the Hintze Hall.",
+            "Discover the Science Museum": "Unleash your curiosity and explore the wonders of science at the Science Museum. Engage with interactive exhibits, discover groundbreaking inventions, and delve into the realms of space exploration, robotics, medicine, and technology.",
+            "Take a leisurely walk along the South Bank": "Enjoy a leisurely stroll along the South Bank of the River Thames, soaking in the vibrant atmosphere. Admire iconic landmarks like the London Eye, Shakespeare's Globe Theatre, and the Tower Bridge. Stop by the Southbank Centre for art, music, and cultural events.",
+            "Enjoy a traditional English afternoon tea": "Indulge in a quintessential English tradition - afternoon tea. Treat yourself to a selection of delicate sandwiches, freshly baked scones with clotted cream and jam, and a variety of exquisite pastries and teas. Experience the charm of a traditional tea service in a cozy tearoom or luxury hotel."
+          },
+          "image": "https://images.unsplash.com/photo-1584652868574-0669f4292976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8TmF0dXJhbCUyMEhpc3RvcnklMjBNdXNldW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+          "day": "Day 7",
+          "activities": [
+            "Visit the Churchill War Rooms",
+            "Explore the Kensington Palace and Gardens",
+            "Stroll through Portobello Road Market",
+            "Experience the vibrant nightlife of Soho",
+            "Enjoy a farewell dinner at a fine dining restaurant"
+          ],
+          "description":{
+            "Visit the Churchill War Rooms": "Step back in time and visit the Churchill War Rooms, an underground bunker that served as the nerve center for British operations during World War II. Explore the historic rooms, walk through the corridors where Winston Churchill and his team made crucial decisions, and learn about this significant period of history.",
+            "Explore the Kensington Palace and Gardens": "Discover the grandeur of Kensington Palace and its beautiful gardens. Immerse yourself in royal history as you explore the state rooms, visit the Queen's apartments, and learn about the lives of past and present members of the royal family. Take a leisurely stroll through the meticulously manicured gardens and enjoy the serene atmosphere.",
+            "Stroll through Portobello Road Market": "Wander along Portobello Road Market, one of London's most famous street markets. Browse through a fascinating array of antiques, vintage clothing, quirky collectibles, and street food stalls. Immerse yourself in the lively atmosphere, enjoy live music, and hunt for unique treasures.",
+            "Experience the vibrant nightlife of Soho": "Indulge in the vibrant nightlife of Soho, a lively neighborhood known for its entertainment, restaurants, and bars. Explore the bustling streets lined with theaters, comedy clubs, and music venues. Experience the diverse culinary scene, enjoy live performances, and soak up the energetic atmosphere.",
+            "Enjoy a farewell dinner at a fine dining restaurant": "Celebrate your time in London with a memorable farewell dinner at a fine dining restaurant. Savor exquisite cuisine crafted by renowned chefs, accompanied by an elegant ambiance and impeccable service. Toast to your London adventures and create lasting memories with a special dining experience."
+          },       
+          "image": "https://images.unsplash.com/photo-1682403298257-ea55e8b46c97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8S2Vuc2luZ3RvbiUyMFBhbGFjZSUyMGFuZCUyMEdhcmRlbnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive London, Hotel Checkin, Tower of London, Tower Bridge, Thames River cruise, dinner at traditional british pub, day 2 - Buckingham Palace, British Museum, Hyde Park, Big Ben and Houses of Parliament, West End theatre show, day 3 - Greenwich, Royal Observatory, Greenwich Park, Changing of the Guard at Windsor Castle, farewell dinner at trendy restaurant, day 4 - British Library, Tate Modern, London Eye, Oxford Street, dinner in Covent Garden, day 5 - National Gallery, Victoria and Albert Museum, Notting Hill, Camden Market, Thameside dinner cruise, day 6 - St. Paul's Cathedral, Natural History Museum, Science Museum, South Bank, afternoon tea, day 7 - Churchill War Rooms, Kensington Palace and Gardens, Portobello Road Market, Soho, farewell dinner at fine dining restaurant"
+    }
+  }
+}
