@@ -40,7 +40,7 @@ function Explore_Page() {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const response = await fetch("http://localhost:3000/details");
+        const response = await fetch("http://127.0.0.1:5001/details");
 
         if (response.ok) {
           const data = await response.json();
@@ -69,7 +69,7 @@ function Explore_Page() {
   // Function to fetch itinerary data
   const fetchItinerary = async (string, destination, numDays, summary) => {
     try {
-      const response = await axios.get("http://192.168.29.164:5001/gen_it", {
+      const response = await axios.get("http://127.0.0.1:5001/gen_it", {
         params: {
           string,
           destination,

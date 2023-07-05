@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Rajdhani&family=Raleway:wght@400;700&family=Rubik:wght@900&family=Sacramento&family=Space+Grotesk&display=swap');
+.lp-main-div {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/l2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lg-inner-con{
+    width: 50%;
+    height: 100%;
+}
+.lg-heading{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+}
