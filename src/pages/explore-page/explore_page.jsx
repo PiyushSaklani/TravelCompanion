@@ -40,7 +40,7 @@ function Explore_Page() {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5001/details");
+        const response = await fetch("http://localhost:3000/details");
 
         if (response.ok) {
           const data = await response.json();
