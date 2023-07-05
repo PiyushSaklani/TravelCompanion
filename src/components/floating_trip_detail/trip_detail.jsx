@@ -28,7 +28,7 @@ function Trip_Detail() {
 
   const fetchItinerary = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:5001/predef_itinerary?destination=${destination}`);
+      const response = await fetch(`http://localhost:3000/predef_itinerary?destination=${destination}`);
 
       if (response.ok) {
         const data = await response.json();
@@ -45,7 +45,7 @@ function Trip_Detail() {
   const fetchGPT = async () => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:5001/generate_itinerary?destination=${destination}&duration=${duration}`
+        `http://localhost:3000/generate_itinerary?destination=${destination}&duration=${duration}`
       );
       const data = await response.json();
       return JSON.parse(data.itinerary);
