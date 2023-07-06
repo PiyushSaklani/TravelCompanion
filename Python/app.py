@@ -251,6 +251,9 @@ def initial_details():
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client['Autofill']
 collection = db['countries']
+udb = client['user_database']
+users_collection = udb['users']
+itineraries_collection = udb['itineraries']
 # insert = [
 #         {'name': 'Afghanistan'},
 #         {'name': 'Albania'},
@@ -348,6 +351,82 @@ def autocomplete():
     countries = collection.find(query).limit(5)  # Limit to 10 suggestions
     suggestions = [country['name'] for country in countries]
     return jsonify(suggestions)
+
+@app.route('/signup', methods=['GET'])
+def signup():
+    email = request.args.get('email').lower()
+    name = request.args.get('name')
+    password = request.args.get('password')
+    confirm_password = request.args.get('confirm_password')
+
+    #Check if any field is empty
+    if not email or not name or not password or not confirm_password:
+        return jsonify({'message': 'All fields are required'}), 400
+    
+    # Check if the email already exists in the database
+    existing_user = users_collection.find_one({'email': email})
+    if existing_user:
+        return jsonify({'message': 'Account already exists'}), 409
+
+    # Check if password and confirm password match
+    if password != confirm_password:
+        return jsonify({'message': 'Passwords do not match'}), 400
+    
+    # Perform signup logic, e.g., insert user into the database
+    users_collection.insert_one({
+        'email': email,
+        'name': name,
+        'password': password
+    })
+
+    return jsonify({'message': 'Signup successful'})
+
+@app.route('/login', methods=['GET'])
+def login():
+    email = request.args.get('email').lower()
+    password = request.args.get('password')
+
+    # Perform login logic, e.g., check if user exists in the database
+    user = users_collection.find_one({'email': email, 'password': password})
+    if user:
+        return jsonify({'message': 'Login successful'})
+    
+    return jsonify({'message': 'Invalid email or password'}), 401
+
+@app.route('/save_itinerary', methods=['GET'])
+def save_itinerary():
+    itinerary = request.args.get('itinerary')  # JSON string representing the itinerary
+    email = request.args.get('email')
+
+    # Count the number of itineraries for the user
+    itinerary_number = itineraries_collection.count_documents({'email': email}) + 1
+
+    # Store the itinerary in the itineraries collection
+    itineraries_collection.insert_one({
+        'email': email,
+        'itinerary_number': itinerary_number,
+        'itinerary': itinerary
+    })
+
+    return jsonify({'message': 'Itinerary saved', 'itinerary_number': itinerary_number})
+
+@app.route('/delete_itinerary', methods=['GET'])
+def delete_itinerary():
+    email = request.args.get('email')
+    itinerary_number = int(request.args.get('itinerary_number'))
+
+    # Check if the email exists in the users collection
+    existing_user = users_collection.find_one({'email': email})
+    if not existing_user:
+        return jsonify({'message': 'User does not exist'}), 404
+
+    # Delete the itinerary from the itineraries collection
+    deleted_itinerary = itineraries_collection.find_one_and_delete({'email': email, 'itinerary_number': itinerary_number})
+
+    if deleted_itinerary:
+        return jsonify({'message': 'Itinerary deleted'})
+    else:
+        return jsonify({'message': 'Itinerary not found'}), 404
 
 @app.route('/speech-recognition', methods=['GET'])
 def speech_recognition():
