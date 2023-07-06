@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Initialize OpenAI GPT-3.5 Turbo
-openai.api_key = "YOUR API KEY"
+openai.api_key = "OPENAI_API_KEY"
 model = "gpt-3.5-turbo"
 
 
@@ -68,7 +68,7 @@ def generate_itinerary():
                 {"role": "user", "content": prompt}
             ],
             max_tokens=3000,
-            timeout=2
+            # timeout=2
         )
         itinerary = response.choices[0].message['content'].strip()
         now = datetime.now()
@@ -92,6 +92,7 @@ def generate_itinerary():
             "id": 9,
             "it": [],
             "summary": [],
+            "header_image": ""
             # "summary": summary
         }
         response_data["summary"] = sum[1:]
@@ -134,6 +135,8 @@ def generate_itinerary():
         for i, day in enumerate(response_data["it"]):
             if i < len(images):
                 day["image"] = images[i]
+
+        response_data["header_image"] = images[9]
         return jsonify(response_data)
 
     except Exception as e:
@@ -187,7 +190,7 @@ def predef_itinerary():
     try:
         # Get user input from request
         destination = request.args.get('destination')
-        with open('Python/predefit.json') as json_file:
+        with open('TravelCompanion\Python\predefit.json') as json_file:
             data = json.load(json_file)
             if destination in data:
                 return jsonify(data[destination])
@@ -198,11 +201,10 @@ def predef_itinerary():
         app.logger.error(f"Error: {str(e)}")
         return jsonify({'error': 'An error occurred'}), 500
 
-
 @app.route('/details', methods=['GET'])
 def details():
     try:
-        with open('Python/details.json') as json_file:
+        with open('TravelCompanion\Python\details.json') as json_file:
             data = json.load(json_file)
             return jsonify(data)
 
@@ -215,7 +217,7 @@ def details():
 @app.route('/initial_details', methods=['GET'])
 def initial_details():
     try:
-        with open('Python/initial_details.json') as json_file:
+        with open('TravelCompanion\Python\initial_details.json') as json_file:
             data = json.load(json_file)
             return jsonify(data)
 
@@ -224,26 +226,128 @@ def initial_details():
         app.logger.error(f"Error: {str(e)}")
         return jsonify({'error': 'An error occurred'}), 500
 
-import mysql.connector
+# import mysql.connector
 
-connection = mysql.connector.connect(
-    host="localhost",
-    user="try",
-    password="try_1234",
-    database="autofill"
-)
-@app.route('/autocomplete')
+# connection = mysql.connector.connect(
+#     host="localhost",
+#     user="try",
+#     password="try_1234",
+#     database="autofill"
+# )
+# @app.route('/autocomplete')
+# def autocomplete():
+#     user_input = request.args.get('query')
+
+#     # Query the MySQL database to retrieve matching country names
+#     cursor = connection.cursor()
+#     cursor.execute("SELECT name FROM countries WHERE name LIKE %s", (f"{user_input}%",))
+
+#     results = cursor.fetchall()
+#     country_names = [result[0] for result in results]
+
+#     return jsonify(country_names)
+import pymongo
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+db = client['Autofill']
+collection = db['countries']
+# insert = [
+#         {'name': 'Afghanistan'},
+#         {'name': 'Albania'},
+#         {'name': 'Algeria'},
+#         {'name': 'Andorra'},
+#         {'name': 'Angola'},
+#         {'name': 'Antigua and Barbuda'},
+#         {'name': 'Argentina'},
+#         {'name': 'Armenia'},
+#         {'name': 'Australia'},
+#         {'name': 'Austria'},
+#         {'name': 'Azerbaijan'},
+#         {'name': 'Bahamas'},
+#         {'name': 'Bahrain'},
+#         {'name': 'Bangladesh'},
+#         {'name': 'Barbados'},
+#         {'name': 'Belarus'},
+#         {'name': 'Belgium'},
+#         {'name': 'Belize'},
+#         {'name': 'Benin'},
+#         {'name': 'Bhutan'},
+#         {'name': 'Bolivia'},
+#         {'name': 'Bosnia and Herzegovina'},
+#         {'name': 'Botswana'},
+#         {'name': 'Brazil'},
+#         {'name': 'Brunei'},
+#         {'name': 'Bulgaria'},
+#         {'name': 'Burkina Faso'},
+#         {'name': 'Burundi'},
+#         {'name': 'Cabo Verde'},
+#         {'name': 'Cambodia'},
+#         {'name': 'Cameroon'},
+#         {'name': 'Canada'},
+#         {'name': 'Central African Republic'},
+#         {'name': 'Chad'},
+#         {'name': 'Chile'},
+#         {'name': 'China'},
+#         {'name': 'Colombia'},
+#         {'name': 'Comoros'},
+#         {'name': 'Congo, Democratic Republic of the'},
+#         {'name': 'Congo, Republic of the'},
+#         {'name': 'Costa Rica'},
+#         {'name': 'Côte d’Ivoire'},
+#         {'name': 'Croatia'},
+#         {'name': 'Cuba'},
+#         {'name': 'Cyprus'},
+#         {'name': 'Czech Republic'},
+#         {'name': 'Denmark'},
+#         {'name': 'Djibouti'},
+#         {'name': 'Dominica'},
+#         {'name': 'Dominican Republic'},
+#         {'name': 'East Timor (Timor-Leste)'},
+#         {'name': 'Ecuador'},
+#         {'name': 'Egypt'},
+#         {'name': 'El Salvador'},
+#         {'name': 'Equatorial Guinea'},
+#         {'name': 'Eritrea'},
+#         {'name': 'Estonia'},
+#         {'name': 'Eswatini'},
+#         {'name': 'Ethiopia'},
+#         {'name': 'Fiji'},
+#         {'name': 'Finland'},
+#         {'name': 'France'},
+#         {'name': 'Gabon'},
+#         {'name': 'The Gambia'},
+#         {'name': 'Georgia'},
+#         {'name': 'Germany'},
+#         {'name': 'Ghana'},
+#         {'name': 'Greece'},
+#         {'name': 'Grenada'},
+#         {'name': 'Guatemala'},
+#         {'name': 'Guinea'},
+#         {'name': 'Guinea-Bissau'},
+#         {'name': 'Guyana'},
+#         {'name': 'Haiti'},
+#         {'name': 'Honduras'},
+#         {'name': 'Hungary'},
+#         {'name': 'Iceland'},
+#         {'name': 'India'},
+#         {'name': 'Indonesia'},
+#         {'name': 'Iran'},
+#         {'name': 'Iraq'},
+#         {'name': 'Ireland'},
+#         {'name': 'Paris'},
+#         {'name': 'Rome'},
+#         {'name': 'Tokyo'},
+#         {'name': 'Japan'},
+#         {'name': 'London'}
+#     ]
+# collection.insert_many(insert)
+@app.route('/autocomplete', methods=['GET'])
 def autocomplete():
-    user_input = request.args.get('query')
+    search_text = request.args.get('text')
+    query = { 'name': { '$regex': search_text, '$options': 'i' } }
+    countries = collection.find(query).limit(5)  # Limit to 10 suggestions
+    suggestions = [country['name'] for country in countries]
+    return jsonify(suggestions)
 
-    # Query the MySQL database to retrieve matching country names
-    cursor = connection.cursor()
-    cursor.execute("SELECT name FROM countries WHERE name LIKE %s", (f"{user_input}%",))
-
-    results = cursor.fetchall()
-    country_names = [result[0] for result in results]
-
-    return jsonify(country_names)
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
     app.run(debug=True, host='0.0.0.0', port=port)

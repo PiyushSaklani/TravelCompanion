@@ -69,7 +69,7 @@ function Explore_Page() {
   // Function to fetch itinerary data
   const fetchItinerary = async (string, destination, numDays, summary) => {
     try {
-      const response = await axios.get("http://192.168.29.164:5001/gen_it", {
+      const response = await axios.get("http://127.0.0.1:5001/gen_it", {
         params: {
           string,
           destination,
@@ -90,7 +90,7 @@ function Explore_Page() {
     console.log("process start");
     await fetchItinerary(
       customizationInput,
-      destination,
+      tripData.destination,
       tripData.num_days,
       tripData.summary
     )
