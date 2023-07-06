@@ -5,13 +5,15 @@ from flask_cors import CORS, cross_origin
 import openai
 import requests
 import json
-
+import pymongo
+import spacy
+import speech_recognition as sr
 
 app = Flask(__name__)
 CORS(app)
 
 # Initialize OpenAI GPT-3.5 Turbo
-openai.api_key = "OPENAI_API_KEY"
+openai.api_key = "API KEY"
 model = "gpt-3.5-turbo"
 
 
@@ -68,7 +70,7 @@ def generate_itinerary():
                 {"role": "user", "content": prompt}
             ],
             max_tokens=3000,
-            # timeout=2
+            timeout=2
         )
         itinerary = response.choices[0].message['content'].strip()
         now = datetime.now()
@@ -79,6 +81,8 @@ def generate_itinerary():
         
         # Split itinerary into separate days
         itinerary_split = itinerary.split('DAY ')
+        # itinerary_split = re.split(r'DAY \d+:', itinerary, flags=re.IGNORECASE)
+        # itinerary_split = re.split(r'DAY \d+:', itinerary)
         for variation in ["SUMMARY:", "summary:", "Summary:"]:
             if variation in itinerary:
                 sum = itinerary.split(variation)
@@ -161,8 +165,6 @@ def get_images(location):
 
     return image_urls
 
-import spacy
-
 def extract_information(string):
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(string)
@@ -190,7 +192,7 @@ def predef_itinerary():
     try:
         # Get user input from request
         destination = request.args.get('destination')
-        with open('TravelCompanion\Python\predefit.json') as json_file:
+        with open('Python\predefit.json') as json_file:
             data = json.load(json_file)
             if destination in data:
                 return jsonify(data[destination])
@@ -204,7 +206,7 @@ def predef_itinerary():
 @app.route('/details', methods=['GET'])
 def details():
     try:
-        with open('TravelCompanion\Python\details.json') as json_file:
+        with open('Python\details.json') as json_file:
             data = json.load(json_file)
             return jsonify(data)
 
@@ -246,7 +248,6 @@ def initial_details():
 #     country_names = [result[0] for result in results]
 
 #     return jsonify(country_names)
-import pymongo
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client['Autofill']
 collection = db['countries']
@@ -343,10 +344,30 @@ collection = db['countries']
 @app.route('/autocomplete', methods=['GET'])
 def autocomplete():
     search_text = request.args.get('text')
-    query = { 'name': { '$regex': search_text, '$options': 'i' } }
+    query = { 'name': { '$regex': '^' + search_text, '$options': 'i' } }
     countries = collection.find(query).limit(5)  # Limit to 10 suggestions
     suggestions = [country['name'] for country in countries]
     return jsonify(suggestions)
+
+@app.route('/speech-recognition', methods=['GET'])
+def speech_recognition():
+    transcript = request.args.get('transcript')
+
+    # Perform speech recognition tasks using a library like SpeechRecognition
+    r = sr.Recognizer()
+    with sr.AudioFile(transcript) as source:
+        audio = r.record(source)
+
+    try:
+        recognized_text = r.recognize_google(audio)
+        # Perform further processing or business logic with the recognized text
+        
+        # Return the response
+        return jsonify({'result': recognized_text})
+    except sr.UnknownValueError:
+        return jsonify({'result': 'Speech recognition could not understand the audio'})
+    except sr.RequestError as e:
+        return jsonify({'result': f"Could not request results from speech recognition service: {e}"})
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
