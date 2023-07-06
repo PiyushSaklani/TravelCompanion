@@ -343,7 +343,7 @@ collection = db['countries']
 @app.route('/autocomplete', methods=['GET'])
 def autocomplete():
     search_text = request.args.get('text')
-    query = { 'name': { '$regex': search_text, '$options': 'i' } }
+    query = { 'name': { '$regex': '^' + search_text, '$options': 'i' } }
     countries = collection.find(query).limit(5)  # Limit to 10 suggestions
     suggestions = [country['name'] for country in countries]
     return jsonify(suggestions)
