@@ -1,6 +1,58 @@
-.ep-main-div {
+.main-outer-div {
   width: 100vw;
   height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(100, 1%);
+  grid-template-rows: repeat(100, 1%);
+}
+.popup-outer-div {
+  grid-row: 15/76;
+  grid-column: 35/66;
+
+  /* background-color: black; */
+  background-image: url("../../images/popup.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 10;
+}
+.popupcontent{
+  width: 70%;
+  height: 200px;
+
+  /* background-color: #212529; */
+}
+.popup-iner-div {
+  margin-top: 15px;
+  width: 70%;
+  height: 20px;
+  display: flex;
+  justify-content: end;
+}
+.popupsubheading{
+  margin-top: 40px;
+  width: 60%;
+  text-align: start;
+  font-weight: bold;
+}
+.popupheading{
+  margin-top: 120px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: start;
+}
+.ep-main-div {
+  grid-row: 1/101;
+  grid-column: 1/101;
+
+  overflow-y: scroll;
 }
 .ep-div-1 {
   width: 100%;
@@ -44,29 +96,29 @@
   box-sizing: border-box;
   flex-wrap: wrap;
 }
-.ep-day-plan{
-    padding: 20px 0px;
-    height: 100%;
-    margin: 0 20px;
-    width: 25%;
-    background-color: #f8f9fa;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding-bottom: 40px;
+.ep-day-plan {
+  padding: 20px 0px;
+  height: 100%;
+  margin: 0 20px;
+  width: 25%;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
 }
-.ep-day-heading{
-    margin-bottom: 50px;
+.ep-day-heading {
+  margin-bottom: 50px;
 }
 
-.trip-div-main-box{
+.trip-div-main-box {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
 }
-.trip-div-inner-box{
+.trip-div-inner-box {
   width: 90%;
   height: 100%;
 
@@ -80,19 +132,19 @@
   justify-content: start;
   align-items: start;
 }
-.location-name{
+.location-name {
   font-weight: 600;
   padding-top: 10px;
 }
-.location-description{
+.location-description {
   font-size: 12px;
   text-align: justify;
 }
-.trip-detail-div{
+.trip-detail-div {
   width: 50%;
   text-align: left;
 }
-.place-img{
+.place-img {
   width: 40%;
   height: 350px;
   /* background-color: aqua; */
@@ -102,24 +154,24 @@
   background-repeat: no-repeat;
   border-radius: 10px;
 }
-.inner-detil-div{
+.inner-detil-div {
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
-.customize-field{
+.customize-field {
   margin-top: 20px;
   width: 100%;
 }
-.customize-field input{
+.customize-field input {
   width: 350px;
   height: 30px;
   border-radius: 5px;
   border: 1px solid gray;
   padding: 0 10px;
 }
-.customize-field button{
+.customize-field button {
   padding: 9px 20px;
   border-radius: 5px;
   border: none;
@@ -127,14 +179,14 @@
   margin: 0 20px;
   background-color: #212529;
 }
-.include-div{
+.include-div {
   margin: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.include-inner-div{
+.include-inner-div {
   padding: 10px 20px;
   width: 88.5%;
   border-radius: 10px;
@@ -147,41 +199,41 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /* margin-bottom: 40px; */
 }
-.include-inner-div div{
+.include-inner-div div {
   text-align: left;
   line-height: 25px;
   margin-bottom: 20px;
 }
-.ep-deal-div{
+.ep-deal-div {
   width: 80%;
   height: 170px;
   /* background-color: red; */
   margin-bottom: 20px;
-  background-image: url('../../images/new.png');
-  background-size:cover;
+  background-image: url("../../images/new.png");
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
-.ep-place-title{
+.ep-place-title {
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 10px;
 }
-.ep-place-cost{
+.ep-place-cost {
   font-size: 20px;
   /* text-decoration: line-through; */
   /* color: gray; */
 }
-.ep-place-new-cost{
+.ep-place-new-cost {
   font-size: 20px;
 }
-.loading-gif{
+.loading-gif {
   margin-top: 20px;
   /* background-color: #212529; */
   width: 35px;
   height: 35px;
 }
-.confirm-btn{
+.confirm-btn {
   padding: 10px 30px;
   border-radius: 6px;
   font-size: 16px;
