@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Rajdhani&family=Raleway:wght@400;700&family=Rubik:wght@900&family=Sacramento&family=Space+Grotesk&display=swap');
+.signup-main-div {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/l1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+.signup-inner-con{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signup-heading, .signup-subheading, .signup-heading2{
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.signup-heading{
+    font-size: 20px;
+}
+.signup-heading2{
+    font-weight: 800;
+    font-size: 46px;
+}
+.signup-subheading{
+    margin-top: 20px;
+}
+.signup-input-div{
+    margin-top: 100px;
+    width: 80%;
+}
+.input{
+    margin-bottom: 30px;
+    width: 90%;
+    padding-block: 10px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: 1px solid gray;
+}
+.signup-btn{
+    width: 92%;
+    background-color: #212529;
+    border-radius: 6px;
+    padding: 12px 10px;
+    border: none;
+    margin-top: 40px;
+    color: white;
+}

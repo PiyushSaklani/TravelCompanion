@@ -14,6 +14,7 @@ const initialState = {
   trip_data: null,
   initial_trip_data:null,
   showPopUp:false,
+  userId:null
 };
 
 const reducer = (state = initialState, action) => {
@@ -67,6 +68,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         showPopUp: action.payload,
+      };
+      case "SET_USERID":
+      return {
+        ...state,
+        userId: action.payload,
       };
     default:
       return state;

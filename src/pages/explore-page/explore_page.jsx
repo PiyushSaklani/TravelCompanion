@@ -7,10 +7,13 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 import loading_gif from "../../images/loading.gif";
 import PopUp from "../../components/popup/popup";
+import { useNavigate } from "react-router-dom";
 
 function Explore_Page() {
+  const navigate = useNavigate();
   const [showPopUp, setShowPopUp] = useState(false);
   const images = useSelector((state) => state.images);
+  const userId = useSelector((state) => state.userId);
   const destination = useSelector((state) => state.destination);
   const location = useSelector((state) => state.location);
   const duration = useSelector((state) => state.duration);
@@ -22,6 +25,29 @@ function Explore_Page() {
   const initial_trip_data = useSelector((state) => state.initial_trip_data);
   const [customizationInput, setCustomizationInput] = useState("");
   const [loading, setLoading] = useState(false);
+
+  const saveList = async (json, destination, id) => {
+    try {
+      const response = await axios.post("http://localhost:8000/add-list", {
+        json,
+        destination,
+        id,
+      });
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  };
+
+  const handleSaveList = async() => {
+    if(userId){
+      await saveList(tripData, tripData.destination, userId);
+      setShowPopUp(true);
+    }else{
+      navigate("/signin")
+    }
+  };
 
   const handleInputChange = (event) => {
     setCustomizationInput(event.target.value);
@@ -109,127 +135,150 @@ function Explore_Page() {
   };
 
   const handlePopup = () => {
-    setShowPopUp(false)
-  }
+    setShowPopUp(false);
+  };
 
   return (
-    <>
-      {showPopUp ? (
-        <PopUp onClick={handlePopup}/>
-      ) : (
-        <div className="ep-main-div">
-          <div className="mp-navBar">
-            <div className="mp-app-name">Travel</div>
-            <div className="mp-nav-items">
-              <ul>
-                <li>Home</li>
-                <li>Explore</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-            <div className="mp-menu-icon" onClick={handle_menubtn}>
-              {showMenu ? <Close_Icon /> : <Menu_Icon />}
+    <div className="main-outer-div">
+      {showPopUp && (
+        <div className="popup-outer-div">
+          <div className="popup-iner-div">
+            <div className="closebtn" onClick={handlePopup}>
+              <Close_Icon />
             </div>
           </div>
-          {showMenu && (
-            <div className="mp-menubtn-items">
-              <div id="menubtn-item">Home</div>
-              <div id="menubtn-item">Explore</div>
-              <div id="menubtn-item">Contact Us</div>
-            </div>
-          )}
-          <div className="ep-div-1">
-            <div
-              className="ep-main-image"
-              style={{
-                backgroundImage: `url(${initial_trip_data[id]["image"]})`,
-              }}
-            ></div>
-            <div className="ep-div-1-detail">
-              <div className="ep-deal-div"></div>
-              <div className="ep-place-title">
-                {initial_trip_data[id]["title"]}
-              </div>
-              <div className="ep-place-new-cost">
-                Rs. {initial_trip_data[id]["cost"]}
-              </div>
-              {loading ? (
-                <img className="loading-gif" src={loading_gif} alt="GIF" />
-              ) : (
-                <div className="customize-field">
-                  <input
-                    type="text"
-                    placeholder="Customise package"
-                    value={customizationInput}
-                    onChange={handleInputChange}
-                  />
-                  <button onClick={handleButtonClick}>Customise</button>
-                </div>
-              )}
-            </div>
+          <div className="popupcontent">
+            <div className="popupheading">Hello, User</div>
+            <div className="popupsubheading">Your vacation plan has been safely stored in the wishlist.</div>
           </div>
-          {/* <div className="ep-div-2">{dayPlans}</div> */}
-          {tripData["it"].map((day, index) => (
-            <div className="trip-div-main-box">
-              <div className="trip-div-inner-box" key={index}>
-                <h2>{day.day}</h2>
-                <div className="inner-detil-div">
-                  <div className="trip-detail-div">
-                    {day.activities.map((activity, index) => (
-                      <div>
-                        <div className="location-name" key={index}>
-                          {activity}
-                        </div>
-                        <div className="location-description" key={index}>
-                          {day.description[activity]}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div
-                    className="place-img"
-                    style={{
-                      backgroundImage: `url(${day.image})`,
-                    }}
-                  ></div>
-                </div>
-              </div>
-            </div>
-          ))}
-          <div className="include-div">
-            <div className="include-inner-div">
-              <h2>What's Included</h2>
-              <div>
-                ✓ Sightseeing as per the itinerary
-                <br></br>✓ All Transfers, excursions & sightseeing as per the
-                itinerary by ac car
-                <br></br>✓ All toll taxes, parking fees, Fuel and driver's
-                allowances
-                <br></br>✓ Welcome drink on arrival
-                <br></br>✓ All Transport & Hotels Related Taxes
-              </div>
-            </div>
-          </div>
-          {/* https://www.google.com/travel/flights */}
-          <button
-            className="confirm-btn"
-            onClick={() => {
-              setShowPopUp(true)
-            }}
-          >
-            Save Itinerary
-          </button>
-          <button
-            className="confirm-btn"
-            onClick={() => {
-              window.open('https://www.google.com/travel/flights', '_blank');
-            }}
-          >
-            Search Flights
-          </button>
         </div>
       )}
-    </>
+      <div className="ep-main-div">
+        <div className="mp-navBar">
+          <div className="mp-app-name">Travel</div>
+          <div className="mp-nav-items">
+            <ul>
+              <li
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                Home
+              </li>
+              <li
+                onClick={() => {
+                  if(userId){navigate("/wish-list");}
+                  else{navigate("/signin")}
+                }}
+              >
+                Wish List
+              </li>
+              <li>Explore</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div className="mp-menu-icon" onClick={handle_menubtn}>
+            {showMenu ? <Close_Icon /> : <Menu_Icon />}
+          </div>
+        </div>
+        {showMenu && (
+          <div className="mp-menubtn-items">
+            <div id="menubtn-item">Home</div>
+            <div id="menubtn-item">Explore</div>
+            <div id="menubtn-item">Contact Us</div>
+          </div>
+        )}
+        <div className="ep-div-1">
+          <div
+            className="ep-main-image"
+            style={{
+              backgroundImage: `url(${initial_trip_data[id]["image"]})`,
+            }}
+          ></div>
+          <div className="ep-div-1-detail">
+            <div className="ep-deal-div"></div>
+            <div className="ep-place-title">
+              Discover {tripData.destination}'s Charm
+            </div>
+            <div className="ep-place-new-cost">
+              Rs. {initial_trip_data[id]["cost"]}
+            </div>
+            {loading ? (
+              <img className="loading-gif" src={loading_gif} alt="GIF" />
+            ) : (
+              <div className="customize-field">
+                <input
+                  type="text"
+                  placeholder="Customise package"
+                  value={customizationInput}
+                  onChange={handleInputChange}
+                />
+                <button onClick={handleButtonClick}>Customise</button>
+              </div>
+            )}
+          </div>
+        </div>
+        {/* <div className="ep-div-2">{dayPlans}</div> */}
+        {tripData["it"].map((day, index) => (
+          <div className="trip-div-main-box">
+            <div className="trip-div-inner-box" key={index}>
+              <h2>{day.day}</h2>
+              <div className="inner-detil-div">
+                <div className="trip-detail-div">
+                  {day.activities.map((activity, index) => (
+                    <div>
+                      <div className="location-name" key={index}>
+                        {activity}
+                      </div>
+                      <div className="location-description" key={index}>
+                        {day.description[activity]}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div
+                  className="place-img"
+                  style={{
+                    backgroundImage: `url(${day.image})`,
+                  }}
+                ></div>
+              </div>
+            </div>
+          </div>
+        ))}
+        <div className="include-div">
+          <div className="include-inner-div">
+            <h2>What's Included</h2>
+            <div>
+              ✓ Sightseeing as per the itinerary
+              <br></br>✓ All Transfers, excursions & sightseeing as per the
+              itinerary by ac car
+              <br></br>✓ All toll taxes, parking fees, Fuel and driver's
+              allowances
+              <br></br>✓ Welcome drink on arrival
+              <br></br>✓ All Transport & Hotels Related Taxes
+            </div>
+          </div>
+        </div>
+        {/* https://www.google.com/travel/flights */}
+        <button
+          className="confirm-btn"
+          onClick={() => {
+            handleSaveList();
+          }}
+        >
+          Save Itinerary
+        </button>
+        {/* <button
+          className="confirm-btn"
+          onClick={() => {
+            window.open("https://www.google.com/travel/flights", "_blank");
+          }}
+        >
+          Search Flights
+        </button> */}
+      </div>
+    </div>
   );
 }
 
