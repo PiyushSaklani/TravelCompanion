@@ -10,20 +10,12 @@ import PopUp from "../../components/popup/popup";
 import { useNavigate } from "react-router-dom";
 import App_Bar from "../../components/appbar/appbar";
 
-function Explore_Page() {
+function View_Page() {
   const navigate = useNavigate();
   const [showPopUp, setShowPopUp] = useState(false);
-  const images = useSelector((state) => state.images);
   const userId = useSelector((state) => state.userId);
-  const destination = useSelector((state) => state.destination);
-  const location = useSelector((state) => state.location);
-  const duration = useSelector((state) => state.duration);
-  const date = useSelector((state) => state.date);
-  const adults = useSelector((state) => state.adults);
-  const child = useSelector((state) => state.child);
-  const trip_data = useSelector((state) => state.trip_data);
-  const { id, days } = useParams();
   const initial_trip_data = useSelector((state) => state.initial_trip_data);
+  const trip_data = useSelector((state) => state.trip_data);
   const [customizationInput, setCustomizationInput] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -41,6 +33,26 @@ function Explore_Page() {
     }
   };
 
+//   useEffect(() => {
+//     const fetchDetails = async () => {
+//       try {
+//         const response = await fetch("http://127.0.0.1:5001/details");
+
+//         if (response.ok) {
+//           const data = await response.json();;
+//           setTrip_detail(data[trip_data.description][0]);
+//         } else {
+//           const errorData = await response.json();
+//           setError(errorData.error);
+//         }
+//       } catch (error) {
+//         setError("An error occurred");
+//       }
+//     };
+
+//     fetchDetails();
+//   }, []);
+
   const handleSaveList = async() => {
     if(userId){
       await saveList(tripData, tripData.destination, userId);
@@ -54,44 +66,21 @@ function Explore_Page() {
     setCustomizationInput(event.target.value);
   };
 
-  const [tripData, setTrip_detail] = useState(null);
+  const [tripData, setTrip_detail] = useState(trip_data);
 
   const [showMenu, setShowMenu] = useState(false);
   function handle_menubtn() {
     setShowMenu(!showMenu);
   }
+//   const [error, setError] = useState(null);
 
-  const [details, setDetails] = useState(null);
-  const [error, setError] = useState(null);
+//   if (error) {
+//     return <div>Error: {error}</div>;
+//   }
 
-  useEffect(() => {
-    const fetchDetails = async () => {
-      try {
-        const response = await fetch("http://127.0.0.1:5001/details");
-
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data[destination][days]["it"]);
-          setTrip_detail(data[destination][days]);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.error);
-        }
-      } catch (error) {
-        setError("An error occurred");
-      }
-    };
-
-    fetchDetails();
-  }, []);
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
-  if (!tripData) {
-    return <div>Loading...</div>;
-  }
+//   if (!tripData) {
+//     return <div>Loading...</div>;
+//   }
 
   // Function to fetch itinerary data
   const fetchItinerary = async (string, destination, numDays, summary) => {
@@ -157,11 +146,11 @@ function Explore_Page() {
       )}
       <div className="ep-main-div">
         <App_Bar />
-        <div className="ep-div-1">
+        {/* <div className="ep-div-1">
           <div
             className="ep-main-image"
             style={{
-              backgroundImage: `url(${initial_trip_data[id]["image"]})`,
+              backgroundImage: `url(${initial_trip_data[0]["image"]})`,
             }}
           ></div>
           <div className="ep-div-1-detail">
@@ -170,7 +159,6 @@ function Explore_Page() {
               Discover {tripData.destination}'s Charm
             </div>
             <div className="ep-place-new-cost">
-              Rs. {initial_trip_data[id]["cost"]}
             </div>
             {loading ? (
               <img className="loading-gif" src={loading_gif} alt="GIF" />
@@ -186,8 +174,7 @@ function Explore_Page() {
               </div>
             )}
           </div>
-        </div>
-        {/* <div className="ep-div-2">{dayPlans}</div> */}
+        </div> */}
         {tripData["it"].map((day, index) => (
           <div className="trip-div-main-box">
             <div className="trip-div-inner-box" key={index}>
@@ -229,26 +216,17 @@ function Explore_Page() {
             </div>
           </div>
         </div>
-        {/* https://www.google.com/travel/flights */}
-        <button
+        {/* <button
           className="confirm-btn"
           onClick={() => {
             handleSaveList();
           }}
         >
           Save Itinerary
-        </button>
-        {/* <button
-          className="confirm-btn"
-          onClick={() => {
-            window.open("https://www.google.com/travel/flights", "_blank");
-          }}
-        >
-          Search Flights
         </button> */}
       </div>
     </div>
   );
 }
 
-export default Explore_Page;
+export default View_Page;

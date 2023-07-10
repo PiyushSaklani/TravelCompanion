@@ -42,6 +42,7 @@ function SignInPage() {
         console.log(data.message);
         if (data.authenticated) {
           dispatch({ type: "SET_USERID", payload: data.id });
+          dispatch({ type: "SET_USER_EMAIL", payload: email });
           navigate("/");
         } else {
           setEmail("");

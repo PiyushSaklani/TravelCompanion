@@ -3,9 +3,12 @@ import "../main-page/main_page.css";
 import "../wishlist-page/wishlist_page.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import axios from "axios";
+import App_Bar from "../../components/appbar/appbar";
 
 function WISHLIST_PAGE() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const userId = useSelector((state) => state.userId);
@@ -23,30 +26,23 @@ function WISHLIST_PAGE() {
     }
   };
 
+  const deleteList = async (id) => {
+    try {
+      const response = await axios.delete(`http://localhost:8000/delete-list/${id}`);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error.message);
+    }
+    getList(userId);
+  };
   useEffect(() => {
     getList(userId);
   }, []);
 
   return (
     <div className="mp-main-div">
-      <div className="mp-navBar">
-        <div className="mp-app-name">Travel</div>
-        <div className="mp-nav-items">
-          <ul>
-            <li
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Home
-            </li>
-            <li>Wish List</li>
-            <li>Explore</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-      </div>
-      {data.map((list) => (
+      <App_Bar />
+      {data == undefined?"EMPTY":data.map((list,index) => (
         <div className="list-main-div">
           <div className="list-container">
             <div
@@ -62,8 +58,13 @@ function WISHLIST_PAGE() {
               <div className="list-days">{list.json.num_days} Days</div>
             </div>
             <div className="list-btn">
-              <div className="btn">View</div>
-              <div className="btn">Delete</div>
+              <div className="btn" onClick={()=>{
+                dispatch({ type: "SET_TRIP_DATA", payload:list.json});
+                navigate('/view')
+              }}>View</div>
+              <div className="btn" onClick={()=>{
+                deleteList(data[index].list_id)
+                }}>Delete</div>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import Train_Icon from "../../icons/svg/train_icon";
 import Car_Icon from "../../icons/svg/car_icon";
 import Bus_Icon from "../../icons/svg/bus_icon";
 import Flight_Icon from "../../icons/svg/flight_icon";
+import App_Bar from "../../components/appbar/appbar";
 
 function MAIN_PAGE() {
   const navigate = useNavigate();
@@ -41,37 +42,7 @@ function MAIN_PAGE() {
 
   return (
     <div className="mp-main-div">
-      <div className="mp-navBar">
-        <div className="mp-app-name">Travel</div>
-        <div className="mp-nav-items">
-          <ul>
-            <li>Home</li>
-            <li
-              onClick={() => {
-                if (userId) {
-                  navigate("/wish-list");
-                } else {
-                  navigate("/signin");
-                }
-              }}
-            >
-              Wish List
-            </li>
-            <li>Explore</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div className="mp-menu-icon" onClick={handle_menubtn}>
-          {showMenu ? <Close_Icon /> : <Menu_Icon />}
-        </div>
-      </div>
-      {showMenu && (
-        <div className="mp-menubtn-items">
-          <div id="menubtn-item">Home</div>
-          <div id="menubtn-item">Explore</div>
-          <div id="menubtn-item">Contact Us</div>
-        </div>
-      )}
+      <App_Bar />
 
       <Image_Slider />
 

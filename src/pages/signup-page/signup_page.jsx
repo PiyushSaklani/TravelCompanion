@@ -44,6 +44,7 @@ function SignUpPage() {
         .then((data) => {
           console.log(data.message);
           dispatch({ type: "SET_USERID", payload: data._id });
+          dispatch({ type: "SET_USER_EMAIL", payload: email });
           setEmail("");
           setPassword("");
           setaPassword("");

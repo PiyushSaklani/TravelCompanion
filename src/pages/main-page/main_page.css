@@ -27,6 +27,9 @@
 }
 .mp-nav-items ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mp-nav-items ul li {
   display: inline-block;
@@ -167,6 +170,22 @@
 #icons{
   width: 35px;
   height: 35px;
+}
+.user-profile{
+  height: 40px;
+  width: 40px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  background-image: url('../../images/user.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.sign-out-btn{
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 6px 15px;
+  background-color: #f8f9fa;
+  cursor: pointer;
 }
 /* -------------------------------------------------- */
 @media (max-width: 768px) {
