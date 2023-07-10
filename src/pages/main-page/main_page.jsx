@@ -13,6 +13,7 @@ import Car_Icon from "../../icons/svg/car_icon";
 import Bus_Icon from "../../icons/svg/bus_icon";
 import Flight_Icon from "../../icons/svg/flight_icon";
 import App_Bar from "../../components/appbar/appbar";
+import Hotel_Icon from "../../icons/svg/hotel_icon";
 
 function MAIN_PAGE() {
   const navigate = useNavigate();
@@ -98,7 +99,7 @@ function MAIN_PAGE() {
                     <Bus_Icon />
                   </div>
                   <div id="icons">
-                    <Car_Icon />
+                    <Hotel_Icon />
                   </div>
                 </div>
                 <div className="mp-trip-detail-2">

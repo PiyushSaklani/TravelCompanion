@@ -114,7 +114,7 @@ function Explore_Page() {
 
   const handleButtonClick = async () => {
     setLoading(true);
-    console.log("process start");
+    console.log(tripData.summary);
     await fetchItinerary(
       customizationInput,
       tripData.destination,
@@ -150,7 +150,7 @@ function Explore_Page() {
           </div>
           <div className="popupcontent">
             <div className="popupheading">Hello, User</div>
-            <div className="popupsubheading">Your vacation plan has been safely stored in the wishlist.</div>
+            <div className="popupsubheading">Your vacation plan has been safely stored in the yourlist.</div>
             <div className="popupsubheading">After calculating all the expenses and other details, our team will contact you.</div>
           </div>
         </div>
