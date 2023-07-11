@@ -12,7 +12,7 @@ import speech_recognition as sr
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "YOUR API KEY HERE"
+openai.api_key = "YOUR_API_KEY"
 model = "gpt-3.5-turbo"
 
 @app.route('/gen_it', methods=['GET'])

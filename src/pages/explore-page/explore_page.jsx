@@ -161,7 +161,7 @@ function Explore_Page() {
           <div
             className="ep-main-image"
             style={{
-              backgroundImage: `url(${initial_trip_data[id]["image"]})`,
+              backgroundImage: `url(${tripData["header_image"]})`,
             }}
           ></div>
           <div className="ep-div-1-detail">
@@ -169,9 +169,9 @@ function Explore_Page() {
             <div className="ep-place-title">
               Discover {tripData.destination}'s Charm
             </div>
-            <div className="ep-place-new-cost">
+            {/* <div className="ep-place-new-cost">
               Rs. {initial_trip_data[id]["cost"]}
-            </div>
+            </div> */}
             {loading ? (
               <img className="loading-gif" src={loading_gif} alt="GIF" />
             ) : (
