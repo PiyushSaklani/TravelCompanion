@@ -5,12 +5,13 @@ const userSchema = new Schema({
   json: {
     type: Object,
     required: true,
+    unique: true,
   },
   destination: {
     type: String,
     required: true,
   },
-  id: {
+  user_id: {
     type: String,
     required: true,
   },

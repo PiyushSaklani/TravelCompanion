@@ -8,8 +8,9 @@ import Duraction_Icon from "../../icons/svg/Duration_icon";
 import Adult_Icon from "../../icons/svg/Adults_icon";
 import Child_Icon from "../../icons/svg/child_icon";
 import Search_Icon from "../../icons/svg/search_icon";
-//?
 import { useDispatch } from "react-redux";
+// import Select from "react-select";
+import { Select } from "antd";
 
 function Trip_Detail() {
   const [name, setName] = useState("");
@@ -25,10 +26,11 @@ function Trip_Detail() {
 
   const dispatch = useDispatch();
 
-
   const fetchItinerary = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:5001/predef_itinerary?destination=${destination}`);
+      const response = await fetch(
+        `http://127.0.0.1:5001/predef_itinerary?destination=${destination}`
+      );
 
       if (response.ok) {
         const data = await response.json();
@@ -38,9 +40,9 @@ function Trip_Detail() {
         await response.json();
       }
     } catch (error) {
-      console.log('An error occurred');
+      console.log("An error occurred");
     }
-  }
+  };
 
   const fetchGPT = async () => {
     try {
@@ -69,6 +71,60 @@ function Trip_Detail() {
     // dispatch({ type: "SET_TRIP_DATA", payload: Plan1 });
   };
 
+  const [selectedState, setSelectedState] = useState(null);
+  const [options, setOptions] = useState([]);
+
+  const states = [
+    "Andaman and Nicobar Islands",
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chandigarh",
+    "Chhattisgarh",
+    "Dadra and Nagar Haveli",
+    "Daman and Diu",
+    "Delhi",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jammu and Kashmir",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Lakshadweep",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal",
+  ];
+
+  const convertedStates = states.map((state) => ({
+    value: state,
+    label: state,
+  }));
+
+  const onChange = (value) => {
+    setLocation(value);
+  };
+  const onSearch = (value) => {
+    setLocation(value);
+  };
+
   return (
     <div className="mp-input">
       <form className="mp-form" onSubmit={handleSubmit}>
@@ -85,12 +141,26 @@ function Trip_Detail() {
           </div>
           <div id="mp-div">
             <Location_Icon />
-            <input
+            {/* <input
               type="text"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               placeholder="Location"
               className="mp-form-input"
+            /> */}
+            <Select
+              className="mp-form-input"
+              showSearch
+              placeholder="Location"
+              optionFilterProp="children"
+              onChange={onChange}
+              onSearch={onSearch}
+              filterOption={(input, option) =>
+                (option?.label ?? "")
+                  .toLowerCase()
+                  .includes(input.toLowerCase())
+              }
+              options={convertedStates}
             />
           </div>
           <div id="mp-div">
@@ -149,7 +219,7 @@ function Trip_Detail() {
             </select>
           </div>
           <div id="mp-div">
-          <Child_Icon />
+            <Child_Icon />
             <select
               value={numChildren}
               onChange={(e) => setNumChildren(e.target.value)}

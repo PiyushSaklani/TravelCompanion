@@ -11,6 +11,8 @@ import speech_recognition as sr
 
 app = Flask(__name__)
 CORS(app)
+
+# Initialize OpenAI GPT-3.5 Turbo
 openai.api_key = "YOUR API KEY"
 model = "gpt-3.5-turbo"
 

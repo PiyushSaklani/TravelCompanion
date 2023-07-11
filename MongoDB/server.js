@@ -7,6 +7,7 @@ const register = require('./routes/users');
 const login = require('./routes/login');
 const add_list = require('./routes/add_list');
 const get_list = require('./routes/get_list');
+const delete_list = require('./routes/delete_list');
 
 const app = express();
 app.use(cors());
@@ -29,6 +30,7 @@ app.use('/register', register);
 app.use('/login', login);
 app.use('/add-list', add_list);
 app.use('/get-list', get_list);
+app.use('/delete-list', delete_list);
 
 app.listen(8000, () => {
   console.log('Server is running on port 8000');

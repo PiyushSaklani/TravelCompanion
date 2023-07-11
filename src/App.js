@@ -7,6 +7,7 @@ import Initial_Explore_Page from "./pages/initial-explore-page/initial_explore_p
 import SignInPage from "./pages/signin-page/signin_page";
 import SignUpPage from "./pages/signup-page/signup_page";
 import WISHLIST_PAGE from "./pages/wishlist-page/wishlist_page";
+import View_Page from "./pages/view_page/view_page";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/signin" element={<SignInPage />} />
           <Route exact path="/signup" element={<SignUpPage />} />
           <Route exact path="/wish-list" element={<WISHLIST_PAGE />} />
+          <Route exact path="/view" element={<View_Page />} />
         </Routes>
       </BrowserRouter>
     </div>
