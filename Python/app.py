@@ -31,11 +31,11 @@ def generate_itinerary():
         prompt = f"Pre-existing Itinerary: {summary}\n"
         prompt += f"Changes: {string}\n"
         if destination_changed:
-            prompt = f"Make itinerary for {num_days} days in {destination}\n"
+            prompt += f"Make itinerary for {num_days} days in {destination}\n"
         else:
-            prompt = f"Make itinerary for {num_days} days in {destination}\n"
+            prompt += f"Make itinerary for {num_days} days in {destination}\n"
             prompt += f" Earlier itinerary Summary: {summary}\n"
-        prompt += f"Changes: {string}\n"
+        # prompt += f"Changes: {string}\n"
         prompt += "Generate itinerary day wise in detail with headings like DAY 1: Arrival in Destination\n, DAY 2: Sightseeing in Destination\n, DAY 3: Departure from Destination\n"
         prompt += "Make sure the heading's DAY is in capital only rest everything normal\n"
         prompt += "Each line should have small paragraphic details\n"
@@ -77,10 +77,10 @@ def generate_itinerary():
             "num_days": num_days,
             "id": 9,
             "it": [],
-            "summary": [],
+            "summary": "",
             "header_image": ""
         }
-        response_data["summary"] = sum[1:]
+        response_data["summary"] = ' '.join(sum[1:])
         for i in range(num_days):
             day_data = {
                 "day": f"Day {i+1}",
