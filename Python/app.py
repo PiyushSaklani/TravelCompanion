@@ -12,8 +12,7 @@ import speech_recognition as sr
 app = Flask(__name__)
 CORS(app)
 
-# Initialize OpenAI GPT-3.5 Turbo
-openai.api_key = "YOUR API KEY"
+openai.api_key = "YOUR API KEY HERE"
 model = "gpt-3.5-turbo"
 
 @app.route('/gen_it', methods=['GET'])
@@ -30,7 +29,7 @@ def generate_itinerary():
             num_days = extracted_num_days
         destination_changed = (destination != request.args.get('destination'))
         prompt = f"Pre-existing Itinerary: {summary}\n"
-        prompt = f"Changes: {string}\n"
+        prompt += f"Changes: {string}\n"
         if destination_changed:
             prompt = f"Make itinerary for {num_days} days in {destination}\n"
         else:
@@ -57,6 +56,16 @@ def generate_itinerary():
         itinerary = response.choices[0].message['content'].strip()
         print(itinerary)
         itinerary_split = itinerary.split('DAY ')
+        
+        # itinerary_days = []
+        # num = [str(i) for i in range(1, 16)]
+        # for i in num:
+        #     pattern = re.compile(f'Day {i}', re.IGNORECASE)
+        #     if re.search(pattern, itinerary):
+        #         itinerary_days = re.split(pattern, itinerary)
+        #         break
+        # itinerary_split = [day.strip() for day in itinerary_days if day.strip()]
+
         # itinerary_split = re.split(r'DAY \d+:', itinerary, flags=re.IGNORECASE)
         for variation in ["SUMMARY:", "summary:", "Summary:"]:
             if variation in itinerary:
@@ -176,7 +185,7 @@ def initial_details():
 
 @app.route('/autocomplete', methods=['GET'])
 def autocomplete():
-    search_text = request.args.get('text')
+    # search_text = request.args.get('text')
     client = pymongo.MongoClient("mongodb://localhost:27017/") #add connection string
     db = client['Autofill']
     collection = db['countries']
@@ -187,9 +196,9 @@ def autocomplete():
         existing_country = collection.find_one({'name': country})
         if existing_country is None:
             collection.insert_one({'name': country})
-    query = { 'name': { '$regex': '^' + search_text, '$options': 'i' } }
-    countries = collection.find(query).limit(5)
-    suggestions = [country['name'] for country in countries]
+    # query = { 'name': { '$regex': '^' + search_text, '$options': 'i' } }
+    # countries = collection.find(query)#.limit(5)
+    suggestions = [country['name'] for country in collection.find({})]
     return jsonify(suggestions)
 
 if __name__ == '__main__':
