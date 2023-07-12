@@ -28,14 +28,12 @@ def generate_itinerary():
         if extracted_num_days:
             num_days = extracted_num_days
         destination_changed = (destination != request.args.get('destination'))
-        # prompt = f"Pre-existing Itinerary: {summary}\n"
         prompt = f"Changes: {string}\n"
         if destination_changed:
             prompt += f"Make itinerary for {num_days} days in {destination}\n"
         else:
             prompt += f"Make itinerary for {num_days} days in {destination}\n"
             prompt += f" Earlier itinerary Summary: {summary}\n"
-        # prompt += f"Changes: {string}\n"
         prompt += "Generate itinerary day wise in detail with headings like DAY 1: Arrival in Destination\n, DAY 2: Sightseeing in Destination\n, DAY 3: Departure from Destination\n"
         prompt += "Make sure the heading's DAY is in capital only rest everything normal\n"
         prompt += "Each line should have small paragraphic details\n"
@@ -66,7 +64,8 @@ def generate_itinerary():
         #         itinerary_days.extend(day_split)
         # print("it_day: ",itinerary_days)
         # itinerary_split = [day.strip() for day in itinerary_days if day.strip()]
-        # # print("it_split: ",itinerary_split)
+        # print("it_split: ",itinerary_split)
+        
         # # itinerary_split = re.split(r'DAY \d+:', itinerary, flags=re.IGNORECASE)
         for variation in ["SUMMARY:", "summary:", "Summary:"]:
             if variation in itinerary:
