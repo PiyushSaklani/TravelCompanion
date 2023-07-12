@@ -1,10 +1,12 @@
 .popup-main-div {
-  width: 100vw;
-  height: 100vh;
+  grid-row: 1/101;
+  grid-column: 1/101;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: red;
 }
 
 .popup-inner-div {

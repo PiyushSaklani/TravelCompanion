@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Rajdhani&family=Raleway:wght@400;700&family=Rubik:wght@900&family=Sacramento&family=Space+Grotesk&display=swap');
+.lp-main-div {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/l2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lg-inner-con{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lg-heading, .lg-subheading, .lg-heading2{
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.lg-heading{
+    font-size: 20px;
+}
+.lg-heading2{
+    font-weight: 800;
+    font-size: 46px;
+}
+.lg-subheading{
+    margin-top: 20px;
+}
+.lg-input-div{
+    margin-top: 100px;
+    width: 80%;
+}
+.input{
+    margin-bottom: 30px;
+    width: 90%;
+    padding-block: 10px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: 1px solid gray;
+}
+.lp-btn{
+    width: 92%;
+    background-color: #212529;
+    border-radius: 6px;
+    padding: 12px 10px;
+    margin-top: 40px;
+    border: none;
+    color: white;
+}
