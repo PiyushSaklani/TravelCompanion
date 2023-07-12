@@ -12,7 +12,7 @@ import speech_recognition as sr
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = "API_KEY"
 model = "gpt-3.5-turbo"
 
 @app.route('/gen_it', methods=['GET'])
@@ -28,8 +28,8 @@ def generate_itinerary():
         if extracted_num_days:
             num_days = extracted_num_days
         destination_changed = (destination != request.args.get('destination'))
-        prompt = f"Pre-existing Itinerary: {summary}\n"
-        prompt += f"Changes: {string}\n"
+        # prompt = f"Pre-existing Itinerary: {summary}\n"
+        prompt = f"Changes: {string}\n"
         if destination_changed:
             prompt += f"Make itinerary for {num_days} days in {destination}\n"
         else:
@@ -60,13 +60,14 @@ def generate_itinerary():
         # itinerary_days = []
         # num = [str(i) for i in range(1, 16)]
         # for i in num:
-        #     pattern = re.compile(f'Day {i}', re.IGNORECASE)
+        #     pattern = re.compile(f'Day {i}:', re.IGNORECASE)
         #     if re.search(pattern, itinerary):
-        #         itinerary_days = re.split(pattern, itinerary)
-        #         break
+        #         day_split = re.split(pattern, itinerary)
+        #         itinerary_days.extend(day_split)
+        # print("it_day: ",itinerary_days)
         # itinerary_split = [day.strip() for day in itinerary_days if day.strip()]
-
-        # itinerary_split = re.split(r'DAY \d+:', itinerary, flags=re.IGNORECASE)
+        # # print("it_split: ",itinerary_split)
+        # # itinerary_split = re.split(r'DAY \d+:', itinerary, flags=re.IGNORECASE)
         for variation in ["SUMMARY:", "summary:", "Summary:"]:
             if variation in itinerary:
                 sum = itinerary.split(variation)
@@ -107,7 +108,7 @@ def generate_itinerary():
                             if 'chatbot' in activity.lower() or 'chatgpt' in activity.lower():
                                 raise ValueError("Error: Invalid activity. Please try again.")
                     day_data['description'][a] = [
-                        activity + '<br>' for activity in day_activities[1:] if activity]
+                        activity for activity in day_activities[1:] if activity]
             response_data["it"].append(day_data)
         images = get_images(destination)
         for i, day in enumerate(response_data["it"]):
