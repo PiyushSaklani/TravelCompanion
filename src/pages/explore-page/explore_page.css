@@ -163,6 +163,10 @@
 .customize-field {
   margin-top: 20px;
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: aqua; */
 }
 .customize-field input {
   width: 350px;
@@ -176,7 +180,7 @@
   border-radius: 5px;
   border: none;
   color: #f8f9fa;
-  margin: 0 20px;
+  /* margin: 0 20px; */
   background-color: #212529;
 }
 .include-div {

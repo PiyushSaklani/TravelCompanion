@@ -9,6 +9,7 @@ import loading_gif from "../../images/loading.gif";
 import PopUp from "../../components/popup/popup";
 import { useNavigate } from "react-router-dom";
 import App_Bar from "../../components/appbar/appbar";
+import Mic_Icon from "../../icons/svg/mic_icon"
 
 function Explore_Page() {
   const navigate = useNavigate();
@@ -182,6 +183,7 @@ function Explore_Page() {
                   value={customizationInput}
                   onChange={handleInputChange}
                 />
+                <Mic_Icon />
                 <button onClick={handleButtonClick}>Customise</button>
               </div>
             )}
