@@ -209,11 +209,13 @@
   margin-bottom: 20px;
 }
 .ep-deal-div {
-  width: 440px;
-  height: 170px;
+  width: 90%;
+  height: 80%;
   /* background-color: red; */
   margin-bottom: 20px;
-  background-image: url("../../images/new.png");
+  background-image: url("../../images/Frame1.png");
+  object-fit: scale-down;
+  object-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
