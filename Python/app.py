@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Initialize OpenAI GPT-3.5 Turbo
-openai.api_key = "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"
+openai.api_key = "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"
 model = "gpt-3.5-turbo"
 
 

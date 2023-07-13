@@ -9,9 +9,12 @@ import SignUpPage from "./pages/signup-page/signup_page";
 import WISHLIST_PAGE from "./pages/wishlist-page/wishlist_page";
 import View_Page from "./pages/view_page/view_page";
 
+
+
 function App() {
   useEffect(() => {
     document.title = 'Travel Companion'; // Set the new title here
+
   }, []);
   return (
     <div className="App">

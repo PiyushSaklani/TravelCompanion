@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const logger = require('./logger');
+const hostName = require('./hostname')
 
 const register = require('./routes/users');
 const login = require('./routes/login');
@@ -19,11 +21,13 @@ mongoose.connect('mongodb://127.0.0.1:27017/travel', {
 
 const db = mongoose.connection;
 
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.on('error', () => {
+  logger.error(`${hostName} Error MongoDB connection error`);
+});
 db.on('open', () => {
+  logger.info(`${hostName} Info MongoDB connection established successfully`);
   console.log('MongoDB connection established successfully');
 });
-
 app.use(bodyParser.json());
 
 app.use('/register', register);
@@ -33,5 +37,6 @@ app.use('/get-list', get_list);
 app.use('/delete-list', delete_list);
 
 app.listen(8000, () => {
+  logger.info(`${hostName} Info Server is running on port 8000`);
   console.log('Server is running on port 8000');
 });
