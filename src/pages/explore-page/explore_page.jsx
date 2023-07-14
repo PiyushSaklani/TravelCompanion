@@ -10,7 +10,10 @@ import PopUp from "../../components/popup/popup";
 import { useNavigate } from "react-router-dom";
 import App_Bar from "../../components/appbar/appbar";
 import Mic_Icon from "../../icons/svg/mic_icon";
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
+import Spinner_Icon from "../../icons/svg/spinner_icon";
 
 function Explore_Page() {
   const navigate = useNavigate();
@@ -32,8 +35,10 @@ function Explore_Page() {
   const [showMenu, setShowMenu] = useState(false);
   const [details, setDetails] = useState(null);
   const [error, setError] = useState(null);
+  const [mic, setMic] = useState(true);
 
-  const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition()
+  const { transcript, browserSupportsSpeechRecognition } =
+    useSpeechRecognition();
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -58,11 +63,11 @@ function Explore_Page() {
 
   useEffect(() => {
     // console.log(transcript)
-    setCustomizationInput(transcript)
-  },[transcript])
+    setCustomizationInput(transcript);
+  }, [transcript]);
 
   if (!browserSupportsSpeechRecognition) {
-    return null
+    return null;
   }
 
   const saveList = async (json, destination, user_id) => {
@@ -121,7 +126,8 @@ function Explore_Page() {
 
   const handleButtonClick = async () => {
     setLoading(true);
-    SpeechRecognition.stopListening()
+    setMic(true);
+    SpeechRecognition.stopListening();
     // console.log(tripData.summary);
     await fetchItinerary(
       customizationInput,
@@ -141,7 +147,7 @@ function Explore_Page() {
       });
     // Perform some action when the button is clicked
     // console.log("Button clicked!");
-    setCustomizationInput("")
+    setCustomizationInput("");
   };
 
   const handlePopup = () => {
@@ -196,8 +202,14 @@ function Explore_Page() {
                   value={customizationInput}
                   onChange={handleInputChange}
                 />
-                <div onClick={() => {SpeechRecognition.startListening()}}>
-                  <Mic_Icon />
+                <div
+                  onClick={() => {
+                    SpeechRecognition.startListening();
+                    setMic(false);
+                  }}
+                >
+                  {mic && <Mic_Icon />}
+                  {!mic && <Spinner_Icon />}
                 </div>
                 <button onClick={handleButtonClick}>Customise</button>
               </div>
@@ -206,30 +218,30 @@ function Explore_Page() {
         </div>
         {/* <div className="ep-div-2">{transcript}</div> */}
         {tripData["it"].map((day, index) => (
-  <div className="trip-div-main-box" key={index}>
-    <div className="trip-div-inner-box">
-      <h2>{day.day}</h2>
-      <div className="inner-detil-div">
-        <div className="trip-detail-div">
-          {day.activities.map((activity, activityIndex) => (
-            <div key={activityIndex}>
-              <div className="location-name">{activity}</div>
-              <div className="location-description">
-                {day.description[activity]}
+          <div className="trip-div-main-box" key={index}>
+            <div className="trip-div-inner-box">
+              <h2>{day.day}</h2>
+              <div className="inner-detil-div">
+                <div className="trip-detail-div">
+                  {day.activities.map((activity, activityIndex) => (
+                    <div key={activityIndex}>
+                      <div className="location-name">{activity}</div>
+                      <div className="location-description">
+                        {day.description[activity]}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div
+                  className="place-img"
+                  style={{
+                    backgroundImage: `url(${day.image})`,
+                  }}
+                ></div>
               </div>
             </div>
-          ))}
-        </div>
-        <div
-          className="place-img"
-          style={{
-            backgroundImage: `url(${day.image})`,
-          }}
-        ></div>
-      </div>
-    </div>
-  </div>
-))}
+          </div>
+        ))}
         <div className="include-div">
           <div className="include-inner-div">
             <h2>What's Included</h2>

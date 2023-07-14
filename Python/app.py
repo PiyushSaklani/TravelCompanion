@@ -7,7 +7,6 @@ import json
 import pymongo
 from flask_cors import CORS
 import spacy
-import speech_recognition as sr
 
 app = Flask(__name__)
 CORS(app)
@@ -153,7 +152,7 @@ def extract_information(string):
 def predef_itinerary():
     try:
         destination = request.args.get('destination')
-        with open('Python\predefit.json') as json_file:
+        with open('Python/predefit.json') as json_file:
             data = json.load(json_file)
             if destination in data:
                 return jsonify(data[destination])
@@ -166,7 +165,7 @@ def predef_itinerary():
 @app.route('/details', methods=['GET'])
 def details():
     try:
-        with open('Python\details.json') as json_file:
+        with open('Python/details.json') as json_file:
             data = json.load(json_file)
             return jsonify(data)
     except Exception as e:
@@ -176,7 +175,7 @@ def details():
 @app.route('/initial_details', methods=['GET'])
 def initial_details():
     try:
-        with open('Python\initial_details.json') as json_file:
+        with open('Python/initial_details.json') as json_file:
             data = json.load(json_file)
             return jsonify(data)
     except Exception as e:
@@ -190,7 +189,7 @@ def autocomplete():
     db = client['Autofill']
     collection = db['countries']
     udb = client['user_database']
-    with open('Python\country_name.txt', 'r') as file:
+    with open('Python/country_name.txt', 'r') as file:
         country_names = file.read().splitlines()
     for country in country_names:
         existing_country = collection.find_one({'name': country})
