@@ -23,8 +23,24 @@ function Trip_Detail() {
   const [search, setSearch] = useState("");
   const [images, setImages] = useState([]);
   const [gptData, setGptData] = useState();
+  const [states, setStates] = useState([]);
+
 
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:5001/autocomplete');
+        const data = await response.json();
+        setStates(data);
+      } catch (error) {
+        console.error('Error fetching autocomplete data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const fetchItinerary = async () => {
     try {
@@ -74,44 +90,44 @@ function Trip_Detail() {
   const [selectedState, setSelectedState] = useState(null);
   const [options, setOptions] = useState([]);
 
-  const states = [
-    "Andaman and Nicobar Islands",
-    "Andhra Pradesh",
-    "Arunachal Pradesh",
-    "Assam",
-    "Bihar",
-    "Chandigarh",
-    "Chhattisgarh",
-    "Dadra and Nagar Haveli",
-    "Daman and Diu",
-    "Delhi",
-    "Goa",
-    "Gujarat",
-    "Haryana",
-    "Himachal Pradesh",
-    "Jammu and Kashmir",
-    "Jharkhand",
-    "Karnataka",
-    "Kerala",
-    "Lakshadweep",
-    "Madhya Pradesh",
-    "Maharashtra",
-    "Manipur",
-    "Meghalaya",
-    "Mizoram",
-    "Nagaland",
-    "Odisha",
-    "Puducherry",
-    "Punjab",
-    "Rajasthan",
-    "Sikkim",
-    "Tamil Nadu",
-    "Telangana",
-    "Tripura",
-    "Uttar Pradesh",
-    "Uttarakhand",
-    "West Bengal",
-  ];
+  // const states = [
+  //   "Andaman and Nicobar Islands",
+  //   "Andhra Pradesh",
+  //   "Arunachal Pradesh",
+  //   "Assam",
+  //   "Bihar",
+  //   "Chandigarh",
+  //   "Chhattisgarh",
+  //   "Dadra and Nagar Haveli",
+  //   "Daman and Diu",
+  //   "Delhi",
+  //   "Goa",
+  //   "Gujarat",
+  //   "Haryana",
+  //   "Himachal Pradesh",
+  //   "Jammu and Kashmir",
+  //   "Jharkhand",
+  //   "Karnataka",
+  //   "Kerala",
+  //   "Lakshadweep",
+  //   "Madhya Pradesh",
+  //   "Maharashtra",
+  //   "Manipur",
+  //   "Meghalaya",
+  //   "Mizoram",
+  //   "Nagaland",
+  //   "Odisha",
+  //   "Puducherry",
+  //   "Punjab",
+  //   "Rajasthan",
+  //   "Sikkim",
+  //   "Tamil Nadu",
+  //   "Telangana",
+  //   "Tripura",
+  //   "Uttar Pradesh",
+  //   "Uttarakhand",
+  //   "West Bengal",
+  // ];
 
   const convertedStates = states.map((state) => ({
     value: state,

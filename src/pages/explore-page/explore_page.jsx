@@ -36,6 +36,7 @@ function Explore_Page() {
   const [details, setDetails] = useState(null);
   const [error, setError] = useState(null);
   const [mic, setMic] = useState(true);
+  const [gptcall, setGptcall] = useState(false);
 
   const { transcript, browserSupportsSpeechRecognition } =
     useSpeechRecognition();
@@ -126,6 +127,7 @@ function Explore_Page() {
 
   const handleButtonClick = async () => {
     setLoading(true);
+    setGptcall(true)
     setMic(true);
     SpeechRecognition.stopListening();
     // console.log(tripData.summary);
@@ -189,9 +191,9 @@ function Explore_Page() {
             <div className="ep-place-title">
               Discover {tripData.destination}'s Charm
             </div>
-            {/* <div className="ep-place-new-cost">
+            {!gptcall&&<div className="ep-place-new-cost">
               Rs. {initial_trip_data[id]["cost"]}
-            </div> */}
+            </div>}
             {loading ? (
               <img className="loading-gif" src={loading_gif} alt="GIF" />
             ) : (
