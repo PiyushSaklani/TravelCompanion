@@ -9,6 +9,8 @@ import loading_gif from "../../images/loading.gif";
 import PopUp from "../../components/popup/popup";
 import { useNavigate } from "react-router-dom";
 import App_Bar from "../../components/appbar/appbar";
+import Mic_Icon from "../../icons/svg/mic_icon";
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 
 function Explore_Page() {
   const navigate = useNavigate();
@@ -26,43 +28,12 @@ function Explore_Page() {
   const initial_trip_data = useSelector((state) => state.initial_trip_data);
   const [customizationInput, setCustomizationInput] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const saveList = async (json, destination, user_id) => {
-    try {
-      const response = await axios.post("http://localhost:8000/add-list", {
-        json,
-        destination,
-        user_id,
-      });
-      return response.data;
-    } catch (error) {
-      console.error(error);
-      throw error;
-    }
-  };
-
-  const handleSaveList = async() => {
-    if(userId){
-      await saveList(tripData, tripData.destination, userId);
-      setShowPopUp(true);
-    }else{
-      navigate("/signin")
-    }
-  };
-
-  const handleInputChange = (event) => {
-    setCustomizationInput(event.target.value);
-  };
-
   const [tripData, setTrip_detail] = useState(null);
-
   const [showMenu, setShowMenu] = useState(false);
-  function handle_menubtn() {
-    setShowMenu(!showMenu);
-  }
-
   const [details, setDetails] = useState(null);
   const [error, setError] = useState(null);
+
+  const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition()
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -83,7 +54,43 @@ function Explore_Page() {
     };
 
     fetchDetails();
-  }, []);
+  }, [destination, days]);
+
+  useEffect(() => {
+    // console.log(transcript)
+    setCustomizationInput(transcript)
+  },[transcript])
+
+  if (!browserSupportsSpeechRecognition) {
+    return null
+  }
+
+  const saveList = async (json, destination, user_id) => {
+    try {
+      const response = await axios.post("http://localhost:8000/add-list", {
+        json,
+        destination,
+        user_id,
+      });
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  };
+
+  const handleSaveList = async () => {
+    if (userId) {
+      await saveList(tripData, tripData.destination, userId);
+      setShowPopUp(true);
+    } else {
+      navigate("/signin");
+    }
+  };
+
+  const handleInputChange = (event) => {
+    setCustomizationInput(event.target.value);
+  };
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -114,7 +121,8 @@ function Explore_Page() {
 
   const handleButtonClick = async () => {
     setLoading(true);
-    console.log(tripData.summary);
+    SpeechRecognition.stopListening()
+    // console.log(tripData.summary);
     await fetchItinerary(
       customizationInput,
       tripData.destination,
@@ -132,7 +140,8 @@ function Explore_Page() {
         setLoading(false);
       });
     // Perform some action when the button is clicked
-    console.log("Button clicked!");
+    // console.log("Button clicked!");
+    setCustomizationInput("")
   };
 
   const handlePopup = () => {
@@ -150,8 +159,13 @@ function Explore_Page() {
           </div>
           <div className="popupcontent">
             <div className="popupheading">Hello, User</div>
-            <div className="popupsubheading">Your vacation plan has been safely stored in the yourlist.</div>
-            <div className="popupsubheading">After calculating all the expenses and other details, our team will contact you.</div>
+            <div className="popupsubheading">
+              Your vacation plan has been safely stored in the yourlist.
+            </div>
+            <div className="popupsubheading">
+              After calculating all the expenses and other details, our team
+              will contact you.
+            </div>
           </div>
         </div>
       )}
@@ -182,54 +196,53 @@ function Explore_Page() {
                   value={customizationInput}
                   onChange={handleInputChange}
                 />
+                <div onClick={() => {SpeechRecognition.startListening()}}>
+                  <Mic_Icon />
+                </div>
                 <button onClick={handleButtonClick}>Customise</button>
               </div>
             )}
           </div>
         </div>
-        {/* <div className="ep-div-2">{dayPlans}</div> */}
+        {/* <div className="ep-div-2">{transcript}</div> */}
         {tripData["it"].map((day, index) => (
-          <div className="trip-div-main-box">
-            <div className="trip-div-inner-box" key={index}>
-              <h2>{day.day}</h2>
-              <div className="inner-detil-div">
-                <div className="trip-detail-div">
-                  {day.activities.map((activity, index) => (
-                    <div>
-                      <div className="location-name" key={index}>
-                        {activity}
-                      </div>
-                      <div className="location-description" key={index}>
-                        {day.description[activity]}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div
-                  className="place-img"
-                  style={{
-                    backgroundImage: `url(${day.image})`,
-                  }}
-                ></div>
+  <div className="trip-div-main-box" key={index}>
+    <div className="trip-div-inner-box">
+      <h2>{day.day}</h2>
+      <div className="inner-detil-div">
+        <div className="trip-detail-div">
+          {day.activities.map((activity, activityIndex) => (
+            <div key={activityIndex}>
+              <div className="location-name">{activity}</div>
+              <div className="location-description">
+                {day.description[activity]}
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div
+          className="place-img"
+          style={{
+            backgroundImage: `url(${day.image})`,
+          }}
+        ></div>
+      </div>
+    </div>
+  </div>
+))}
         <div className="include-div">
           <div className="include-inner-div">
             <h2>What's Included</h2>
             <div>
               ✓ Sightseeing as per the itinerary
-              <br></br>✓ All Transfers, excursions & sightseeing as per the
+              <br />✓ All Transfers, excursions & sightseeing as per the
               itinerary by ac car
-              <br></br>✓ All toll taxes, parking fees, Fuel and driver's
-              allowances
-              <br></br>✓ Welcome drink on arrival
-              <br></br>✓ All Transport & Hotels Related Taxes
+              <br />✓ All toll taxes, parking fees, Fuel and driver's allowances
+              <br />✓ Welcome drink on arrival
+              <br />✓ All Transport & Hotels Related Taxes
             </div>
           </div>
         </div>
-        {/* https://www.google.com/travel/flights */}
         <button
           className="confirm-btn"
           onClick={() => {

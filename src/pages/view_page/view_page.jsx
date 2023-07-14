@@ -187,7 +187,19 @@ function View_Page() {
                         {activity}
                       </div>
                       <div className="location-description" key={index}>
-                        {day.description[activity]}
+                        {Array.isArray(day.description[activity]) ? (
+                          day.description[activity].map((descriptionLine, index) => (
+                            <React.Fragment key={index}>
+                              {descriptionLine}
+                              <br />
+                            </React.Fragment>
+                          ))
+                        ) : (
+                          <React.Fragment>
+                            {day.description[activity]}
+                            <br />
+                          </React.Fragment>
+                        )}
                       </div>
                     </div>
                   ))}

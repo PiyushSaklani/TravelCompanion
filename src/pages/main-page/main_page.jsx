@@ -95,10 +95,20 @@ function MAIN_PAGE() {
                     <Train_Icon />
                   </div>
                   <div id="icons"
+                  onClick={() => {
+                    window.open(
+                      "https://www.makemytrip.com/bus-tickets/"
+                    );
+                  }}
                   >
                     <Bus_Icon />
                   </div>
-                  <div id="icons">
+                  <div id="icons"
+                  onClick={() => {
+                    window.open(
+                      "https://www.makemytrip.com/hotels/"
+                    );
+                  }}>
                     <Hotel_Icon />
                   </div>
                 </div>
