@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const List = require("../models/List");
+const Notify = require("../models/Notify");
 const logger = require('../logger');
 const hostName = require('../hostname')
 
@@ -11,25 +11,25 @@ router.delete("/:id", async (req, res) => {
     console.log(id)
 
     // Find and delete the document that matches the given id
-    const lists = await List.find({ _id:id });
-    console.log(lists)
+    const notify = await Notify.find({ _id:id });
+    console.log(notify)
 
-    const deletedList = await List.findOneAndDelete({ _id:id });
+    const deletedList = await Notify.findOneAndDelete({ _id:id });
 
     if (deletedList) {
       res.json({
-        message: "List deleted successfully",
+        message: "Notify deleted successfully",
         deletedList,
       });
-      logger.info(`${hostName} Info List deleted successfully : ${id}`);
+      logger.info(`${hostName} Info Notify deleted successfully : ${id}`);
     } else {
-      res.status(404).json({ message: "List not found" });
-      logger.error(`${hostName} Error List not found : ${id}`);
+      res.status(404).json({ message: "Notify not found" });
+      logger.error(`${hostName} Error Notify not found : ${id}`);
     }
   } catch (error) {
     console.error(error.message);
     res.status(500).json({ error: error.message });
-    logger.error(`${hostName} Error while finding List : ${error.message}`);
+    logger.error(`${hostName} Error while finding Notify : ${error.message}`);
   }
 });
 

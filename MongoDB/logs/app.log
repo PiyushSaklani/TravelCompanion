@@ -1,4 +1,164 @@
-[2023-07-13T16:26:32.330] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
-[2023-07-13T16:26:32.336] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
-[2023-07-14T08:12:38.331] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
-[2023-07-14T08:12:38.340] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-19T18:28:01.298] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-19T18:28:01.324] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-19T21:45:22.749] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T04:17:41.119] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:17:59.086] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:20:06.500] [ERROR] default - Piyushs-MacBook-Air.local Error Login fail user not found
+[2023-07-20T08:20:21.067] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:21:21.926] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:21:21.931] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:22:39.855] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:28:53.607] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:28:57.587] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:32:32.762] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:32:32.768] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:34:35.004] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:34:35.010] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:34:44.778] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:34:44.784] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:34:56.354] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:34:56.364] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:34:58.908] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:34:58.913] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:35:04.495] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:35:04.501] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:35:10.445] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:35:10.450] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:35:12.226] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:35:12.232] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:43:58.054] [INFO] default - Piyushs-MacBook-Air.local Info Server is running on port 8000
+[2023-07-20T08:43:58.060] [INFO] default - Piyushs-MacBook-Air.local Info MongoDB connection established successfully
+[2023-07-20T08:44:19.536] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:47:22.745] [INFO] default - Piyushs-MacBook-Air.local Info Notify added successfully
+[2023-07-20T08:47:29.238] [INFO] default - Piyushs-MacBook-Air.local Info Notify added successfully
+[2023-07-20T08:47:32.608] [INFO] default - Piyushs-MacBook-Air.local Info Notify added successfully
+[2023-07-20T08:48:30.698] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T08:48:30.700] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T08:48:50.570] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:48:50.619] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:48:50.627] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:49:40.621] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:49:41.592] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:49:47.620] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:50:18.597] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:50:24.503] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:50:33.104] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T08:50:33.113] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T08:50:50.109] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:50:50.161] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:50:50.164] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:01.595] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:09.590] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:10.589] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:12.588] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:14.589] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:16.594] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:32.596] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:34.134] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:51:53.016] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:01.597] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:11.592] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:13.595] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:14.588] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:18.629] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:25.966] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:39.614] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:42.586] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:43.953] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:50.971] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:52:58.929] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:54:14.627] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:54:14.628] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:55:58.611] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:03.586] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:05.582] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:08.586] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:10.434] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:23.594] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:45.596] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:47.581] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:49.580] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:51.582] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:53.588] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:56:56.580] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:00.583] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:13.599] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:29.594] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:36.635] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:36.636] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:38.580] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:44.606] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:57:47.934] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:00.628] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:12.584] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:13.578] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:14.669] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:32.582] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:37.999] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:45.579] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:50.592] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:58:54.578] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:59:50.019] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:59:50.077] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T08:59:50.079] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:01.576] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:03.173] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:26.593] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:29.933] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:50.062] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:56.580] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:58.579] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:00:59.583] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:01:03.576] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:01:09.572] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:01:10.935] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:01:18.574] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:01:27.573] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:01:43.588] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:02:02.594] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:02:09.139] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:02:51.575] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:02:51.577] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:03:24.737] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:03:29.762] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:03:52.770] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:03:56.740] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:04:05.738] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:04:08.731] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:04:14.733] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:04:46.759] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:04:49.737] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:04:53.733] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:04:55.979] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:05:03.952] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:05:17.234] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:05:17.278] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:05:17.279] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:05:28.397] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:05:28.398] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:05:40.925] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:05:40.973] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:05:40.976] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:05:56.733] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:05:59.732] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:06:04.470] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:07:40.944] [INFO] default - Piyushs-MacBook-Air.local Info List found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:07:40.946] [INFO] default - Piyushs-MacBook-Air.local Info List found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:07:42.404] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:07:42.405] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:08:10.745] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:08:16.268] [INFO] default - Piyushs-MacBook-Air.local Info Notify deleted successfully : 64b8a74cb441a8a59b8ddb79
+[2023-07-20T09:08:16.273] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:11:42.327] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:11:49.323] [ERROR] default - Piyushs-MacBook-Air.local Error Notify not found : null
+[2023-07-20T09:12:06.589] [INFO] default - Piyushs-MacBook-Air.local Info Login successful : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:12:10.676] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:14:03.371] [INFO] default - Piyushs-MacBook-Air.local Info List added successfully
+[2023-07-20T09:14:03.390] [INFO] default - Piyushs-MacBook-Air.local Info Notify added successfully
+[2023-07-20T09:14:06.440] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:14:15.345] [INFO] default - Piyushs-MacBook-Air.local Info List found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:14:15.358] [INFO] default - Piyushs-MacBook-Air.local Info List found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:14:20.406] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:14:20.407] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7
+[2023-07-20T09:14:24.713] [INFO] default - Piyushs-MacBook-Air.local Info Notify deleted successfully : 64b8ad83b441a8a59b8ddbf7
+[2023-07-20T09:14:24.724] [INFO] default - Piyushs-MacBook-Air.local Info Notify found : 64a6375cc3a3793ca50797e7

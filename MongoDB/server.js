@@ -10,6 +10,9 @@ const login = require('./routes/login');
 const add_list = require('./routes/add_list');
 const get_list = require('./routes/get_list');
 const delete_list = require('./routes/delete_list');
+const add_notify = require('./routes/add_Notify');
+const delete_notify = require('./routes/delete_Notify');
+const get_notify = require('./routes/get_Notify');
 
 const app = express();
 app.use(cors());
@@ -35,6 +38,9 @@ app.use('/login', login);
 app.use('/add-list', add_list);
 app.use('/get-list', get_list);
 app.use('/delete-list', delete_list);
+app.use('/add-notify', add_notify);
+app.use('/delete-notify', delete_notify);
+app.use('/get-notify', get_notify);
 
 app.listen(8000, () => {
   logger.info(`${hostName} Info Server is running on port 8000`);

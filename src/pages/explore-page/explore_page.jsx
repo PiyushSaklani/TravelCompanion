@@ -73,7 +73,7 @@ function Explore_Page() {
 
   const saveList = async (json, destination, user_id) => {
     try {
-      const response = await axios.post("http://localhost:8000/add-list", {
+      const response = await axios.post(`http://localhost:8000/add-list`, {
         json,
         destination,
         user_id,
@@ -168,12 +168,12 @@ function Explore_Page() {
           <div className="popupcontent">
             <div className="popupheading">Hello, User</div>
             <div className="popupsubheading">
-              Your vacation plan has been safely stored in the yourlist.
+            Thank you for booking your trip with us! We are excited to assist you with your travel arrangements.  we will reach out to you promptly with confirmation and other details, once our team reviewed your booking
             </div>
-            <div className="popupsubheading">
+            {/* <div className="popupsubheading">
               After calculating all the expenses and other details, our team
               will contact you.
-            </div>
+            </div> */}
           </div>
         </div>
       )}

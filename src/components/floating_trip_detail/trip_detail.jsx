@@ -134,11 +134,18 @@ function Trip_Detail() {
     label: state,
   }));
 
-  const onChange = (value) => {
+  const onChangeL = (value) => {
     setLocation(value);
   };
-  const onSearch = (value) => {
+  const onSearchL = (value) => {
     setLocation(value);
+  };
+
+  const onChangeD = (value) => {
+    setDestination(value)
+  };
+  const onSearchD = (value) => {
+    setDestination(value)
   };
 
   return (
@@ -167,10 +174,10 @@ function Trip_Detail() {
             <Select
               className="mp-form-input"
               showSearch
-              placeholder="Location"
+              placeholder="Current Location"
               optionFilterProp="children"
-              onChange={onChange}
-              onSearch={onSearch}
+              onChange={onChangeL}
+              onSearch={onSearchL}
               filterOption={(input, option) =>
                 (option?.label ?? "")
                   .toLowerCase()
@@ -181,13 +188,27 @@ function Trip_Detail() {
           </div>
           <div id="mp-div">
             <Destination_Icon />
-            <input
+            <Select
+              className="mp-form-input"
+              showSearch
+              placeholder="Destination"
+              optionFilterProp="children"
+              onChange={onChangeD}
+              onSearch={onSearchD}
+              filterOption={(input, option) =>
+                (option?.label ?? "")
+                  .toLowerCase()
+                  .includes(input.toLowerCase())
+              }
+              options={convertedStates}
+            />
+            {/* <input
               type="text"
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
               placeholder="Destination"
               className="mp-form-input"
-            />
+            /> */}
           </div>
           <div id="mp-div">
             <Duraction_Icon />

@@ -11,7 +11,7 @@ import spacy
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "API_KEY"
+openai.api_key = "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"
 model = "gpt-3.5-turbo"
 
 @app.route('/gen_it', methods=['GET'])

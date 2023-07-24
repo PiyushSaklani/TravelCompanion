@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const List = require("../models/List");
+const Notify = require("../models/Notify");
 const logger = require('../logger');
 const hostName = require('../hostname')
 
@@ -10,29 +10,29 @@ router.post("/", async (req, res) => {
     const { id } = req.body;
 
     // Find all documents that match the given id
-    const lists = await List.find({ user_id:id });
+    const notifies = await Notify.find({ user_id:id });
 
-    if (lists.length > 0) {
-      const data = lists.map((list) => ({
-        list_id: list._id,
-        user_id: list.user_id,
-        destination: list.destination,
-        json: list.json,
+    if (notifies.length > 0) {
+      const data = notifies.map((notify) => ({
+        notify_id: notify._id,
+        user_id: notify.user_id,
+        note: notify.note,
+        time: notify.time,
       }));
 
       res.json({
         data,
         authenticated: true,
       });
-      logger.info(`${hostName} Info List found : ${id}`);
+      logger.info(`${hostName} Info Notify found : ${id}`);
     } else {
       res.json({ authenticated: false });
-      logger.error(`${hostName} Error List not found : ${id}`);
+      logger.error(`${hostName} Error Notify not found : ${id}`);
     }
   } catch (error) {
     console.error(error.message);
     res.status(500).json({ error: error.message });
-    logger.error(`${hostName} Error while finding List : ${error.message}`);
+    logger.error(`${hostName} Error while finding Notify : ${error.message}`);
   }
 });
 
