@@ -405,6 +405,193 @@
       "summary": "day 1 - Arrive Tokyo, Meiji Shrine, Harajuku District, Shibuya Crossing, Traditional Japanese dinner, day 2- Tsukiji Fish Market, Asakusa district, Senso-ji Temple, Ueno Park, Tokyo Skytree, Sushi for dinner, day 3 - tokyo to kyoto, fushimi inari taisha, arashiyama bamboo grove, kinkaku- ji, traditional kaiseki dinner, day 4 - Nijo Castle, Kiyomizu-dera Temple, Higashiyama District, Tea Ceremony, kyoto style ramen for dinner, Day 5 - Kyoto to Osaka, Osaka Castle, Dotonbori district, street food at kuromon ichiba market, namba nightlife, dinner at local izakaya, day 6 - Universal Studios Japan, Umeda Sky Building, Shinsaibashi district, Osaka Aquarium Kaiyukan, okonomiyaki for dinner, day 7 - Nara Park, Todai-ji Temple, Kasuga Taisha Shrine, farewell dinner in Osaka"
     }
   },
+  "Malaysia":{
+    "3": {
+      "destination": "Malaysia",
+      "header_image":"https://images.unsplash.com/photo-1595128727212-7af5764a163f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+      "num_days": 3,
+      "id": 10,
+      "it": [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Kuala Lumpur",
+            "Check into hotel",
+            "Visit Petronas Twin Towers",
+            "Explore Batu Caves",
+            "Enjoy a traditional Malaysian dinner"
+          ],
+          "description": {
+            "Arrive in Kuala Lumpur":
+              "Welcome to Kuala Lumpur, the vibrant capital of Malaysia! As you arrive in this bustling city, you'll be greeted by a perfect blend of modernity and tradition. Take a moment to soak in the lively atmosphere and get ready for an unforgettable journey.",
+            "Check into hotel":
+              "After your arrival, make your way to your hotel in Kuala Lumpur. Check-in and get settled into your comfortable accommodation, where you can relax and recharge for the adventures that await you.",
+            "Visit Petronas Twin Towers":
+              "Marvel at the iconic Petronas Twin Towers, a symbol of Kuala Lumpur's modernity and prosperity. Admire the impressive architecture of this 88-story twin structure, which was once the tallest building in the world. Capture breathtaking views of the city from the observation deck and immerse yourself in the grandeur of this architectural marvel.",
+            "Explore Batu Caves":
+              "Embark on a spiritual journey to Batu Caves, a limestone hill home to a series of caves and Hindu temples. Climb the 272 steps to the main cave and marvel at the impressive golden statue of Lord Murugan. Explore the cave complex and discover the rich history and cultural significance of this iconic landmark.",
+            "Enjoy a traditional Malaysian dinner":
+              "Delight your taste buds with a traditional Malaysian dinner, where you'll savor the exquisite flavors of authentic cuisine. Indulge in a culinary journey, whether it's savoring nasi lemak, satay, or a comforting bowl of laksa, and appreciate the artistry and attention to detail that goes into each dish."
+          },
+          "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFsYXlzaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit the National Mosque of Malaysia",
+            "Explore the Islamic Arts Museum",
+            "Discover the Perdana Botanical Gardens",
+            "Visit the National Museum of Malaysia",
+            "Enjoy a traditional Malay dinner"
+          ],
+          "description": {
+            "Visit the National Mosque of Malaysia":
+              "Embark on a spiritual journey to the National Mosque of Malaysia, a beautiful mosque that serves as a symbol of the country's Islamic heritage. Admire the impressive architecture of this modern mosque, which can accommodate up to 15,000 worshippers. Explore the serene surroundings and immerse yourself in the spiritual ambiance.",
+            "Explore the Islamic Arts Museum":
+              "Discover the rich cultural heritage of Islam at the Islamic Arts Museum, one of the largest museums in Southeast Asia. Explore the impressive collection of Islamic art, artifacts, and manuscripts from around the world. Admire the intricate details of the exhibits and learn about the history and significance of Islamic art.",
+            "Discover the Perdana Botanical Gardens":
+              "Escape the urban hustle and find tranquility in the Perdana Botanical Gardens, a vast green oasis in the heart of Kuala Lumpur. Take a leisurely stroll through its serene pathways, enjoy the picturesque scenery, and visit attractions like the National Monument, National Planetarium, and Butterfly Park.",
+            "Visit the National Museum of Malaysia":
+              "Step into history as you explore the National Museum of Malaysia, a museum dedicated to the rich history and cultural heritage of the country. Discover the impressive collection of artifacts, exhibits, and historical treasures that showcase the diverse cultures of Malaysia. Learn about the country's storied past and immerse yourself in its fascinating history.",
+            "Enjoy a traditional Malay dinner":
+              "Indulge in a memorable dining experience with a traditional Malay dinner. Choose from a wide range of culinary options, including authentic Malay cuisine, international flavors, or local specialties. Immerse yourself in the warm and welcoming ambiance of a traditional Malay restaurant, and savor the authentic flavors of Malaysia's culinary traditions."
+          },
+          "image": "https://images.unsplash.com/photo-1546369527-f5279d232524?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1hbGF5c2lhJTIwbmF0aW9uYWwlMjBtb3NxdWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Visit the Kuala Gandah Elephant Sanctuary",
+            "Shop for souvernirs at Central Market",
+            "Explore the Thean Hou Temple",
+            "Enjoy a farewell dinner in Kuala Lumpur"
+          ],
+          "description": {
+            "Visit the Kuala Gandah Elephant Sanctuary":
+              "Embark on a memorable journey to the Kuala Gandah Elephant Sanctuary, a conservation center dedicated to protecting and rehabilitating elephants. Learn about the conservation efforts and the importance of protecting these majestic creatures. Observe the elephants in their natural habitat and have the opportunity to feed and bathe them.",
+            "Explore the Thean Hou Temple":
+              "Discover the Thean Hou Temple, a six-tiered Chinese temple dedicated to the goddess Tian Hou. Admire the impressive architecture of this grand temple, which features a combination of Buddhist, Taoist, and Confucian elements. Explore the temple grounds and discover the rich history and cultural significance of this iconic landmark.",
+            "Shop for souvenirs at Central Market":
+              "Vist Central Market, a vibrant shopping destination in Kuala Lumpur. Discover a multitude of shops, boutiques, and souvenir stalls. Indulge in retail therapy as you explore the bustling market and find everything from traditional handicrafts to quirky souvenirs, making it a shopper's paradise.",
+            "Enjoy a farewell dinner in Kuala Lumpur":
+              "Conclude your journey in Kuala Lumpur with a delightful farewell dinner. Choose from a wide range of culinary options, including traditional Malaysian cuisine, international flavors, or local specialties. Indulge in the vibrant food scene of Kuala Lumpur, savor delicious dishes, and reflect on the memorable experiences from your trip."
+          }
+          ,
+          "image" : "https://images.unsplash.com/photo-1682827396518-b101a60af7f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1hbGF5c2lhJTIwdGhlYW4lMjBob3UlMjB0ZW1wbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive in Kuala Lumpur, Petronas Twin Towers, Batu Caves, Traditional Malaysian dinner, day 2 - National Mosque of Malaysia, Islamic Arts Museum, Perdana Botanical Gardens, National Museum of Malaysia, Traditional Malay dinner, day 3 - Kuala Gandah Elephant Sanctuary, Central Market, Thean Hou Temple, farewell dinner in Kuala Lumpur"
+    },
+    "5": {
+      "destination": "Malaysia",
+      "header_image":"https://images.unsplash.com/photo-1595128727212-7af5764a163f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+      "num_days": 5,
+      "id": 11,
+      "it" : [
+        {
+          "day": "Day 1",
+          "activities": [
+            "Arrive in Kuala Lumpur",
+            "Check into hotel",
+            "Visit Petronas Twin Towers",
+            "Explore Batu Caves",
+            "Enjoy a traditional Malaysian dinner"
+          ],
+          "description":{
+            "Arrive in Kuala Lumpur": "Welcome to Kuala Lumpur, the vibrant capital of Malaysia! As you arrive in this bustling city, you'll be greeted by a perfect blend of modernity and tradition. Take a moment to soak in the lively atmosphere and get ready for an unforgettable journey.",
+            "Check into hotel": "After your arrival, make your way to your hotel in Kuala Lumpur. Check-in and get settled into your comfortable accommodation, where you can relax and recharge for the adventures that await you.",
+            "Visit Petronas Twin Towers": "Marvel at the iconic Petronas Twin Towers, a symbol of Kuala Lumpur's modernity and prosperity. Admire the impressive architecture of this 88-story twin structure, which was once the tallest building in the world. Capture breathtaking views of the city from the observation deck and immerse yourself in the grandeur of this architectural marvel.",
+            "Explore Batu Caves": "Embark on a spiritual journey to Batu Caves, a limestone hill home to a series of caves and Hindu temples. Climb the 272 steps to the main cave and marvel at the impressive golden statue of Lord Murugan. Explore the cave complex and discover the rich history and cultural significance of this iconic landmark.",
+            "Enjoy a traditional Malaysian dinner": "Delight your taste buds with a traditional Malaysian dinner, where you'll savor the exquisite flavors of authentic cuisine. Indulge in a culinary journey, whether it's savoring nasi lemak, satay, or a comforting bowl of laksa, and appreciate the artistry and attention to detail that goes into each dish."
+          },
+          "image": "https://plus.unsplash.com/premium_photo-1678303397075-64b7fa6de5ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFsYXlzaWElMjBiYXR1JTIwY2F2ZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "day": "Day 2",
+          "activities": [
+            "Visit the National Mosque of Malaysia",
+            "Explore the Islamic Arts Museum",
+            "Discover the Perdana Botanical Gardens",
+            "Visit the National Museum of Malaysia",
+            "Enjoy a traditional Malay dinner"
+          ],
+          "description":{
+            "Visit the National Mosque of Malaysia":
+              "Embark on a spiritual journey to the National Mosque of Malaysia, a beautiful mosque that serves as a symbol of the country's Islamic heritage. Admire the impressive architecture of this modern mosque, which can accommodate up to 15,000 worshippers. Explore the serene surroundings and immerse yourself in the spiritual ambiance.",
+            "Explore the Islamic Arts Museum":
+              "Discover the rich cultural heritage of Islam at the Islamic Arts Museum, one of the largest museums in Southeast Asia. Explore the impressive collection of Islamic art, artifacts, and manuscripts from around the world. Admire the intricate details of the exhibits and learn about the history and significance of Islamic art.",
+            "Discover the Perdana Botanical Gardens":
+              "Escape the urban hustle and find tranquility in the Perdana Botanical Gardens, a vast green oasis in the heart of Kuala Lumpur. Take a leisurely stroll through its serene pathways, enjoy the picturesque scenery, and visit attractions like the National Monument, National Planetarium, and Butterfly Park.",
+            "Visit the National Museum of Malaysia":
+              "Step into history as you explore the National Museum of Malaysia, a museum dedicated to the rich history and cultural heritage of the country. Discover the impressive collection of artifacts, exhibits, and historical treasures that showcase the diverse cultures of Malaysia. Learn about the country's storied past and immerse yourself in its fascinating history.",
+            "Enjoy a traditional Malay dinner":
+              "Indulge in a memorable dining experience with a traditional Malay dinner. Choose from a wide range of culinary options, including authentic Malay cuisine, international flavors, or local specialties. Immerse yourself in the warm and welcoming ambiance of a traditional Malay restaurant, and savor the authentic flavors of Malaysia's culinary traditions."
+          },
+          "image": "https://images.unsplash.com/photo-1624159557825-baac8ea7de23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fG1hbGF5c2lhJTIwcGVkcm9uYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "day": "Day 3",
+          "activities": [
+            "Visit the Kuala Gandah Elephant Sanctuary",
+            "Shop for souvenirs at Central Market",
+            "Explore the Thean Hou Temple",
+            "Enjoy dinner in Kuala Lumpur"
+          ],
+          "description": {
+            "Visit the Kuala Gandah Elephant Sanctuary":
+              "Embark on a memorable journey to the Kuala Gandah Elephant Sanctuary, a conservation center dedicated to protecting and rehabilitating elephants. Learn about the conservation efforts and the importance of protecting these majestic creatures. Observe the elephants in their natural habitat and have the opportunity to feed and bathe them.",
+            "Explore the Thean Hou Temple":
+              "Discover the Thean Hou Temple, a six-tiered Chinese temple dedicated to the goddess Tian Hou. Admire the impressive architecture of this grand temple, which features a combination of Buddhist, Taoist, and Confucian elements. Explore the temple grounds and discover the rich history and cultural significance of this iconic landmark.",
+            "Shop for souvenirs at Central Market":"Vist Central Market, a vibrant shopping destination in Kuala Lumpur. Discover a multitude of shops, boutiques, and souvenir stalls. Indulge in retail therapy as you explore the bustling market and find everything from traditional handicrafts to quirky souvenirs, making it a shopper's paradise.",
+            "Enjoy dinner in Kuala Lumpur":
+              "Conclude your day with a delightful dinner in Kuala Lumpur. Choose from a wide range of culinary options, including traditional Malaysian cuisine, international flavors, or local specialties. Indulge in the vibrant food scene of Kuala Lumpur, savor delicious dishes, and reflect on the memorable experiences from your trip."
+          },
+          "image": "https://images.unsplash.com/photo-1682827396518-b101a60af7f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1hbGF5c2lhJTIwdGhlYW4lMjBob3UlMjB0ZW1wbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "day": "Day 4",
+          "activities": [
+            "Travel from Kuala Lumpur to Penang",
+            "Visit Kek Lok Si Temple",
+            "Explore Penang Hill",
+            "Enjoy a traditional dinner in Penang"
+          ],
+          "description": {
+            "Travel from Kuala Lumpur to Penang":
+              "Embark on a seamless journey from Kuala Lumpur to Penang, as you transition from one vibrant city to another. Enjoy the scenic train ride and soak in the beautiful landscapes along the way. Prepare to explore the dynamic energy and modernity of Penang after your serene experience in Kuala Lumpur.",
+            "Visit Kek Lok Si Temple":
+              "Discover the Kek Lok Si Temple, a Buddhist temple complex and one of the largest temples in Southeast Asia. Admire the impressive architecture of this grand temple, which features a combination of Chinese, Thai, and Burmese elements. Explore the temple grounds and discover the rich history and cultural significance of this iconic landmark.",
+            "Explore Penang Hill":
+              "Escape the urban hustle and find tranquility in Penang Hill, a hill station in Penang. Take a leisurely stroll through its serene pathways, enjoy the picturesque scenery, and visit attractions like the Penang Hill Railway and the Habitat Penang Hill. Marvel at the panoramic views of the city and immerse yourself in the natural beauty of Penang.",
+            "Enjoy a traditional dinner in Penang":
+              "Indulge in a memorable dining experience with a traditional dinner in Penang. Choose from a wide range of culinary options, including authentic Malaysian cuisine, international flavors, or local specialties. Immerse yourself in the warm and welcoming ambiance of a traditional restaurant, and savor the authentic flavors of Penang's culinary traditions."
+          },
+          "image": "https://images.unsplash.com/photo-1620488212381-dea91f7dd69a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbGF5c2lhJTIwa2VrJTIwbG9rJTIwc2klMjB0ZW1wbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "day": "Day 5",
+          "activities": [
+            "Visit Penang National Park",
+            "Explore the Penang Botanic Gardens",
+            "Shop in George Town",
+            "Enjoy a farewell dinner in Penang"
+          ],
+          "description":{
+            "Visit Penang National Park":
+              "Immerse yourself in nature at Penang National Park, a picturesque park home to a diverse range of flora and fauna. Enjoy a leisurely stroll through its serene pathways, enjoy the picturesque scenery, and visit attractions like the Penang Hill Railway and the Habitat Penang Hill. Marvel at the panoramic views of the city and immerse yourself in the natural beauty of Penang.",
+            "Explore the Penang Botanic Gardens":
+              "Escape the urban hustle and find tranquility in the Penang Botanic Gardens, a vast green oasis in the heart of Penang. Take a leisurely stroll through its serene pathways, enjoy the picturesque scenery, and visit attractions like the National Monument, National Planetarium, and Butterfly Park.",
+            "Shop in George Town":
+              "Embark on a shopping spree in the vibrant George Town. Discover a multitude of shops, boutiques, department stores, and trendy fashion outlets. Indulge in retail therapy as you explore the bustling streets and find everything from high-end fashion to quirky souvenirs, making it a shopper's paradise.",
+            "Enjoy a farewell dinner in Penang":
+              "Conclude your journey in Penang with a delightful farewell dinner. Choose from a wide range of culinary options, including traditional Malaysian cuisine, international flavors, or local specialties. Indulge in the vibrant food scene of Penang, savor delicious dishes, and reflect on the memorable experiences from your trip."
+          },
+          "image":"https://images.unsplash.com/photo-1610978295753-7b1b755f6de8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbGF5c2lhJTIwcGVuYW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        }
+      ],
+      "summary": "day 1 - Arrive in Kuala Lumpur, Petronas Twin Towers, Batu Caves, Traditional Malaysian dinner, day 2 - National Mosque of Malaysia, Islamic Arts Museum, Perdana Botanical Gardens, National Museum of Malaysia, Traditional Malay dinner, day 3 - Kuala Gandah Elephant Sanctuary, Central Market, Thean Hou Temple, farewell dinner in Kuala Lumpur, day 4 - Travel from Kuala Lumpur to Penang, Kek Lok Si Temple, Penang Hill, Traditional dinner in Penang, day 5 - Penang National Park, Penang Botanic Gardens, Shop in George Town, farewell dinner in Penang"
+    }
+  },
   "Paris": {
     "3": {
       "destination": "Paris",

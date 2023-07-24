@@ -8,12 +8,19 @@ import pymongo
 from flask_cors import CORS
 import spacy
 import speech_recognition as sr
+from bson import json_util
 
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "API_KEY"
+openai.api_key = "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"
 model = "gpt-3.5-turbo"
+
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+db = client['blog']  # Choose your database (e.g., 'blog')
+
+# Define the blog post collection
+blog_collection = db['blog_posts']  # Choose your collection name (e.g., 'blog_posts')
 
 @app.route('/gen_it', methods=['GET'])
 def generate_itinerary():
@@ -53,7 +60,8 @@ def generate_itinerary():
         )
         itinerary = response.choices[0].message['content'].strip()
         print(itinerary)
-        itinerary_split = itinerary.split('DAY ')
+        # itinerary_split = itinerary.split('DAY ')
+        itinerary_split = re.findall(r'(DAY? \d.*?)\s*(?=(?:DAY? \d|\Z))', itinerary, re.IGNORECASE | re.DOTALL)
         
         # itinerary_days = []
         # num = [str(i) for i in range(1, 16)]
@@ -71,7 +79,7 @@ def generate_itinerary():
             if variation in itinerary:
                 sum = itinerary.split(variation)
                 break
-        itinerary_days = itinerary_split[1:]
+        itinerary_days = itinerary_split[0:]
         response_data = {
             "destination": destination,
             "num_days": num_days,
@@ -139,14 +147,74 @@ def extract_information(string):
     doc = nlp(string)
     destination = None
     num_days = None
+
+    num_mapping = {
+        "one": 1,
+        "two": 2,
+        "three": 3,
+        "four": 4,
+        "five": 5,
+        "six": 6,
+        "seven": 7,
+        "eight": 8,
+        "nine": 9
+    }
+    india_states_cities = [
+    "andhra pradesh", "visakhapatnam", "vijayawada", "guntur", "tirupati", "rajahmundry",
+    "arunachal pradesh", "itanagar", "tawang", "naharlagun",
+    "assam", "guwahati", "silchar", "dibrugarh", "tezpur",
+    "bihar", "patna", "gaya", "muzaffarpur", "bhagalpur",
+    "chhattisgarh", "raipur", "bhilai", "bilaspur",
+    "goa", "panaji", "vasco da gama", "margao",
+    "gujarat", "ahmedabad", "surat", "vadodara", "rajkot",
+    "haryana", "chandigarh", "faridabad", "gurgaon", "panipat",
+    "himachal pradesh", "shimla", "manali", "dharamshala",
+    "jharkhand", "ranchi", "jamshedpur", "dhanbad",
+    "karnataka", "bengaluru", "mysuru", "hubli", "mangaluru",
+    "kerala", "thiruvananthapuram", "kochi", "kozhikode", "thrissur",
+    "madhya pradesh", "bhopal", "indore", "gwalior", "jabalpur",
+    "maharashtra", "mumbai", "pune", "nagpur", "thane",
+    "manipur", "imphal", "thoubal", "bishnupur",
+    "meghalaya", "shillong", "tura", "nongpoh",
+    "mizoram", "aizawl", "lunglei", "champhai",
+    "nagaland", "kohima", "dimapur", "wokha", "mauritius"
+    "odisha", "bhubaneswar", "cuttack", "rourkela",
+    "punjab", "chandigarh", "ludhiana", "amritsar",
+    "rajasthan", "jaipur", "jodhpur", "udaipur", "kota",
+    "sikkim", "gangtok", "namchi", "gyalshing",
+    "tamil nadu", "chennai", "coimbatore", "madurai", "salem",
+    "telangana", "hyderabad", "warangal", "karimnagar",
+    "tripura", "agartala", "dharmanagar", "kailasahar",
+    "uttar pradesh", "lucknow", "kanpur", "varanasi", "agra","noida", "ghaziabad",
+    "uttarakhand", "dehradun", "haridwar", "roorkee",
+    "west bengal", "kolkata", "howrah", "asansol", "siliguri", "delhi", "new delhi"
+]
+
+
     for entity in doc.ents:
         if entity.label_ == "GPE":  # Geopolitical Entity (location)
             destination = entity.text
             break
     for token in doc:
         if token.like_num:
-            num_days = int(token.text)
+            try:
+                num_days = int(token.text)                
+            except ValueError:
+                if token.text.lower() in num_mapping:
+                    num_days = num_mapping[token.text.lower()]
             break
+        
+    # if destination:
+    #     for item in india_states_cities:
+    #         if item.lower() in destination.lower():
+    #             destination = item
+    #             break
+    if not destination:
+        for token in doc:
+            if token.text.lower() in india_states_cities:
+                destination = token.text
+                break
+
     return destination, num_days
 
 @app.route('/predef_itinerary', methods=['GET'])
@@ -154,6 +222,8 @@ def predef_itinerary():
     try:
         destination = request.args.get('destination')
         with open('Python\predefit.json') as json_file:
+            # data = json.load(json_file)
+            # if destination.lower() in data:
             data = json.load(json_file)
             if destination in data:
                 return jsonify(data[destination])
@@ -187,19 +257,56 @@ def initial_details():
 def autocomplete():
     # search_text = request.args.get('text')
     client = pymongo.MongoClient("mongodb://localhost:27017/") #add connection string
-    db = client['Autofill']
-    collection = db['countries']
-    udb = client['user_database']
+    db1 = client['Autofill']
+    collection1 = db1['countries']
     with open('Python\country_name.txt', 'r') as file:
         country_names = file.read().splitlines()
     for country in country_names:
-        existing_country = collection.find_one({'name': country})
+        existing_country = collection1.find_one({'name': country})
         if existing_country is None:
-            collection.insert_one({'name': country})
+            collection1.insert_one({'name': country})
     # query = { 'name': { '$regex': '^' + search_text, '$options': 'i' } }
     # countries = collection.find(query)#.limit(5)
-    suggestions = [country['name'] for country in collection.find({})]
+    suggestions = [country['name'] for country in collection1.find({})]
     return jsonify(suggestions)
+
+
+@app.route('/api/posts', methods=['POST'])
+def create_post():
+    data = request.get_json()
+    title = data['title']
+    content = data['content']
+
+    # Increment the counter and get the next ID
+    counter = db['counters'].find_one_and_update(
+        {"_id": "blogpost"}, {"$inc": {"count": 1}}, upsert=True, return_document=True
+    )
+
+    next_id = counter['count']
+
+    post = {"post_id": next_id, "title": title, "content": content}
+    blog_collection.insert_one(post)
+
+    return jsonify({'message': 'Post created successfully'})
+
+@app.route('/api/posts', methods=['GET'])
+def get_posts():
+    posts = list(blog_collection.find())
+
+    serialized_posts = json_util.dumps(posts)
+    # Return the JSON response
+    return serialized_posts, 200, {'Content-Type': 'application/json'}
+
+@app.route('/api/posts/<post_id>', methods=['GET'])
+def get_post(post_id):
+    post = blog_collection.find_one({"post_id": int(post_id)})
+    if post:
+
+        serialized_posts = json_util.dumps(post)
+    # Return the JSON response
+        return serialized_posts, 200, {'Content-Type': 'application/json'}
+    else:
+        return jsonify({'message': 'Post not found'})
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
