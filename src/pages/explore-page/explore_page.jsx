@@ -229,7 +229,19 @@ function Explore_Page() {
                     <div key={activityIndex}>
                       <div className="location-name">{activity}</div>
                       <div className="location-description">
-                        {day.description[activity]}
+                        {Array.isArray(day.description[activity]) ? (
+                          day.description[activity].map((descriptionLine, index) => (
+                            <React.Fragment key={index}>
+                              {descriptionLine}
+                              <br />
+                            </React.Fragment>
+                          ))
+                        ) : (
+                          <React.Fragment>
+                            {day.description[activity]}
+                            <br />
+                          </React.Fragment>
+                        )}
                       </div>
                     </div>
                   ))}

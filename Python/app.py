@@ -12,7 +12,7 @@ from bson import json_util
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "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"
+openai.api_key = "API KEY"
 model = "gpt-3.5-turbo"
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
