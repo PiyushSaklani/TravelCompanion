@@ -14,7 +14,7 @@ function SignInPage() {
 
   const checkUser = async (email, password) => {
     try {
-      const response = await axios.post("http://localhost:8000/login", {
+      const response = await axios.post(`http://localhost:8000/login`, {
         email,
         password,
       });

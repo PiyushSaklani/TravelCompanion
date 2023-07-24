@@ -10,7 +10,10 @@ import PopUp from "../../components/popup/popup";
 import { useNavigate } from "react-router-dom";
 import App_Bar from "../../components/appbar/appbar";
 import Mic_Icon from "../../icons/svg/mic_icon";
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
+import Spinner_Icon from "../../icons/svg/spinner_icon";
 
 function Explore_Page() {
   const navigate = useNavigate();
@@ -32,8 +35,11 @@ function Explore_Page() {
   const [showMenu, setShowMenu] = useState(false);
   const [details, setDetails] = useState(null);
   const [error, setError] = useState(null);
+  const [mic, setMic] = useState(true);
+  const [gptcall, setGptcall] = useState(false);
 
-  const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition()
+  const { transcript, browserSupportsSpeechRecognition } =
+    useSpeechRecognition();
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -58,16 +64,16 @@ function Explore_Page() {
 
   useEffect(() => {
     // console.log(transcript)
-    setCustomizationInput(transcript)
-  },[transcript])
+    setCustomizationInput(transcript);
+  }, [transcript]);
 
   if (!browserSupportsSpeechRecognition) {
-    return null
+    return null;
   }
 
   const saveList = async (json, destination, user_id) => {
     try {
-      const response = await axios.post("http://localhost:8000/add-list", {
+      const response = await axios.post(`http://localhost:8000/add-list`, {
         json,
         destination,
         user_id,
@@ -121,7 +127,9 @@ function Explore_Page() {
 
   const handleButtonClick = async () => {
     setLoading(true);
-    SpeechRecognition.stopListening()
+    setGptcall(true)
+    setMic(true);
+    SpeechRecognition.stopListening();
     // console.log(tripData.summary);
     await fetchItinerary(
       customizationInput,
@@ -141,7 +149,7 @@ function Explore_Page() {
       });
     // Perform some action when the button is clicked
     // console.log("Button clicked!");
-    setCustomizationInput("")
+    setCustomizationInput("");
   };
 
   const handlePopup = () => {
@@ -160,12 +168,12 @@ function Explore_Page() {
           <div className="popupcontent">
             <div className="popupheading">Hello, User</div>
             <div className="popupsubheading">
-              Your vacation plan has been safely stored in the yourlist.
+            Thank you for booking your trip with us! We are excited to assist you with your travel arrangements.  we will reach out to you promptly with confirmation and other details, once our team reviewed your booking
             </div>
-            <div className="popupsubheading">
+            {/* <div className="popupsubheading">
               After calculating all the expenses and other details, our team
               will contact you.
-            </div>
+            </div> */}
           </div>
         </div>
       )}
@@ -183,9 +191,9 @@ function Explore_Page() {
             <div className="ep-place-title">
               Discover {tripData.destination}'s Charm
             </div>
-            {/* <div className="ep-place-new-cost">
+            {!gptcall&&<div className="ep-place-new-cost">
               Rs. {initial_trip_data[id]["cost"]}
-            </div> */}
+            </div>}
             {loading ? (
               <img className="loading-gif" src={loading_gif} alt="GIF" />
             ) : (
@@ -196,8 +204,14 @@ function Explore_Page() {
                   value={customizationInput}
                   onChange={handleInputChange}
                 />
-                <div onClick={() => {SpeechRecognition.startListening()}}>
-                  <Mic_Icon />
+                <div
+                  onClick={() => {
+                    SpeechRecognition.startListening();
+                    setMic(false);
+                  }}
+                >
+                  {mic && <Mic_Icon />}
+                  {!mic && <Spinner_Icon />}
                 </div>
                 <button onClick={handleButtonClick}>Customise</button>
               </div>
@@ -206,30 +220,30 @@ function Explore_Page() {
         </div>
         {/* <div className="ep-div-2">{transcript}</div> */}
         {tripData["it"].map((day, index) => (
-  <div className="trip-div-main-box" key={index}>
-    <div className="trip-div-inner-box">
-      <h2>{day.day}</h2>
-      <div className="inner-detil-div">
-        <div className="trip-detail-div">
-          {day.activities.map((activity, activityIndex) => (
-            <div key={activityIndex}>
-              <div className="location-name">{activity}</div>
-              <div className="location-description">
-                {day.description[activity]}
+          <div className="trip-div-main-box" key={index}>
+            <div className="trip-div-inner-box">
+              <h2>{day.day}</h2>
+              <div className="inner-detil-div">
+                <div className="trip-detail-div">
+                  {day.activities.map((activity, activityIndex) => (
+                    <div key={activityIndex}>
+                      <div className="location-name">{activity}</div>
+                      <div className="location-description">
+                        {day.description[activity]}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div
+                  className="place-img"
+                  style={{
+                    backgroundImage: `url(${day.image})`,
+                  }}
+                ></div>
               </div>
             </div>
-          ))}
-        </div>
-        <div
-          className="place-img"
-          style={{
-            backgroundImage: `url(${day.image})`,
-          }}
-        ></div>
-      </div>
-    </div>
-  </div>
-))}
+          </div>
+        ))}
         <div className="include-div">
           <div className="include-inner-div">
             <h2>What's Included</h2>

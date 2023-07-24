@@ -3,6 +3,7 @@ import "./signup_page.css";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 function SignUpPage() {
   const dispatch = useDispatch();
@@ -107,6 +108,7 @@ function SignUpPage() {
           </form>
           <div></div>
         </div>
+        <div style={{paddingTop:50,}}>Already a member? <Link to='/signin'>Signin</Link></div>
       </div>
     </div>
   );

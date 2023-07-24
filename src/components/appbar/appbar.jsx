@@ -5,7 +5,7 @@ import { Popover } from "antd";
 import { Link } from "react-router-dom";
 import Bell_Icon from "../../icons/svg/bell_icon";
 
-function App_Bar() {
+function App_Bar(props) {
   const navigate = useNavigate();
   const userId = useSelector((state) => state.userId);
   const userEmail = useSelector((state) => state.userEmail);
@@ -33,7 +33,7 @@ function App_Bar() {
             Your List
           </li>
           <li>Contact Us</li>
-          <li><Bell_Icon /></li>
+          <li onClick={props.onClick}><Bell_Icon /></li>
           <li>
             <Popover
               content={
