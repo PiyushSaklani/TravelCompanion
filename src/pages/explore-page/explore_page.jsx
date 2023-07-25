@@ -14,6 +14,10 @@ import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
 import Spinner_Icon from "../../icons/svg/spinner_icon";
+import Train_Icon from "../../icons/svg/train_icon";
+import Bus_Icon from "../../icons/svg/bus_icon";
+import Flight_Icon from "../../icons/svg/flight_icon";
+import Hotel_Icon from "../../icons/svg/hotel_icon";
 
 function Explore_Page() {
   const navigate = useNavigate();
@@ -71,6 +75,19 @@ function Explore_Page() {
     return null;
   }
 
+  const saveNotify = async (note,user_id) => {
+    try {
+      const response = await axios.post("http://localhost:8000/add-notify", {
+        note,
+        user_id,
+      });
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  };
+
   const saveList = async (json, destination, user_id) => {
     try {
       const response = await axios.post(`http://localhost:8000/add-list`, {
@@ -88,6 +105,7 @@ function Explore_Page() {
   const handleSaveList = async () => {
     if (userId) {
       await saveList(tripData, tripData.destination, userId);
+      await saveNotify(`Vacation plan to ${tripData.destination} is saved`, userId);
       setShowPopUp(true);
     } else {
       navigate("/signin");
@@ -191,9 +209,46 @@ function Explore_Page() {
             <div className="ep-place-title">
               Discover {tripData.destination}'s Charm
             </div>
-            {!gptcall&&<div className="ep-place-new-cost">
+            <div className="trip_icons" style={{paddingInline:200}}>
+                    <div
+                      id="icons"
+                      onClick={() => {
+                        window.open(
+                          "https://www.google.com/travel/flights",
+                          "_blank"
+                        );
+                      }}
+                    >
+                      <Flight_Icon />
+                    </div>
+                    <div
+                      id="icons"
+                      onClick={() => {
+                        window.open("https://www.ixigo.com/trains");
+                      }}
+                    >
+                      <Train_Icon />
+                    </div>
+                    <div
+                      id="icons"
+                      onClick={() => {
+                        window.open("https://www.makemytrip.com/bus-tickets/");
+                      }}
+                    >
+                      <Bus_Icon />
+                    </div>
+                    <div
+                      id="icons"
+                      onClick={() => {
+                        window.open("https://www.makemytrip.com/hotels/");
+                      }}
+                    >
+                      <Hotel_Icon />
+                    </div>
+                  </div>
+            {/* {!gptcall&&<div className="ep-place-new-cost">
               Rs. {initial_trip_data[id]["cost"]}
-            </div>}
+            </div>} */}
             {loading ? (
               <img className="loading-gif" src={loading_gif} alt="GIF" />
             ) : (
@@ -275,7 +330,7 @@ function Explore_Page() {
             handleSaveList();
           }}
         >
-          Save Itinerary
+          Book Package
         </button>
         {/* <button
           className="confirm-btn"

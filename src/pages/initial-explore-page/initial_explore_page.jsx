@@ -64,7 +64,7 @@ function Initial_Explore_Page() {
   return (
     <div className="ep-main-div">
       <div className="mp-navBar">
-        <div className="mp-app-name">Travel</div>
+        <div className="mp-app-name">Travel Companion</div>
         <div className="mp-nav-items">
           <ul>
             <li>Home</li>
@@ -83,7 +83,7 @@ function Initial_Explore_Page() {
           <div id="menubtn-item">Contact Us</div>
         </div>
       )}
-      <div className="ep-div-1">
+      {/* <div className="ep-div-1">
         <div
           className="ep-main-image"
           style={{
@@ -101,7 +101,7 @@ function Initial_Explore_Page() {
             <button onClick={handleButtonClick}>Submit</button>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className="ep-div-2">{dayPlans}</div> */}
       {tripData.map((day, index) => (
         <div className="trip-div-main-box">
@@ -143,6 +143,11 @@ function Initial_Explore_Page() {
         </div>
         </div>
       </div>
+      <button
+          className="confirm-btn"
+        >
+          Book Package
+        </button>
     </div>
   );
 }

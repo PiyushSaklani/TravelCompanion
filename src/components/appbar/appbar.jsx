@@ -11,7 +11,7 @@ function App_Bar(props) {
   const userEmail = useSelector((state) => state.userEmail);
   return (
     <div className="mp-navBar">
-      <div className="mp-app-name">Travel</div>
+      <div className="mp-app-name">Travel Companion</div>
       <div className="mp-nav-items">
         <ul>
           <li
@@ -32,7 +32,7 @@ function App_Bar(props) {
           >
             Your List
           </li>
-          <li>Contact Us</li>
+          {/* <li>Contact Us</li> */}
           <li onClick={props.onClick}><Bell_Icon /></li>
           <li>
             <Popover
