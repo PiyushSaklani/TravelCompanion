@@ -12,7 +12,7 @@ from bson import json_util
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "API KEY"
+openai.api_key = "YOUR KEY"
 model = "gpt-3.5-turbo"
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -39,15 +39,17 @@ def generate_itinerary():
             prompt += f"Make itinerary for {num_days} days in {destination}\n"
         else:
             prompt += f"Make itinerary for {num_days} days in {destination}\n"
-            prompt += f" Earlier itinerary Summary: {summary}\n"
-        prompt += "Generate itinerary day wise in detail with headings like DAY 1: Arrival in Destination\n, DAY 2: Sightseeing in Destination\n, DAY 3: Departure from Destination\n"
+            # prompt += f" Earlier itinerary Summary: {summary}\n"
+        prompt += "Generate itinerary day wise in detail with headings like DAY 1: Place 1, Place 2, Place 3\n"
         prompt += "Make sure the heading's DAY is in capital only rest everything normal\n"
         prompt += "Each line should have small paragraphic details\n"
-        prompt += "Also give a summary in the extreme end (after complete itinerary for all days) including just the name of all places visited. Format: Day 1: Place 1, Place 2, Place 3 in 1 line with heading SUMMARY:\n"
+        # prompt += "Also give a summary in the extreme end (after complete itinerary for all days) including just the name of all places visited. Format: Day 1: Place 1, Place 2, Place 3 in 1 line with heading SUMMARY:\n"
         prompt += "Detailed and strictly follow the format specified.\n"
         prompt += "Give me max words 300\n"
         prompt += "give in bullet points"
+        prompt += "don't add extra notes"
         print(prompt)
+        print(" ")
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo-0613",
             messages=[
@@ -74,10 +76,10 @@ def generate_itinerary():
         # print("it_split: ",itinerary_split)
         
         # # itinerary_split = re.split(r'DAY \d+:', itinerary, flags=re.IGNORECASE)
-        for variation in ["SUMMARY:", "summary:", "Summary:"]:
-            if variation in itinerary:
-                sum = itinerary.split(variation)
-                break
+        # for variation in ["SUMMARY:", "summary:", "Summary:"]:
+        #     if variation in itinerary:
+        #         sum = itinerary.split(variation)
+        #         break
         itinerary_days = itinerary_split[0:]
         response_data = {
             "destination": destination,
@@ -87,7 +89,7 @@ def generate_itinerary():
             "summary": "",
             "header_image": ""
         }
-        response_data["summary"] = ' '.join(sum[1:])
+        # response_data["summary"] = ' '.join(sum[1:])
         for i in range(num_days):
             day_data = {
                 "day": f"Day {i+1}",
@@ -100,10 +102,10 @@ def generate_itinerary():
                 k = day_activities[0]
                 a = k.split(':')
                 day_activities[0] = a[1]
-                for variation in ["SUMMARY:", "summary:", "Summary:"]:
-                    if variation in day_activities:
-                        summary_index = day_activities.index(variation)
-                        day_activities = day_activities[:summary_index]
+                # for variation in ["SUMMARY:", "summary:", "Summary:"]:
+                #     if variation in day_activities:
+                #         summary_index = day_activities.index(variation)
+                #         day_activities = day_activities[:summary_index]
                 activities = [activity.strip()
                               for activity in day_activities[0].split(',')]
                 day_data['activities'] = activities
@@ -187,6 +189,146 @@ def extract_information(string):
     "uttar pradesh", "lucknow", "kanpur", "varanasi", "agra","noida", "ghaziabad",
     "uttarakhand", "dehradun", "haridwar", "roorkee",
     "west bengal", "kolkata", "howrah", "asansol", "siliguri", "delhi", "new delhi"
+    "afghanistan", "kabul", "herat", "kandahar",
+    "albania", "tirana", "durres", "vlore",
+    "algeria", "algiers", "oran", "constantine",
+    "andorra", "andorra la vella", "escaldes-engordany",
+    "angola", "luanda", "lobito", "huambo",
+    "argentina", "buenos aires", "cordoba", "rosario",
+    "armenia", "yerevan", "gyumri", "vanadzor",
+    "australia", "sydney", "melbourne", "brisbane",
+    "austria", "vienna", "graz", "salzburg",
+    "azerbaijan", "baku", "ganja", "sumqayit",
+    "bahamas", "nassau", "freeport", "abaco islands",
+    "bahrain", "manama", "muharraq", "rifar",
+    "bangladesh", "dhaka", "chittagong", "khulna",
+    "barbados", "bridgetown", "speightstown", "holetown",
+    "belarus", "minsk", "gomel", "mogilev",
+    "belgium", "brussels", "antwerp", "ghent",
+    "belize", "belmopan", "san ignacio", "orange walk",
+    "benin", "porto-novo", "cotonou", "parakou",
+    "bhutan", "thimphu", "punakha", "paro",
+    "bolivia", "sucre", "la paz", "santa cruz",
+    "bosnia and herzegovina", "sarajevo", "banja luka", "tuzla",
+    "botswana", "gaborone", "francistown", "maun",
+    "brazil", "rio de janeiro", "sao paulo", "salvador",
+    "brunei", "bandar seri begawan", "kuala belait", "seria",
+    "bulgaria", "sofia", "plovdiv", "varna",
+    "burkina faso", "ouagadougou", "bobodioulasso", "koudougou",
+    "burundi", "bujumbura", "gitega", "rumonge",
+    "cambodia", "phnom penh", "siem reap", "battambang",
+    "cameroon", "yaounde", "douala", "bamenda",
+    "canada", "ottawa", "toronto", "vancouver",
+    "cape verde", "praia", "mindelo", "sao filipe",
+    "central african republic", "bangui", "bimbo", "bambari",
+    "chad", "n'djamena", "moundou", "sagh",
+    "chile", "santiago", "valparaiso", "concepcion",
+    "china", "beijing", "shanghai", "guangzhou",
+    "colombia", "bogota", "medellin", "cali",
+    "comoros", "moroni", "mutsamudu", "fomboni",
+    "congo", "kinshasa", "lubumbashi", "mbuji-mayi",
+    "costa rica", "san jose", "limon", "alajuela",
+    "croatia", "zagreb", "split", "rijeka",
+    "cuba", "havana", "santiago de cuba", "camaguey",
+    "cyprus", "nicosia", "limassol", "larnaca",
+    "czech republic", "prague", "brno", "ostrava",
+    "denmark", "copenhagen", "aarhus", "odense",
+    "djibouti", "djibouti", "ali sabieh", "tadjoura",
+    "dominica", "roseau", "portsmouth", "marigot",
+    "dominican republic", "santo domingo", "santiago", "la romana",
+    "east timor", "dili", "baucau", "maliana",
+    "ecuador", "quito", "guayaquil", "cuenca",
+    "egypt", "cairo", "alexandria", "giza",
+    "el salvador", "san salvador", "santa ana", "soyapango",
+    "equatorial guinea", "malabo", "bata", "eko",
+    "eritrea", "asmara", "massawa", "keren",
+    "estonia", "tallinn", "tartu", "narva",
+    "ethiopia", "addis ababa", "dire dawa", "mekelle",
+    "fiji", "suva", "nadi", "lautoka",
+    "finland", "helsinki", "espoo", "tampere",
+    "france", "paris", "marseille", "lyon",
+    "gabon", "libreville", "port-gentil", "masuku",
+    "gambia", "banjul", "serrekunda", "brikama",
+    "georgia", "tbilisi", "kutaisi", "batumi",
+    "germany", "berlin", "hamburg", "munich",
+    "ghana", "accra", "kumasi", "tamale",
+    "greece", "athens", "thessaloniki", "patras",
+    "grenada", "st. george's", "grenville", "sauteurs",
+    "guatemala", "guatemala city", "mixco", "villa nueva",
+    "guinea", "conakry", "nzerekore", "kindia",
+    "guinea-bissau", "bissau", "bafata", "gabu",
+    "guyana", "georgetown", "linden", "new amsterdam",
+    "haiti", "port-au-prince", "carrefour", "delmas",
+    "honduras", "tegucigalpa", "san pedro sula", "choloma",
+    "hungary", "budapest", "debrecen", "szeged",
+    "iceland", "reykjavik", "kopavogur", "hafnarfjordur",
+    "india",
+    "indonesia", "jakarta", "surabaya", "bandung",
+    "iran", "tehran", "mashhad", "isfahan",
+    "iraq", "baghdad", "mosul", "basra",
+    "ireland", "dublin", "cork", "galway",
+    "israel", "jerusalem", "tel aviv", "haifa",
+    "italy", "rome", "milan", "naples",
+    "jamaica", "kingston", "montego bay", "mandeville",
+    "japan", "tokyo", "osaka", "kyoto",
+    "jordan", "amman", "zarqa", "irbid",
+    "kazakhstan", "almaty", "nur-sultan", "shymkent",
+    "kenya", "nairobi", "mombasa", "kisumu",
+    "kiribati", "tarawa", "betio", "bikenibeu",
+    "north korea", "pyongyang", "chongjin", "hamhung",
+    "south korea", "seoul", "busan", "incheon",
+    "kosovo", "pristina", "peje", "prizren",
+    "kuwait", "kuwait city", "al ahmadi", "hawalli",
+    "kyrgyzstan", "bishkek", "osh", "jalalabad",
+    "laos", "vientiane", "savannakhet", "luang prabang",
+    "latvia", "riga", "daugavpils", "liepaja",
+    "lebanon", "beirut", "tripoli", "sidon",
+    "lesotho", "maseru", "tysowane", "leribe",
+    "liberia", "monrovia", "gbarnga", "buchanan",
+    "libya", "tripoli", "benghazi", "misrata",
+    "liechtenstein", "vaduz", "schaan", "triesen",
+    "lithuania", "vilnius", "kaunas", "klaipeda",
+    "luxembourg", "luxembourg city", "esch-sur-alzette", "differdange",
+    "macedonia", "skopje", "bitola", "kumanovo",
+    "madagascar", "antananarivo", "toamasina", "antsirabe",
+    "malawi", "lilongwe", "blantyre", "mzuzu",
+    "malaysia", "kuala lumpur", "george town", "johor bahru",
+    "maldives", "male", "addu city", "fuvahmulah",
+    "mali", "bamako", "sikasso", "segou",
+    "malta", "valletta", "birkirkara", "qormi",
+    "marshall islands", "majuro", "ebeye", "arno",
+    "mauritania", "nouakchott", "nouadhibou", "kiffa",
+    "mauritius", "port louis", "vacoas", "curepipe",
+    "mexico", "mexico city", "guadalajara", "monterrey",
+    "micronesia", "palikir", "weno", "kolonia",
+    "moldova", "chisinau", "balti", "tiraspol",
+    "monaco", "monaco", "monte carlo", "la condamine",
+    "mongolia", "ulaanbaatar", "erdenet", "darkhan",
+    "montenegro", "podgorica", "niksic", "pljevlja",
+    "morocco", "rabat", "casablanca", "fes",
+    "mozambique", "maputo", "matola", "beira",
+    "myanmar", "naypyidaw", "yangon", "mandalay",
+    "namibia", "windhoek", "riemanns", "walvis bay",
+    "nauru", "yaren", "denigomodu", "meneng",
+    "nepal", "kathmandu", "pokhara", "lalitpur",
+    "netherlands", "amsterdam", "rotterdam", "the hague",
+    "new zealand", "wellington", "auckland", "christchurch",
+    "nicaragua", "managua", "leon", "masaya",
+    "niger", "niamey", "zinder", "maradi",
+    "nigeria", "abuja", "lagos", "kano",
+    "norway", "oslo", "bergen", "trondheim",
+    "oman", "muscat", "seeb", "salalah",
+    "pakistan", "islamabad", "karachi", "lahore",
+    "palau", "ngerulmud", "koror", "meketii",
+    "palestine", "jerusalem", "gaza", "ramallah",
+    "panama", "panama city", "san miguelito", "tocumen",
+    "papua new guinea", "port moresby", "lae", "madang",
+    "paraguay", "asuncion", "ciudad del este", "san lorenzo",
+    "peru", "lima", "arequipa", "trujillo",
+    "philippines", "manila", "quezon city", "davao city",
+    "poland", "warsaw", "krakow", "lodz",
+    "portugal", "lisbon", "porto", "vila nova de gaia",
+    "qatar"
 ]
 
 

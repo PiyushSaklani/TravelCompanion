@@ -10,6 +10,7 @@
   grid-row: 15/76;
   grid-column: 35/66;
 
+
   /* background-color: black; */
   background-image: url("../../images/popup.png");
   background-position: center;
@@ -24,26 +25,26 @@
   z-index: 10;
 }
 .popupcontent{
-  width: 70%;
-  height: 200px;
+  width: 60%;
+  height: 150px;
 
   /* background-color: #212529; */
 }
 .popup-iner-div {
   margin-top: 15px;
-  width: 70%;
+  width: 60%;
   height: 20px;
   display: flex;
   justify-content: end;
 }
 .popupsubheading{
-  margin-top: 40px;
-  width: 60%;
+  margin-top: 20px;
+  width: 70%;
   text-align: start;
   font-weight: bold;
 }
 .popupheading{
-  margin-top: 80px;
+  margin-top: 20px;
   font-size: 28px;
   font-weight: bold;
   text-align: start;
