@@ -125,7 +125,7 @@ function View_Page() {
             handleSaveList();
           }}
         >
-          Save Itinerary
+          Book Package
         </button> */}
       </div>
     </div>

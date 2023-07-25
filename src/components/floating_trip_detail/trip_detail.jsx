@@ -42,6 +42,8 @@ function Trip_Detail() {
     fetchData();
   }, []);
 
+  // useEffect(() => {fetchItinerary();},[])
+
   const fetchItinerary = async () => {
     try {
       const response = await fetch(
@@ -82,6 +84,7 @@ function Trip_Detail() {
     dispatch({ type: "SET_CHILD", payload: numChildren });
     await fetchItinerary();
     dispatch({ type: "SET_IMAGES", payload: true });
+
     // var Plan1 = await fetchGPT();
     // console.log(Plan1);
     // dispatch({ type: "SET_TRIP_DATA", payload: Plan1 });
@@ -202,6 +205,7 @@ function Trip_Detail() {
               }
               options={convertedStates}
             />
+            <div style={{color:'red', height:40}}>*</div>
             {/* <input
               type="text"
               value={destination}
@@ -225,6 +229,7 @@ function Trip_Detail() {
                 </option>
               ))}
             </select>
+            <div style={{color:'red', height:40}}>*</div>
           </div>
           {/* </div> */}
 
